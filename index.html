@@ -95,16 +95,16 @@
                 <li>
                     <div class="news_card">
                         <h1 class="news_text"></h1>
-                        <h1 class="news_content">Error : No Exist();</h1>
+                        <h1 class="news_content" id="apply">Error : No Exist();</h1>
                     </div>
                 </li>
             </ul>
     </div>
-    <div class="apply" id="apply">
+    <div class="apply">
         <h1 class="apply_title">APPLY CREATOR</h1>
         <p class="apply_description">- 제휴 및 기타 문의는 이메일 또는 상담으로 연락해주세요.</p>
         <div class="apply_wrap">
-            <iframe class="apply_form" src="https://script.google.com/macros/s/AKfycbyIMlWEe8icnPnRMDcp-SW3P4U4RXMLORIwqHw0LV8gDKjNoQAXxrPJykzzFUiGOp0z/exec" width="1000" heignt="1000" scrolling="no"></iframe>
+            <iframe class="apply_form" src="https://script.google.com/macros/s/AKfycbyDgte0VgZhwr2lHJCvGd3jCPQ7I0bZWyR3gIk6xRBwjlJAnJB1VTyj8FKgprLSux_h/exec" width="1000" heignt="1000" scrolling="no"></iframe>
         </div>
     </div>
     <div class="g-recaptcha" data-sitekey="6LcpodojAAAAALYzsnKaftuQozKqQReSdtqEDpxR" data-callback="onSubmit" data-size="invisible"></div>
@@ -141,5 +141,47 @@
         </div>
     </footer>
     <script src="https://www.google.com/recaptcha/api.js"></script>
+         <!-- Channel Plugin Scripts -->
+  <script lang="JavaScript">
+    (function() {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+      }
+      var ch = function() {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function(args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+    ChannelIO('boot', {
+      "pluginKey": "c4894c6e-919c-4529-8e16-65e28acd4bd0" //please fill with your plugin key
+    });
+  </script>
+<!-- End Channel Plugin -->
 </body>
 </html>
