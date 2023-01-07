@@ -292,6 +292,25 @@ a:link {
     margin-left: 290px;
 }
 
+.apply_description {
+    font-family: 'NanumSquareNeo-Variable' !important;
+    font-size: 20px;
+    margin-bottom: -21px !important;
+    margin-left: 290px !important;
+    position: relative;
+    top: -40px;
+}
+
+.apply_form {
+    margin: 0 auto;
+    width: 100%;
+    height: 1020px;
+}
+
+.apply_form::-webkit-scrollbar {
+    display: none;
+}
+
 .footer_nav {
     padding: 0;
     height: 50px;
