@@ -409,7 +409,6 @@ a:link {
     .news {
         width: 100% !important;
         height: 100vh !important;
-        background: url('/Img/Error/Error-Moblie.png');
     }
 
     .mobile_error {
@@ -418,6 +417,7 @@ a:link {
         padding-top: 100%;
         display: block;
         text-align: center;
+        background: url('/Img/Error/Error-Moblie.png');
     }
 
     .mobile_error > h1 {
