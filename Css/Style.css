@@ -409,7 +409,7 @@ a:link {
     .news {
         width: 100% !important;
         height: 100vh !important;
-        background: url('MobileError.png');
+        background: url('/Img/Error/Error-Moblie.png');
     }
 
     .mobile_error {
