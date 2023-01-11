@@ -168,7 +168,7 @@ a:link {
 .new_profile1 {
     width: 250px;
     height: 250px;
-    background: url("/Img/Profile/CrownK_.png");
+    background: url("/Img/Profile/Marka.png");
     border-radius: 100%;
     margin: 0 auto;
     box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
@@ -177,7 +177,7 @@ a:link {
 .new_profile2 {
     width: 250px;
     height: 250px;
-    background: url("/Img/Profile/Dajibori.png");
+    background: url("/Img/Profile/Godcho.png");
     border-radius: 100%;
     margin: 0 auto;
     box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
@@ -186,7 +186,7 @@ a:link {
 .new_profile3 {
     width: 250px;
     height: 250px;
-    background: url("/Img/Profile/Godcho.png");
+    background: url("/Img/Profile/CrownK_.png");
     border-radius: 100%;
     margin: 0 auto;
     box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
