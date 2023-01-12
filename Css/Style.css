@@ -664,7 +664,7 @@ a:link {
         font-size: 15px;
         margin-bottom: -16px !important;
         width: 100%;
-        margin-left: 0 !important;
+        margin-left: -1.3% !important;
         position: relative;
         top: -25px;
     }
