@@ -436,7 +436,7 @@ a:link {
     }
     
     .intro {
-        width: 100%;
+        width: 100.39%;
         height: 600px;
         background-color: black;
     }
@@ -533,6 +533,7 @@ a:link {
         margin-left: -5px;
         margin-top: 18px;
         font-size: 30px;
+        margin-bottom: 9% !important;
     }
 
     .profile_name2,
