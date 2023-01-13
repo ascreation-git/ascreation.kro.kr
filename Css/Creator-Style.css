@@ -90,6 +90,10 @@ a:link {
     font-size: 60px;
 }
 
+.titlemobile {
+    display: none;
+}
+
 .btn {
     width: 0 !important;
     background-color: blue;
@@ -337,4 +341,315 @@ a:link {
         display: flex;
         margin-left: 36.5%;
     }
+}
+
+/*모바일 CSS 세로*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .wrap {
+        width: 100%;
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: 78px;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(6px);
+        z-index: 2;
+    }
+    
+    .logo {
+        margin-left: 34.25%;
+        width: 230px;
+        height: 78px;
+        background: url('/Img/Logo/Mobile-Header-Logo.png');
+    }
+    
+    .navigation {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .titlemobile {
+        display: block;
+    }
+
+    .titlemobile > h1 {
+        width: 100%;
+        padding-top: 70px;
+        font-family: 'SBAggroB';
+        text-align: center;
+        font-size: 1.75rem;
+    }
+    
+    .btn {
+        width: 0 !important;
+        height: 0 !important;
+        position: relative;
+        left: 18%;
+        align-items: center;
+    }
+    
+    .creator_apply {
+        width: 180px;
+        height: 50px;
+        background-color: #000;
+        border: 1px solid black;
+        border-radius: 2px;
+        transition: 0.4s;
+        margin-bottom: -53px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .creator_apply > h1 {
+        text-align: center;
+        line-height: 50px;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    
+    .creator_apply:hover{
+        background-color: #fff;
+    }
+    
+    .creator_apply > h1:hover{
+        color: #000;
+    }
+    
+    .creator {
+        padding: 9%;
+    }
+    
+    .creator_c {
+        display: block;
+    }
+    
+    .creator_c > li {
+        flex: 1;
+    }
+    
+    .profile_name:not(:first-child){
+        display: flex;
+        text-align: center;
+        margin-left: 24%;
+        margin-top: 18px;
+        margin-bottom: 12% !important;
+        font-size: 30px;
+    }
+    
+    .creator_c > a {
+        height: 0;
+    }
+    
+    .creator_wrap {
+        padding-top: 8%;
+    }
+    
+    .creator_c {
+        margin-top: 5%;
+    }
+
+    .creator_profile1 {
+        padding-top: 10%;
+    }
+    
+    .creator_profile {
+        transform: scale(1.0);
+        transition: transform 0.5s; 
+    }
+    
+    .creator_profile:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;  
+    }
+    
+
+    .footer_nav {
+        padding: 0;
+        height: 50px;
+        background-color: rgb(12, 12, 11);
+    }
+
+    .footer_link {
+        display: flex;
+        padding-left: 0.7rem !important;
+    }
+
+    .footer_link > li {
+        position: relative;
+        margin: 0 8px;
+        color: #a1a1a1;
+    }
+
+    .footer_link > li,
+    .footer_link > li > a,
+    .footer_strong {
+        font-size: 0.77rem;
+    }
+
+    .footer_link > li > a, .footer_strong {
+        line-height: 50px;
+        color: #fff;
+        transition: 0.4s;
+    }
+
+    .footer_link > li > a:hover, .footer_strong:hover{
+        color: #5c5c5c;
+    }
+
+    .footer_content {
+        display: block;
+    }
+
+    .footer {
+        background-color: #111;
+        padding: 60px 0 60px 0;
+    }
+
+    .footer_logo {
+        background: url('/Img/Logo/Mobile-Footer-Logo.png');
+        width: 190px;
+        height: 45px;
+        margin-top: -15%;
+        margin-left: -11%;
+    }
+
+    .footer_content > p {
+        color: #fff;
+        font-size: 13px;
+        line-height: 45px;
+        margin-left: -15%;
+    }
+
+    .footer_content > p > a {
+        color: #fff;
+        transition: 0.4s;
+    }
+
+    .footer_content > p > a:hover {
+        color: #5c5c5c;
+    }
+
+    .footer_line {
+        display: none;
+    }
+
+    .footer_copyright > p {
+        text-align: center;
+        font-size: 13px;
+        color: #cfcfcf;
+        margin: 0;
+        margin-top: -6% !important;
+        margin-bottom: -10% !important;
+    }
+
+    .footer_copyright > p > a {
+        color: #fff;
+        transition: 0.4s;
+    }
+
+    .footer_copyright > p > a:hover {
+        color: #5c5c5c;
+    }
+
+    /*Profile Mobile*/
+    .question_profile {
+        width: 250px;
+        height: 250px;
+        background: url("/Img/Profile/Question-Profile.png");
+        border-radius: 100%;
+        margin: 0 auto;
+        box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
+    }
+
+    .profile1 {
+        width: 250px;
+        height: 250px;
+        background: url("/Img/Profile/CrownK_.png");
+        border-radius: 100%;
+        margin: 0 auto;
+        box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
+        margin-left: 0.6%;
+    }
+    
+    .profile2 {
+        width: 250px;
+        height: 250px;
+        background: url("/Img/Profile/Dajibori.png");
+        border-radius: 100%;
+        margin: 0 auto;
+        box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
+        margin-left: 0.6%;
+    }
+    
+    .profile4 {
+        width: 250px;
+        height: 250px;
+        background: url("/Img/Profile/Kenyang.png");
+        border-radius: 100%;
+        margin: 0 auto;
+        box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
+        margin-left: 0.6%;
+    }
+    
+    .profile5 {
+        width: 250px;
+        height: 250px;
+        background: url("/Img/Profile/Lomun.png");
+        border-radius: 100%;
+        margin: 0 auto;
+        box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
+        margin-left: 0.6%;
+    }
+    
+    .profile6 {
+        width: 250px;
+        height: 250px;
+        background: url("/Img/Profile/Sogak.png");
+        border-radius: 100%;
+        margin: 0 auto;
+        box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
+        margin-left: 0.6%;
+    }
+    
+    .profile7 {
+        width: 250px;
+        height: 250px;
+        background: url("/Img/Profile/0Man.png");
+        border-radius: 100%;
+        margin: 0 auto;
+        box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
+        margin-left: 0.6%;
+    }
+    
+    .profile8 {
+        width: 250px;
+        height: 250px;
+        background: url("/Img/Profile/Godcho.png");
+        border-radius: 100%;
+        margin: 0 auto;
+        box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
+        margin-left: 0.6%;
+    }
+    
+    .profile9 {
+        width: 250px;
+        height: 250px;
+        background: url("/Img/Profile/Marka.png");
+        border-radius: 100%;
+        margin: 0 auto;
+        box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
+        margin-left: 0.6%;
+    }
+    
 }
