@@ -1,5 +1,5 @@
+/*=== [ IMPORT FONT ] ===*/
 @font-face {
-
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
@@ -22,6 +22,8 @@
     font-style: normal;
 }
 
+/*=== [ BASE ] ===*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -40,11 +42,22 @@ a:link {
     text-decoration: none;
 }
 
+/*=== [ MAIN CSS ] ===*/
+
 .intro {
     width: 100%;
     height: 780px;
     background-color: black;
 }
+
+.intro_text > h1, strong {
+    color: #fff;
+    padding: 18% 0 0 0;
+    text-align: center;
+    font-size: 55px;
+}
+
+/*=== [ HEADER ] ===*/
 
 .header {
     position: fixed;
@@ -90,12 +103,7 @@ a:link {
     color: rgba(172, 172, 173);
 }
 
-.intro_text > h1, strong {
-    color: #fff;
-    padding: 18% 0 0 0;
-    text-align: center;
-    font-size: 55px;
-}
+/*=== [ STAT ] ===*/
 
 .description {
     position: relative;
@@ -134,8 +142,10 @@ a:link {
     font-size: 25px;
 }
 
-.html_line {
-    width: 85%;
+/*=== [ NEW CREATOR MAIN ] ===*/
+
+.creator {
+    height: 900px;
     margin: 0 auto;
 }
 
@@ -156,6 +166,48 @@ a:link {
 .creator_c > li {
     flex: 1;
 }
+
+.creator_c > a {
+    height: 0;
+}
+
+.creator_c {
+    margin-left: 119px;
+}
+
+.creator_btn {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 2px;
+    transition: 0.4s;
+    position: relative;
+    top: 330px;
+    right: 870px;
+}
+
+.creator_wrap {
+    padding-top: 8%;
+}
+
+.creator_btn:hover{
+    background-color: #000;
+}
+
+.creator_btn > h1:hover{
+    color: #fff;
+}
+
+.creator_btn > h1 {
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+
+/*=== [ NEW CREATOR PROFILE ] ===*/
 
 .profile_name:not(:first-child){
     display: flex;
@@ -192,50 +244,6 @@ a:link {
     box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
 }
 
-.creator_btn {
-    width: 150px;
-    height: 50px;
-    background-color: transparent;
-    border: 1px solid black;
-    border-radius: 2px;
-    transition: 0.4s;
-    position: relative;
-    top: 330px;
-    right: 870px;
-}
-
-.creator_c > a {
-    height: 0;
-}
-
-.creator_c {
-    margin-left: 119px;
-}
-
-.creator_wrap {
-    padding-top: 8%;
-}
-
-.creator {
-    height: 900px;
-    margin: 0 auto;
-}
-
-.creator_btn:hover{
-    background-color: #000;
-}
-
-.creator_btn > h1:hover{
-    color: #fff;
-}
-
-.creator_btn > h1 {
-    font-size: 18px;
-    line-height: 50px;
-    text-align: center;
-    transition: 0.4s;
-}
-
 .creator_profile {
     transform: scale(1.0);
     transition: transform 0.5s; 
@@ -245,6 +253,8 @@ a:link {
     transform: scale(1.1);
     transition: transform 0.5s;  
 }
+
+/*=== [ NEWS ] ===*/
 
 .news_wrap {
     height: 1000px;  
@@ -282,6 +292,8 @@ a:link {
     margin-right: 70px;
 }
 
+/*=== [ APPLY CREATOR ] ===*/
+
 .apply_title {
     font-weight: bolder;
     text-align: left;
@@ -310,6 +322,8 @@ a:link {
 .apply_form::-webkit-scrollbar {
     display: none;
 }
+
+/*=== [ FOOTER ] ===*/
 
 .footer_nav {
     padding: 0;
@@ -392,11 +406,7 @@ a:link {
     color: #5c5c5c;
 }
 
-.mobile_error {
-    display: none;
-}
-
-/* 모바일 CSS 가로*/
+/*=== [ MOBILE ACROSS ] ===*/
 @media all and (min-width: 480px) and (max-width: 1023px) {
     .wrap,
     .apply,
@@ -429,7 +439,7 @@ a:link {
     }
 }
 
-/* 모바일 CSS 세로*/
+/*=== [ MOBILE DOWN ] ===*/
 @media (min-width: 320px) and (max-width: 480px) {
     .wrap {
         width: 100%;
@@ -775,7 +785,7 @@ a:link {
     
 }
 
-/*2560 x 1440*/
+/*=== [ 2560 X 1440 RW CSS ] ===*/
 @media (min-width: 2558px) and (max-width: 2560px) {
     .intro_text > h1, strong {
         color: #fff;
