@@ -4,7 +4,7 @@ The Files In This Repository Are The Web Site Code For ' AS CREATE!ON '.
 
 ## Author
 
-- ' AS CREAT!ON '
+' AS CREAT!ON '
 
 # License
 
@@ -12,7 +12,11 @@ The Files In This Repository Are The Web Site Code For ' AS CREATE!ON '.
 === [ LICENSE ] ===
 All Files In This Repository Are The Work Of ' AS CREAT!ON ' And Are Protected By Copyright.
 
-It Is Possible To Copy And Modify Part Of The Code, But All Similar Acts That Violate Copyright Laws, Such As Unauthorized Copying, Modification, And Distribution Of The Entire Code, Are Prohibited.
+It Is Possible To Copy And Modify Part Of The Code, But All Similar Acts That Violate Copyright Laws, 
+Such As Unauthorized Copying, Modification, And Distribution Of The Entire Code, Are Prohibited.
+
+* This ' README ' Can Be Used In Place Of A ' LICENSE ' File.
+====================
 ```
 
-``2023. 01. 15.``
+`2023. 01. 15.`
