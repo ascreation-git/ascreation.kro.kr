@@ -1,12 +1,12 @@
-# **' AS CREAT!ON ' Web Site**
+# : ' AS CREAT!ON ' Web Site
 
 The Files In This Repository Are The Web Site Code For ' AS CREATE!ON '.
 
-## Author
+## : Author
 
 - ' AS CREAT!ON '
 
-# License
+# : License
 
 ```
 === [ LICENSE ] ===
@@ -19,4 +19,4 @@ Such As Unauthorized Copying, Modification, And Distribution Of The Entire Code,
 ====================
 ```
 
-`2023. 01. 15.`
+`: 2023. 01. 15.`
