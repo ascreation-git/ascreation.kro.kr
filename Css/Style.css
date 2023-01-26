@@ -866,5 +866,119 @@ a:link {
         display: flex;
         margin-left: 36.5%;
     }
+}
 
+/*=== [ 3440 X 1440 RW CSS ] ===*/
+@media (min-width: 3439px) and (max-width: 3440px) {
+    .intro {
+        height: 1000px;
+    }
+
+    .intro_text > h1, strong {
+        color: #fff;
+        padding: 13% 0 0 0;
+        text-align: center;
+        font-size: 65px;
+    }
+
+    .description {
+        position: relative;
+        top: -100px;
+        width: 1920px;
+        height: 200px;
+        background-color: #fff;
+        box-shadow: 0 1px 10px rgb(54 54 54 / 20%);
+        display: flex;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    
+    .description > li {
+        flex: 1;
+        height: 150px;
+        margin-top: 2.8%;
+    }
+    
+    .description > li > div {
+        text-align: center;
+    }
+    
+    .description > li:not(:last-child){
+        border-right: 1px solid #000;
+        height: 80px;
+    }
+    
+    .des_c1 {
+        font-family: 'Gothic A1', sans-serif;
+        font-size: 30px;
+    }
+    
+    .des_c2 {
+        font-family: 'Gothic A1', sans-serif;
+        font-size: 30px;
+    }
+
+    .creator_title {
+        margin-left: 540px;
+        font-size: 90px;
+    }
+
+    .profile_name:not(:first-child){
+        display: flex;
+        text-align: center;
+        margin-left: 465px;
+        margin-top: 18px;
+        font-size: 30px;
+    }
+
+    .creator_btn {
+        width: 150px;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 2px;
+        transition: 0.4s;
+        position: relative;
+        top: 340px;
+        right: 1625px;
+    }
+
+    .news_wrap {
+        height: 1000px;
+        margin-top: 80px;
+    }
+    
+    .news_title {
+        font-size: 90px;
+        margin-right: 710px;
+    }
+    
+    .news_wrap > ul {
+        width: 2000px;
+        height: 330px;
+        background: #fff;
+        margin: 0 auto 40px;
+        box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
+        border-radius: 5px;
+    }
+
+    .apply_title {
+        margin-top: 80px !important;
+        margin-left: 540px;
+        font-size: 90px;
+    }
+
+    .apply_description {
+        font-family: 'NanumSquareNeo-Variable' !important;
+        font-size: 25px;
+        margin-bottom: -21px !important;
+        margin-left: 540px !important;
+        position: relative;
+        top: -40px;
+    }
+
+    .footer_content {
+        display: flex;
+        margin-left: 41%;
+    }
 }

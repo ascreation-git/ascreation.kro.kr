@@ -655,5 +655,27 @@ a:link {
         box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
         margin-left: 0.6%;
     }
+}
+
+/*=== [ 3440 X 1440 RW CSS ] ===*/
+@media (min-width: 3439px) and (max-width: 3440px) {
+    .title > h1 {
+        font-family: 'SBAggroB';
+        text-align: center;
+        margin-top: -4%;
+        font-size: 80px;
+    }
+
+    .profile_name:not(:first-child){
+        display: flex;
+        text-align: center;
+        margin-left: 285px;
+        margin-top: 18px;
+        font-size: 30px;
+    }
     
+    .footer_content {
+        display: flex;
+        margin-left: 41%;
+    }
 }
