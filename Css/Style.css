@@ -184,7 +184,7 @@ a:link {
     transition: 0.4s;
     position: relative;
     top: 330px;
-    right: 870px;
+    right: 865px;
 }
 
 .creator_wrap {
@@ -195,11 +195,11 @@ a:link {
     background-color: #000;
 }
 
-.creator_btn > h1:hover{
+.creator_btn > h2:hover{
     color: #fff;
 }
 
-.creator_btn > h1 {
+.creator_btn > h2 {
     font-size: 18px;
     line-height: 50px;
     text-align: center;
@@ -416,27 +416,6 @@ a:link {
     footer {
         display: none;
     }
-
-    .news {
-        width: 100% !important;
-        height: 100vh !important;
-        background: url('/Img/Error/Error-Mobile.png');
-        background-size: cover;
-    }
-
-    .mobile_error {
-        width: 100% !important;
-        height: 100vh !important;
-        padding-top: 19%;
-        display: block;
-        text-align: center;
-    }
-
-    .mobile_error > h1 {
-        color: #fff;
-        font-size: 2.5rem;
-        font-weight: bolder;
-    }
 }
 
 /*=== [ MOBILE DOWN ] ===*/
@@ -578,7 +557,7 @@ a:link {
         transition: 0.4s;
         position: relative;
         top: 0px;
-        right: 12.5%;
+        right: 12%;
     }
     
     .creator_c > a {
@@ -602,11 +581,11 @@ a:link {
         background-color: #000;
     }
     
-    .creator_btn > h1:hover{
+    .creator_btn > h2:hover{
         color: #fff;
     }
     
-    .creator_btn > h1 {
+    .creator_btn > h2 {
         font-size: 18px;
         line-height: 50px;
         text-align: center;
@@ -883,9 +862,9 @@ a:link {
 
     .description {
         position: relative;
-        top: -100px;
-        width: 1920px;
-        height: 200px;
+        top: -90px;
+        width: 1600px;
+        height: 180px;
         background-color: #fff;
         box-shadow: 0 1px 10px rgb(54 54 54 / 20%);
         display: flex;
@@ -910,12 +889,12 @@ a:link {
     
     .des_c1 {
         font-family: 'Gothic A1', sans-serif;
-        font-size: 30px;
+        font-size: 29px;
     }
     
     .des_c2 {
         font-family: 'Gothic A1', sans-serif;
-        font-size: 30px;
+        font-size: 29px;
     }
 
     .creator_title {
@@ -950,12 +929,12 @@ a:link {
     
     .news_title {
         font-size: 90px;
-        margin-right: 710px;
+        margin-right: 560px;
     }
     
     .news_wrap > ul {
-        width: 2000px;
-        height: 330px;
+        width: 2310px;
+        height: 350px;
         background: #fff;
         margin: 0 auto 40px;
         box-shadow: 0 1px 10px rgb(54 54 54 / 30%);
