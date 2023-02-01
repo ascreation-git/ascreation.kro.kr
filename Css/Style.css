@@ -84,7 +84,7 @@ a:link {
 .navigation {
     display: flex;
     justify-content: flex-end;
-    width: calc(100% - 727px);
+    width: calc(100% - 716px);
     line-height: 100px;
     
 }
