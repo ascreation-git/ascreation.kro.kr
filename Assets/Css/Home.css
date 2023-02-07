@@ -1,0 +1,24 @@
+/*=== [ HOME STYLESHEET START ] ===*/
+
+/*=== [ ACTIVE NAVIGATION ] ===*/
+.navigation > li > a[href="/index.html"] {
+    color: rgb(120, 120, 120)
+}
+
+/*=== [ INTRO ] ===*/
+.int {
+    background: linear-gradient(to bottom left, #232738, #000);
+    height: 100vh;
+}
+
+.int-title {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    color: #fff;
+    font-size: 58px;
+    text-align: center;
+    animation: FadeIn 1s;
+}
+
+/*=== [ HOME STYLESHEET END ] ===*/

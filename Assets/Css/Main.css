@@ -1,0 +1,165 @@
+/*=== [ MAIN STYLESHEET START ] ===*/
+
+/*=== [ BASE CSS ] ===*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'GmarketSansMedium';
+    list-style: none; 
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/*=== [ ANIMATE CSS ] ===*/
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/*=== [ WRAP CSS ] ===*/
+.wrap {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*=== [ HEADER CSS ] ===*/
+.header {
+    display: flex;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #fff;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    animation: FadeIn 1s;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    line-height: 80px;
+}
+
+.navigation > li {
+    font-size: 20.5px;
+    margin-left: 60px;
+}
+
+.navigation > li > a {
+    font-weight: bolder;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.navigation > li > a:hover {
+    color: rgb(120, 120, 120)
+}
+
+/*=== [ Button CSS ] ===*/
+
+.btn {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    top: 49%;
+    background: transparent;
+    color: #dddddd;
+    font-size: 16px;
+    font-weight: lighter;
+    border: none;
+    border-bottom: 1px solid #5c5c5c !important;
+    width: 200px;
+    height: 50px;
+    transition: 0.4s;
+    animation: FadeIn 1s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #fff;
+    border-bottom: 1px solid #fff !important;
+    font-size: 17px;
+}
+
+/*=== [ FOOTER CSS ] ===*/
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    bottom: 0px;
+    animation: FadeIn 1s;
+}
+
+.footer-nav {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer-nav > li > a {
+    color: #e9e9e9;
+    font-weight: bolder;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.footer-nav > li > a:hover {
+    color: #919191
+}
+
+.footer-copy {
+    color: #707070;
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer-copy > a {
+    color: #707070;
+    transition: 0.4s;
+}
+
+.footer-copy > a:hover {
+    color: #919191
+}
+
+/*=== [ MAIN STYLESHEET END ] ===*/

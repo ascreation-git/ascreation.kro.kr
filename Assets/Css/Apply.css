@@ -1,0 +1,42 @@
+/*=== [ APPLY STYLESHEET START ] ===*/
+
+/*=== [ ACTIVE NAVIGATION ] ===*/
+.navigation > li > a[href="/Apply.html"] {
+    color: rgb(120, 120, 120)
+}
+
+
+/*=== [ INTRO ] ===*/
+.apply-int {
+    background: linear-gradient(to bottom left, #232738, #000);
+    height: 100vh;
+}
+
+.int-title {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    color: #fff;
+    font-size: 58px;
+    text-align: center;
+    animation: FadeIn 1s;
+}
+
+/*=== [ APPLY FORM SECTION ] ===*/
+.apply-form {
+    background: linear-gradient(148deg, #000, #232738);
+    height: 1228px;
+}
+
+.form {
+    margin: 100px auto;
+    width: 100%;
+    height: 1021px;
+    border: none;
+}
+
+.form::-webkit-scrollbar {
+    display: none;
+}
+
+/*=== [ APPLY STYLESHEET END ] ===*/

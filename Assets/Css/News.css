@@ -1,0 +1,62 @@
+/*=== [ NEWS STYLESHEET START ] ===*/
+
+/*=== [ ACTIVE NAVIGATION ] ===*/
+.navigation > li > a[href="/News.html"] {
+    color: rgb(120, 120, 120)
+}
+
+/*=== [ INTRO ] ===*/
+.news-int {
+    background: linear-gradient(to bottom left, #232738, #000);
+    height: 100vh;
+}
+
+.int-title {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    color: #fff;
+    font-size: 58px;
+    text-align: center;
+    animation: FadeIn 1s;
+}
+
+/*=== [ NEWS CONTENTS ] ===*/
+.news-wrap {
+    display: none;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.box1 {
+    margin-bottom: 40px !important;
+}
+
+.news-box {
+    width: 1320px;
+    height: 280px;
+    margin: 0 auto;
+    border-radius: 0.5px;
+    box-shadow: 0 5px 10px rgb(255 255 255 / 10%);
+    background-color: #fff;
+}
+
+.news-title {
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: lighter;
+    padding: 15px 0 0 15px;
+    font-size: 22px;
+    margin-left: 40px;
+    padding-top: 30px;
+}
+
+.news-contents {
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: lighter;
+    font-size: 20px;
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+/*=== [ NEWS STYLESHEET END ] ===*/
