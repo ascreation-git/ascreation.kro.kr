@@ -21,4 +21,22 @@
     animation: FadeIn 1s;
 }
 
+/*=== [ MOBILE CSS ] ===*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /*=== [ MOBILE ACTIVE NAVIGATION ] ===*/
+    .mobilenav > li > a[href="/index.html"] {
+        color: rgb(120, 120, 120)
+    }
+
+    /*=== [ MOBILE INTRO ] ===*/
+    .int-title {
+        font-size: 30px;
+    }
+
+    .int-btn {
+        margin-top: -15px;
+    }
+}
+
 /*=== [ HOME STYLESHEET END ] ===*/

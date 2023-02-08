@@ -27,6 +27,7 @@
     <!--=== [ CONNECT HTML SCRIPT / CSS ] ===-->
     <link rel="stylesheet" href="/Assets/Css/Main.css">
     <link rel="stylesheet" href="/Assets/Css/Apply.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
 </head> 
 <body>
     <!--=== [ START WEB BODY ] ===-->
@@ -39,6 +40,18 @@
                     <li><a href="/index.html">HOME</a></li>
                     <li><a href="/Creators.html">CREATORS</a></li>
                     <li><a href="/News.html">NEWS</a></li>
+                    <li><a href="/Apply.html">APPLY</a></li>
+                </ul>
+
+                <!--=== [ MOBILE HEADER ] ===-->
+                <div class="mobilenavbutton">
+                    <!--=== [ MOBILE HEADER MENU IMG ] ===-->
+                </div>
+                
+                <!--=== [ MOBILE NAVIGATION ] ===-->
+                <ul class="mobilenav">
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/Creators.html">CREATORS</a></li>
                     <li><a href="/Apply.html">APPLY</a></li>
                 </ul>
             </div>
@@ -71,10 +84,20 @@
                 <script language="JavaScript">
                     document.write(new Date().getFullYear())
                 </script>
-                AS CREAT!ON. All Rights Reserved. | <a href="mailto:biz@ascreation.kro.kr">Biz@ascreation.kro.kr</a>
+                AS CREAT!ON. All Rights Reserved. <bar>|</bar> <a href="mailto:biz@ascreation.kro.kr">Biz@ascreation.kro.kr</a>
             </p>
         </footer>
     </div>
+    
+    <!--=== [ MOBILE HEADER TOGGLE SCRIPT ] ===-->
+    <script>
+        $(document).ready( function() {
+          $( '.mobilenavbutton' ).click( function() {
+            $( '.mobilenav' ).fadeToggle();
+          });
+        });
+    </script>
+
     <!--=== [ END WEB BODY ] ===-->
 </body>
 </html>

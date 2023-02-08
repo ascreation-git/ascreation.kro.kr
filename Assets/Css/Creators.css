@@ -63,6 +63,72 @@
     transition: transform 0.5s;  
 }
 
+/*=== [ MOBILE CSS ] ===*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /*=== [ MOBILE ACTIVE NAVIGATION ] ===*/
+    .mobilenav > li > a[href="/Creators.html"] {
+        color: rgb(120, 120, 120)
+    }
+
+    /*=== [ MOBILE INTRO ] ===*/
+    .creator-title {
+        font-size: 34px;
+    }
+
+    .int-btn {
+        margin-top: -15px;
+    }
+
+    /*=== [ MOBILE VIEW CREATORS ] ===*/
+    .view-creators {
+        background: linear-gradient(96deg, #000, #232738);
+        height: 3500px;
+    }
+    
+    .creator_c {
+        display: block;
+    }
+    
+    .creator_c > li {
+        flex: 1;
+    }
+    
+    .profile_name:not(:first-child){
+        display: flex;
+        text-align: center;
+        margin-left: 34.5%;
+        margin-top: 18px;
+        margin-bottom: 12% !important;
+        font-size: 30px;
+    }
+    
+    .creator_c > a {
+        height: 0;
+    }
+    
+    .creator_wrap {
+        padding-top: 8%;
+    }
+
+    .creator_profile1 {
+        padding-top: 10%;
+    }
+
+    .question_profile {
+        display: none;
+    }
+
+    .creator_profile:hover {
+        transform: scale(1);
+    }
+
+    .footer {
+        bottom: -414.5%;
+    }
+}
+
+
 /*=== [ 2560 X 1440 RW CSS ] ===*/
 @media (min-width: 2558px) and (max-width: 2560px) {
     .view-creators {
@@ -106,7 +172,6 @@
     border-radius: 100%;
     margin: 0 auto;
     cursor: default;
-    box-shadow: 0 1px 10px rgb(255, 255, 255 / 5%);
 }
 
 .profile1 {

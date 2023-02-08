@@ -39,4 +39,27 @@
     display: none;
 }
 
+/*=== [ MOBILE CSS ] ===*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /*=== [ MOBILE ACTIVE NAVIGATION ] ===*/
+    .mobilenav > li > a[href="/Apply.html"] {
+        color: rgb(120, 120, 120)
+    }
+
+    /*=== [ INTRO ] ===*/
+    .int-title {
+        font-size: 34px;
+    }
+
+    /*=== [ APPLY ] ===*/
+    .apply-form {
+        background: linear-gradient(104deg, #000, #232738);
+        height: 1336px;
+    }
+
+    .form {
+        height: 1128px;
+    }
+}
 /*=== [ APPLY STYLESHEET END ] ===*/

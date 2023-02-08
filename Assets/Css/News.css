@@ -59,4 +59,12 @@
     padding-top: 10px;
 }
 
+/*=== [ MOBILE CSS ] ===*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .wrap {
+        display: none;
+    }
+}
+
 /*=== [ NEWS STYLESHEET END ] ===*/
