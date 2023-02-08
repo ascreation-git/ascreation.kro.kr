@@ -27,4 +27,24 @@
     animation: FadeIn 1s;
 }
 
+/*=== [ MOBILE CSS ] ===*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .error-title {
+        position: relative;
+        top: 45%;
+        font-size: 35px;
+    }
+
+    .error-detail { 
+        position: relative;
+        top: 45.5%;
+        font-size: 20px;
+    }
+
+    .error-btn {
+        margin-top: -35px;
+    }
+}
+
 /*=== [ ERROR STYLESHEET END ] ===*/
