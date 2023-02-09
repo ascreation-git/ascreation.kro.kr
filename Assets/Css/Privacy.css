@@ -1,0 +1,155 @@
+/*=== [ PRIVACY STYLESHEET START ] ===*/
+
+/*=== [ INTRO ] ===*/
+.policy-int {
+    background: linear-gradient(to bottom left, #232738, #000);
+    height: 100vh;
+}
+
+.int-title {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    color: #fff;
+    font-size: 58px;
+    text-align: center;
+    animation: FadeIn 1s;
+}
+
+/*=== [ POLICY CONTENTS ] ===*/
+.policy-wrap {
+    background: linear-gradient(122deg, #000, #232738);
+    height: 3100px;
+}
+
+.explain {
+    padding-top: 100px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.line {
+    width: 83%;
+    margin: 0 auto 15px;
+}
+
+.sub {
+    margin-left: 5%;
+    margin-bottom: -10px;
+    font-size: 28px;
+}
+
+.first,
+.second {
+    margin-top: 0 !important;
+}
+
+.sub{
+    margin-top: 30px;
+}
+
+custag {
+    color: #fff;
+    font-size: 20px;
+}
+
+.content {
+    font-weight: normal;
+    margin-right: 6.2%;
+    margin-left: 6.2%;
+}
+
+.content2 {
+    font-weight: normal;
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+.content,
+.content2,
+.sub,
+span {
+    color: #fff;
+}
+
+a {
+    color: #4fffbe;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #41cc99;
+}
+
+.footer {
+    height: 38px;
+}
+
+/*=== [ MOBILE CSS ] ===*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /*=== [ MOBILE INTRO ] ===*/
+    .policy-int {
+        background: linear-gradient(to bottom left, #232738, #000);
+        height: 100vh;
+    }
+    
+    .int-title {
+        font-size: 34px;
+    }
+    
+    /*=== [ MOBILE POLICY CONTENTS ] ===*/
+    .policy-wrap {
+        background: linear-gradient(94deg, #000, #232738);
+        height: 4520px;
+    }
+    
+    .explain {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    
+    .line {
+        width: 83%;
+        margin: 0 auto 15px;
+    }
+    
+    .sub {
+        margin-left: 5%;
+        margin-bottom: -10px;
+        font-size: 17px;
+    }
+    
+    .first,
+    .second {
+        margin-top: 0 !important;
+    }
+    
+    .sub{
+        margin-top: 30px;
+    }
+    
+    custag {
+        color: #fff;
+        font-size: 14px;
+    }
+    
+    .content {
+        font-weight: normal;
+        font-size: 15px;
+        margin-right: 7.5%;
+        margin-left: 7.5%;
+    }
+    
+    .content2 {
+        font-weight: normal;
+        font-size: 15px;
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+}
+
+/*=== [ PRIVACY STYLESHEET END ] ===*/
