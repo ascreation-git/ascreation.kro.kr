@@ -152,4 +152,13 @@ a:hover {
     }
 }
 
+/*=== [ 3440 X 1440 RW CSS ] ===*/
+@media (min-width: 3439px) and (max-width: 3440px) {
+    /*=== [ POLICY CONTENTS ] ===*/
+    .policy-wrap {
+        background: linear-gradient(140deg, #000, #232738);
+        height: 2930px;
+    }
+}
+
 /*=== [ PRIVACY STYLESHEET END ] ===*/
