@@ -62,4 +62,19 @@
         height: 1128px;
     }
 }
+
+/*=== [ 3440 X 1440 RW CSS ] ===*/
+
+@media (min-width: 3439px) and (max-width: 3440px) {
+
+    /*=== [ APPLY ] ===*/
+    .apply-form {
+        background: linear-gradient(150deg, #000, #232738);
+        height: 1336px;
+    }
+
+    .form {
+        height: 1021px;
+    }
+}
 /*=== [ APPLY STYLESHEET END ] ===*/
