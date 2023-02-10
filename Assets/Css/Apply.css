@@ -5,10 +5,8 @@
     color: rgb(120, 120, 120)
 }
 
-
 /*=== [ INTRO ] ===*/
 .apply-int {
-    background: linear-gradient(to bottom left, #232738, #000);
     height: 100vh;
 }
 
@@ -24,7 +22,6 @@
 
 /*=== [ APPLY FORM SECTION ] ===*/
 .apply-form {
-    background: linear-gradient(148deg, #000, #232738);
     height: 1228px;
 }
 
@@ -54,7 +51,6 @@
 
     /*=== [ APPLY ] ===*/
     .apply-form {
-        background: linear-gradient(104deg, #000, #232738);
         height: 1336px;
     }
 
@@ -69,7 +65,6 @@
 
     /*=== [ APPLY ] ===*/
     .apply-form {
-        background: linear-gradient(150deg, #000, #232738);
         height: 1336px;
     }
 

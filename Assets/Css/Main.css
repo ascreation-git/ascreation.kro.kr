@@ -30,6 +30,10 @@
     color: #fff;
 }
 
+body {
+    background: linear-gradient(to bottom left, #232738, #000);
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;

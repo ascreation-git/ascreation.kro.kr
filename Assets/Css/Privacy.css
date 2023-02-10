@@ -2,7 +2,6 @@
 
 /*=== [ INTRO ] ===*/
 .policy-int {
-    background: linear-gradient(to bottom left, #232738, #000);
     height: 100vh;
 }
 
@@ -18,7 +17,6 @@
 
 /*=== [ POLICY CONTENTS ] ===*/
 .policy-wrap {
-    background: linear-gradient(122deg, #000, #232738);
     height: 3100px;
 }
 
@@ -100,7 +98,6 @@ a:hover {
 
     /*=== [ MOBILE INTRO ] ===*/
     .policy-int {
-        background: linear-gradient(to bottom left, #232738, #000);
         height: 100vh;
     }
     
@@ -110,7 +107,6 @@ a:hover {
     
     /*=== [ MOBILE POLICY CONTENTS ] ===*/
     .policy-wrap {
-        background: linear-gradient(94deg, #000, #232738);
         height: 4520px;
     }
     
@@ -164,7 +160,6 @@ a:hover {
 @media (min-width: 3439px) and (max-width: 3440px) {
     /*=== [ POLICY CONTENTS ] ===*/
     .policy-wrap {
-        background: linear-gradient(140deg, #000, #232738);
         height: 2930px;
     }
 }
