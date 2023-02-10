@@ -227,6 +227,7 @@
         width: 100%;
         height: 400px;
         box-shadow: none;
+        margin-right: 0;
     }
 
     .addition {
@@ -253,6 +254,7 @@
         font-size: 27px;
         font-weight: normal;
         color: #fff;
+        margin-right: 0;
     }
 
     .line {
@@ -269,8 +271,9 @@
 
     .stat {
         display: flex;
-        margin: 0 4.2%;
-        width: 100%;
+        margin-left: 4% !important;
+        margin: 0;
+        width: 96%;
     }
 
     .stat > li {
