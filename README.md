@@ -19,4 +19,4 @@ Such As Unauthorized Copying, Modification, And Distribution Of The Entire Code,
 ====================
 ```
 
-`: 2023. 02. 15.`
+`: 02. 15. 2023.`
