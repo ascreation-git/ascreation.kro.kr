@@ -49,7 +49,7 @@
                 <h1 class="int-title">
                     NEWS
                 </h1>
-                <button class="int-btn btn">> Latest News</button>
+                <button class="news-btn btn">> Latest News</button>
                 <div class="news-wrap">
                     <div class="news-box box1">
                         <h2 class="news-title">Not Found.</h2>
@@ -64,10 +64,10 @@
             
             <!--=== [ NEWS SCRIPT ] ===-->
             <script>
-                $(".int-btn").click(function(){
-                    $(".int-title").fadeOut(200);
-                    $(".int-btn").fadeOut(100);
-                    $(".news-wrap").delay(210).fadeIn(100);
+                $(".news-btn").click(function(){
+                    $(".int-title").fadeOut(100);
+                    $(".news-btn").fadeOut(100);
+                    $(".news-wrap").delay(120).fadeIn(200);
                 });
             </script>
         </div>

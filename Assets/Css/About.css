@@ -1,0 +1,360 @@
+/*=== [ ABOUT STYLESHEET START ] ===*/
+
+/*=== [ INTRO ] ===*/
+.int {
+    height: 100vh;
+}
+
+.int-title {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    color: #fff;
+    font-size: 58px;
+    text-align: center;
+    animation: FadeIn 1s;
+}
+
+/*=== [ ABOUT INTRO ] ===*/
+.aboutint-wrap {
+    display: none;
+    height: 100vh;
+}
+
+.about-title {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    color: #fff;
+    font-size: 58px;
+    text-align: center;
+    animation: FadeIn 1s;
+}
+
+.about-subtext {
+    position: relative;
+    transform: translateY(-50%);
+    top: 48.5%;
+    color: #fff;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    animation: FadeIn 1s;
+}
+
+.about-subtext > strong {
+    font-weight: bolder;
+    color: #fff;
+}
+
+/*=== [ ABOUT ] ===*/
+.about-wrap {
+    display: none;
+    text-align: center;
+    height: 2250px;
+}
+
+.color-title {
+    padding-top: 6%;
+    font-weight: bolder;
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.about-color {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.base {
+    background: linear-gradient(to bottom left, #000, #222222);
+    width: 550px;
+    height: 400px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.addition {
+    background: linear-gradient(to bottom left, #232738, #394164);
+    width: 600px;
+    height: 450px;
+    box-shadow: 0px 1px 10px rgba(35, 39, 56, 5);
+}
+
+.impact {
+    background: linear-gradient(to bottom left, #4fffbe, #0d2e22);
+    width: 650px;
+    height: 500px;
+    margin-right: 0;
+    box-shadow: 0px 1px 10px rgba(79, 255, 190, 0.5);
+}
+
+.color-detail {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    font-size: 27px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.line {
+    margin: 15% auto 2%;
+    width: 30%;
+}
+
+.stat-title {
+    font-weight: bolder;
+    font-size: 70px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.stat {
+    display: flex;
+    margin: 50px auto;
+    width: 1300px;
+}
+
+.stat > li {
+    flex: 1;
+}
+
+.stat-sub,
+.stat-result {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.stat-sub {
+    font-size: 50px;
+    color: #4fffbe;
+}
+
+.stat-result {
+    margin-top: 10px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.line2 {
+    width: 50% !important;
+    margin-top: 15% !important;
+    margin: 0 auto 50px auto;
+}
+
+.logo-title {
+    font-weight: bolder;
+    font-size: 70px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.logo {
+    background: url('/Assets/Images/Logo/AboutLogo.png');
+    margin: 40px auto 40px auto;
+    width: 1000px;
+    height: 135px;
+}
+
+.download-btn {
+    position: relative;
+    transform: translateY(-50%);
+    top: 0%;
+}
+
+/*=== [ MOBILE CSS ] ===*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /*=== [ MOBILE INTRO ] ===*/
+    .int-title {
+        font-size: 30px;
+    }
+
+    .int-btn {
+        margin-top: 3px;
+    }
+
+    /*=== [ ABOUT INTRO ] ===*/
+    .aboutint-wrap {
+        display: none;
+        height: 100vh;
+    }
+
+    .about-title {
+        position: relative;
+        transform: translateY(-50%);
+        top: 50%;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        animation: FadeIn 1s;
+    }
+
+    .about-subtext {
+        position: relative;
+        transform: translateY(-50%);
+        top: 48.5%;
+        color: #fff;
+        font-weight: normal;
+        font-size: 19px;
+        text-align: center;
+        animation: FadeIn 1s;
+    }
+
+    .about-subtext > strong {
+        font-weight: bolder;
+        color: #fff;
+    }
+
+    /*=== [ ABOUT ] ===*/
+    .about-wrap {
+        display: none;
+        text-align: center;
+        height: 2020px;
+    }
+
+    .color-title {
+        padding-top: 6%;
+        font-weight: bolder;
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+
+    .base {
+        background: linear-gradient(to bottom left, #000, #222222);
+        width: 100%;
+        height: 400px;
+        box-shadow: none;
+    }
+
+    .addition {
+        background: linear-gradient(to bottom left, #232738, #394164);
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+        box-shadow: none;
+    }
+
+    .impact {
+        background: linear-gradient(to bottom left, #4fffbe, #0d2e22);
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+        margin-right: 0;
+        box-shadow: none;
+    }
+
+    .color-detail {
+        position: relative;
+        transform: translateY(-50%);
+        top: 50%;
+        font-size: 27px;
+        font-weight: normal;
+        color: #fff;
+    }
+
+    .line {
+        margin: 15% auto 2%;
+        width: 30%;
+    }
+
+    .stat-title {
+        font-weight: bolder;
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .stat {
+        display: flex;
+        margin: 0 4.2%;
+        width: 100%;
+    }
+
+    .stat > li {
+        flex: 1;
+    }
+
+    .stat-sub,
+    .stat-result {
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .stat-sub {
+        font-size: 21px;
+        color: #4fffbe;
+    }
+
+    .stat-result {
+        margin-top: 10px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .line2 {
+        width: 50% !important;
+        margin-top: 15% !important;
+        margin: 0 auto 13px auto;
+    }
+
+    .logo-title {
+        font-weight: bolder;
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        background: url('/Assets/Images/Logo/MobileLogo.png');
+        margin: 0px auto 40px auto;
+        width: 330px;
+        height: 47px;
+    }
+
+    .download-btn {
+        position: relative;
+        transform: translateY(-50%);
+        top: 0%;
+    }
+}
+
+/*=== [ 2560 X 1440 RW CSS ] ===*/
+
+@media (min-width: 2558px) and (max-width: 2560px) {
+    .about-wrap {
+        height: 2500px;
+    }
+
+    .about-color {
+        display: inline-block;
+        margin-right: 100px;
+    }
+
+    .impact {
+        margin-right: 0 !important;
+    }
+}
+
+/*=== [ 3440 X 1440 RW CSS ] ===*/
+
+@media (min-width: 3439px) and (max-width: 3440px) {
+    .about-wrap {
+        height: 2900px;
+    }
+
+    .about-color {
+        display: inline-block;
+        margin-right: 100px;
+    }
+
+    .impact {
+        margin-right: 0 !important;
+    }
+}
+
+
+
+/*=== [ ABOUT STYLESHEET END ] ===*/
