@@ -227,7 +227,7 @@
         width: 100%;
         height: 400px;
         box-shadow: none;
-        margin-right: 0;
+        margin-right: 0 !important;
     }
 
     .addition {
@@ -235,6 +235,7 @@
         width: 100%;
         height: 400px;
         margin-top: 30px;
+        margin-right: 0 !important;
         box-shadow: none;
     }
 
@@ -243,7 +244,7 @@
         width: 100%;
         height: 400px;
         margin-top: 30px;
-        margin-right: 0;
+        margin-right: 0 !important;
         box-shadow: none;
     }
 
