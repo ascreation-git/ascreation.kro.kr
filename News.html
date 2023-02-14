@@ -50,14 +50,36 @@
                     NEWS
                 </h1>
                 <button class="news-btn btn">> Latest News</button>
+
+                <!--=== [ VIEW NEWS ] ===-->
                 <div class="news-wrap">
-                    <div class="news-box box1">
-                        <h2 class="news-title">Not Found.</h2>
-                        <h3 class="news-contents"></h3>
-                    </div>
-                    <div class="news-box">
-                        <h2 class="news-title">Not Found.</h2>
-                        <h3 class="news-contents"></h3>
+                    <div class="news-grid">
+                        <div class="news-card">
+                            <a href="#" class="news-link">
+                                <div class="card-wrap">
+                                    <div class="card-image news1"></div>
+                                </div>
+                            </a>
+                            <h4 class="card-subject">Not Found</h4>
+                        </div>
+
+                        <div class="news-card">
+                            <a href="#" class="news-link">
+                                <div class="card-wrap">
+                                    <div class="card-image news2"></div>
+                                </div>
+                            </a>
+                            <h4 class="card-subject">Not Found</h4>
+                        </div>
+
+                        <div class="news-card">
+                            <a href="#" class="news-link">
+                                <div class="card-wrap">
+                                    <div class="card-image news3"></div>
+                                </div>
+                            </a>
+                            <h4 class="card-subject">Not Found</h4>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -67,7 +89,7 @@
                 $(".news-btn").click(function(){
                     $(".int-title").fadeOut(100);
                     $(".news-btn").fadeOut(100);
-                    $(".news-wrap").delay(120).fadeIn(200);
+                    $(".news-wrap").delay(100).fadeIn(200);
                 });
             </script>
         </div>

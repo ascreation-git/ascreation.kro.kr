@@ -28,41 +28,72 @@
     top: 50%;
 }
 
-.box1 {
-    margin-bottom: 40px !important;
+.news-grid {
+    display: flex;
+    justify-content: center;
 }
 
-.news-box {
-    width: 1320px;
-    height: 280px;
-    margin: 0 auto;
-    border-radius: 0.5px;
-    box-shadow: 0 5px 10px rgb(255 255 255 / 10%);
-    background-color: #fff;
+.news-card {
+    width: 450px;
+    height: 450px;
+    transform: scale(1.0);
+    transition: transform 0.5s;
 }
 
-.news-title {
+.news-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;  
+}
+
+.news-card:not(:nth-child(3)) {
+    margin-right: 50px;
+}
+
+.card-wrap {
+    width: 0;
+    height: 0;
+}
+
+.card-image {
+    margin: 10px 20px 0 20px;
+    width: 410px;
+    height: 410px;
+    background: white;
+    transition: 0.4s;
+}
+
+.card-image:hover {
+    box-shadow: 0px 0.5px 5px rgb(79 255 190 / 50%);
+}
+
+.card-subject {
+    position: relative;
+    transform: translateY(-50%);
+    top: 95%;
     font-family: 'NanumSquareNeo-Variable';
     font-weight: lighter;
-    padding: 15px 0 0 15px;
-    font-size: 22px;
-    margin-left: 40px;
-    padding-top: 30px;
-}
-
-.news-contents {
-    font-family: 'NanumSquareNeo-Variable';
-    font-weight: lighter;
-    font-size: 20px;
-    margin-left: 40px;
-    padding-top: 10px;
+    text-align: center;
+    color: white;
 }
 
 /*=== [ MOBILE CSS ] ===*/
-
 @media (min-width: 320px) and (max-width: 480px) {
     .wrap {
         display: none;
+    }
+}
+
+/*=== [ 3440 X 1440 RW CSS ] ===*/
+@media (min-width: 3439px) and (max-width: 3440px) {
+    .news-card {
+        width: 500px;
+        height: 525px;
+    }
+
+    .card-image {
+        margin: 10px 10px 0 10px;
+        width: 480px;
+        height: 480px;
     }
 }
 
