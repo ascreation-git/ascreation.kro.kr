@@ -67,9 +67,7 @@
 .profile-name {
     position: relative;
     transform: translateY(-50%);
-    top: 93%;
-    font-family: 'NanumSquareNeo-Variable';
-    font-weight: lighter;
+    top: 95%;
     font-size: 25px;
     text-align: center;
     color: white;
@@ -107,7 +105,7 @@
     
     .contents-grid {
         display: block;
-        margin-left: 25px !important;
+        margin: 5% !important;
     }
 
     .profile {
