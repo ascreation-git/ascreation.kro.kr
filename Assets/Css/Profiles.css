@@ -1,6 +1,10 @@
 /*=== [ PROFILES STYLESHEET START ] ===*/
 
 /*=== [ PROFILES ] ===*/
+.question {
+    background: url('/Assets/Images/Profiles/Question.png')
+}
+
 .pro1 {
     background: url('/Assets/Images/Profiles/CrownK.png')
 }
