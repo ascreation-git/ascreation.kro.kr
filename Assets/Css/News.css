@@ -110,18 +110,6 @@
         margin: 0 3.5%;
         animation: FadeIn 1s;
     }
-
-    .error-detail {
-        position: relative;
-        transform: translateY(-50%);
-        top: 46.5%;
-        color: #919191;
-        font-weight: lighter;
-        font-size: 18px;
-        text-align: center;
-        margin: 0 3.5%;
-        animation: FadeIn 1s;
-    }
 }
 
 /*=== [ 3440 X 1440 RW CSS ] ===*/
