@@ -103,9 +103,9 @@
     .error-title {
         position: relative;
         transform: translateY(-50%);
-        top: 45%;
+        top: 50%;
         color: #fff;
-        font-size: 32px;
+        font-size: 30px;
         text-align: center;
         margin: 0 3.5%;
         animation: FadeIn 1s;
