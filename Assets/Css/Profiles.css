@@ -2,7 +2,43 @@
 
 /*=== [ PROFILES ] ===*/
 .pro1 {
-    background: black;
+    background: url('/Assets/Images/Profiles/CrownK')
+}
+
+.pro2 {
+    background: url('/Assets/Images/Profiles/Dajibori')
+}
+
+.pro3 {
+    background: url('/Assets/Images/Profiles/Kenyang')
+}
+
+.pro4 {
+    background: url('/Assets/Images/Profiles/Lomun')
+}
+
+.pro5 {
+    background: url('/Assets/Images/Profiles/Sogak')
+}
+
+.pro6 {
+    background: url('/Assets/Images/Profiles/0Man')
+}
+
+.pro7 {
+    background: url('/Assets/Images/Profiles/Godcho')
+}
+
+.pro8 {
+    background: url('/Assets/Images/Profiles/Marka')
+}
+
+.pro9 {
+    background: url('/Assets/Images/Profiles/Adwer')
+}
+
+.pro10 {
+    background: url('/Assets/Images/Profiles/Haramii')
 }
 
 /*=== [ PROFILES STYLESHEET END ] ===*/
