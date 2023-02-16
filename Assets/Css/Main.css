@@ -141,21 +141,33 @@ html::-webkit-scrollbar {
 .footer {
     position: absolute;
     width: 100%;
-    height: 73px;
+    height: 65px;
     bottom: 0px;
     animation: FadeIn 1s;
 }
 
 .footer-nav {
-    margin-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
     text-align: center;
 }
 
 .footer-nav > li > a {
     color: #e9e9e9;
     font-weight: bolder;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 20px;
     transition: 0.4s;
+}
+
+.footer-nav > li:not(:last-child) > a {
+    color: #4FFFBE;
+    margin-right: 25px;
+}
+
+.footer-nav > li:not(:last-child) > a:hover {
+    color: #41cc99;
 }
 
 .footer-nav > li > a:hover {
@@ -163,24 +175,18 @@ html::-webkit-scrollbar {
 }
 
 .footer-copy {
-    font-family: 'NanumSquareNeo-Variable';
     color: #707070;
     font-size: 15px;
     text-align: center;
 }
 
 .footer-copy > a {
-    font-family: 'NanumSquareNeo-Variable';
     color: #707070;
     transition: 0.4s;
 }
 
 .footer-copy > a:hover {
     color: #919191
-}
-
-bar {
-    color: #707070;        
 }
 
 /*=== [ MOBILE CSS ] ===*/
@@ -218,8 +224,12 @@ bar {
     }
 
     /*=== [ MOBILE FOOTER CSS ] ===*/
+    .footer {
+        height: 63px
+    }
     .footer-nav {
-        margin-bottom: 10px;
+        justify-content: flex-start;
+        margin: 0 0px 10px 10px;
         text-align: center;
     }
     
@@ -231,6 +241,10 @@ bar {
         font-size: 14px;
         transition: 0.4s;
     }
+
+    .footer-nav > li:not(:last-child) > a {
+        margin-right: 15px;
+    }
     
     .footer-nav > li > a:hover {
         color: #919191
@@ -238,7 +252,7 @@ bar {
     
     .footer-copy {
         color: #707070;
-        font-size: 12.5px;
+        font-size: 11.6px;
         text-align: center;
     }
     
@@ -250,11 +264,6 @@ bar {
     .footer-copy > a:hover {
         color: #919191
     }
-
-    bar {
-        display: none;
-    }
-
 }
 
 /*=== [ MAIN STYLESHEET END ] ===*/

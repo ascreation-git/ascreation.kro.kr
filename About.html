@@ -88,7 +88,7 @@
                 </div>
                 <div class="about-color impact">
                     <h2 class="color-detail">
-                        #4FFFFBE
+                        #4FFFBE
                         <br>CREATION IMPACT
                     </h2>
                 </div>
@@ -104,66 +104,71 @@
                         <div data-count="480342" class="stat-result result2">0</div>
                     </li>
                 </ul>
-                
+            </section>
+        </div>
+
         <!--=== [ FOOTER ] ===-->
         <footer class="footer">
             <div class="footer-nav">
                 <li>
-                    <a href="/Privacy.html">개인정보 처리방침</a>
+                    <a href="/Privacy.html">PRIVACY POLICY</a>
+                </li>
+                <li>
+                    <a href="mailto:biz@ascreation.kro.kr">E-MAIL</a>
                 </li>
             </div>
             <p class="footer-copy">
-                Copyright
+                COPYRIGHT
                 <script language="JavaScript">
                     document.write(new Date().getFullYear())
                 </script>
-                AS CREAT!ON. All Rights Reserved. <bar>|</bar> <a href="mailto:biz@ascreation.kro.kr">Biz@ascreation.kro.kr</a>
+                AS CREAT!ON ALL RIGHTS RESERVED.
             </p>
         </footer>
-        
-        <!--=== [ ABOUT SCRIPT ] ===-->
-        <script>
-            $(".int-btn").click(function(){
-                $(".int-title").fadeOut(100);
-                $(".int-btn").fadeOut(100);
-                $(".aboutint-wrap").delay(100).fadeIn(200);
-                $(".about-wrap").delay(100).fadeIn(200);
-            });
-        </script>
-
-        <script>
-            let observer = new IntersectionObserver((e)=>{
-                e.forEach((object)=>{
-                    if(object.isIntersecting) {
-                        /*
-                            + THANKS FOR ' https://kincoding.com/ ' / 즐코딩
-                        */
-                        $('.stat-result').each(function () {
-                        const $this = $(this),
-                            countTo = $this.attr('data-count');
-            
-                        $({
-                            countNum: $this.text()
-                        }).animate({
-                            countNum: countTo
-                        }, {
-                            duration: 3000,
-                            easing: 'linear',
-                            step: function () {
-                                $this.text(Math.floor(this.countNum));
-                            },
-                            complete: function () {
-                                $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
-                            }
-                        });
-                    });
-                }
-            })
-        })
-            let stat = document.querySelector('.stat-result')
-            observer.observe(stat)
-        </script>
     </div>
+        
+    <!--=== [ ABOUT SCRIPT ] ===-->
+    <script>
+        $(".int-btn").click(function(){
+            $(".int-title").fadeOut(100);
+            $(".int-btn").fadeOut(100);
+            $(".aboutint-wrap").delay(100).fadeIn(200);
+            $(".about-wrap").delay(100).fadeIn(200);
+        });
+    </script>
+
+    <script>
+        let observer = new IntersectionObserver((e)=>{
+            e.forEach((object)=>{
+                if(object.isIntersecting) {
+                    /*
+                        + THANKS FOR ' https://kincoding.com/ ' / 즐코딩
+                    */
+                    $('.stat-result').each(function () {
+                    const $this = $(this),
+                        countTo = $this.attr('data-count');
+        
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                        countNum: countTo
+                    }, {
+                        duration: 3000,
+                        easing: 'linear',
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+                        }
+                    });
+                });
+            }
+        })
+    })
+        let stat = document.querySelector('.stat-result')
+        observer.observe(stat)
+    </script>
 
     <!--=== [ MOBILE HEADER TOGGLE SCRIPT ] ===-->
     <script>
