@@ -11,14 +11,19 @@
       <priority>0.80</priority>
     </url>
     <url>
+      <loc>https://ascreation.kro.kr/About</loc>
+      <lastmod>2023-01-17T11:51:27+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+    <url>
       <loc>https://ascreation.kro.kr/News</loc>
       <lastmod>2023-01-17T11:51:27+00:00</lastmod>
-      <priority>0.70</priority>
+      <priority>0.80</priority>
     </url>
     <url>
       <loc>https://ascreation.kro.kr/Apply</loc>
       <lastmod>2023-01-17T11:51:27+00:00</lastmod>
-      <priority>0.70</priority>
+      <priority>0.80</priority>
     </url>
     <url>
       <loc>https://ascreation.kro.kr/Privacy</loc>

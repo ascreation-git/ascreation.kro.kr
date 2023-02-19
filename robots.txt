@@ -1,3 +1,4 @@
 User-agent: *
+Disallow: /Assets
 Allow:/
 Sitemap: https://ascreation.kro.kr/sitemap.xml
