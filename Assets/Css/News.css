@@ -5,6 +5,10 @@
     color: rgb(120, 120, 120)
 }
 
+.navigation > li > a[href="/English/News.html"] {
+    color: rgb(120, 120, 120)
+}
+
 /*=== [ INTRO ] ===*/
 .news-int {
     height: 100vh;

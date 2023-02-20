@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>        
     <!--=== [ HTML INFO / META ] ===-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AS CREAT!ON | Apply</title>
+    <title>AS CREAT!ON | News</title>
 
     <!--=== [ HTML FAVICON ] ===-->
     <link rel="shortcut icon" href="Assets/Images/Favicon/favicon.ico"> 
@@ -25,9 +25,9 @@
     <meta name="msapplication-TileImage" content="Assets/Images/Favicon/ms-icon-144x144.png">
 
     <!--=== [ CONNECT HTML SCRIPT / CSS ] ===-->
-    <link rel="stylesheet" href="/Assets/Css/Main.css">
-    <link rel="stylesheet" href="/Assets/Css/Apply.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="/Assets/Css/Main.css">
+    <link rel="stylesheet" href="/Assets/Css/News.css">
 </head> 
 <body>
     <!--=== [ START WEB BODY ] ===-->
@@ -37,39 +37,76 @@
             <div class="header">
                 <!--=== [ NAVIGATION ] ===-->
                 <ul class="navigation">
-                    <li><a href="/index.html">HOME</a></li>
-                    <li><a href="/Creators.html">CREATORS</a></li>
-                    <li><a href="/News.html">NEWS</a></li>
-                    <li><a href="/Apply.html">APPLY</a></li>
-                </ul>
-
-                <!--=== [ MOBILE HEADER ] ===-->
-                <div class="mobilenavbutton">
-                    <!--=== [ MOBILE HEADER MENU IMG ] ===-->
-                </div>
-                
-                <!--=== [ MOBILE NAVIGATION ] ===-->
-                <ul class="mobilenav">
-                    <li><a href="/index.html">HOME</a></li>
-                    <li><a href="/Creators.html">CREATORS</a></li>
-                    <li><a href="/Apply.html">APPLY</a></li>
+                    <li><a href="/English/index.html">HOME</a></li>
+                    <li><a href="/English/Creators.html">CREATORS</a></li>
+                    <li><a href="/English/News.html">NEWS</a></li>
+                    <li><a href="/English/Apply.html">APPLY</a></li>
                 </ul>
             </div>
 
             <!--=== [ INTRO SECTION ] ===-->
-            <section class="apply-int">
+            <section class="news-int">
                 <h1 class="int-title">
-                    APPLY CREATOR
+                    NEWS
                 </h1>
-                <button class="int-btn btn" onclick="location.href = '#Form' ">> Apply Now</button>
-            </section>
+                <button class="news-btn btn">> Latest News</button>
 
-            <!--=== [ APPLY SECTION ] ===-->
-            <section class="apply-form" id="Form">
-                <div class="form-wrap">
-                    <iframe class="form" src="https://script.google.com/macros/s/AKfycbwoyISaiY3uAlN1BtWTmucTa3D4rV8obhr0bNwkhBp4T0ezNbMpWsocOhzx2JTVuUwW/exec" scrolling="no"></iframe>
+                <!--=== [ VIEW NEWS ] ===-->
+                <div class="news-wrap">
+                    <div class="news-grid">
+                        <div class="news-card">
+                            <a href="#" class="news-link">
+                                <div class="card-wrap">
+                                    <div class="card-image news1"></div>
+                                </div>
+                            </a>
+                            <h4 class="card-subject">Not Found</h4>
+                        </div>
+
+                        <div class="news-card">
+                            <a href="#" class="news-link">
+                                <div class="card-wrap">
+                                    <div class="card-image news2"></div>
+                                </div>
+                            </a>
+                            <h4 class="card-subject">Not Found</h4>
+                        </div>
+
+                        <div class="news-card">
+                            <a href="#" class="news-link">
+                                <div class="card-wrap">
+                                    <div class="card-image news3"></div>
+                                </div>
+                            </a>
+                            <h4 class="card-subject">Not Found</h4>
+                        </div>
+
+                        <div class="news-card">
+                            <a href="#" class="news-link">
+                                <div class="card-wrap">
+                                    <div class="card-image news3"></div>
+                                </div>
+                            </a>
+                            <h4 class="card-subject">Not Found</h4>
+                        </div>
+                    </div>
                 </div>
             </section>
+
+            <!--=== [ CONNECTION ERROR ] ===-->
+            <section class="error">
+                <h2 class="error-title">This Page Is Not Available On Mobile.</h2>
+            </section>
+
+            
+            <!--=== [ NEWS SCRIPT ] ===-->
+            <script>
+                $(".news-btn").click(function(){
+                    $(".int-title").fadeOut(100);
+                    $(".news-btn").fadeOut(100);
+                    $(".news-wrap").delay(100).fadeIn(200);
+                });
+            </script>
         </div>
 
         <!--=== [ FOOTER ] ===-->
@@ -82,7 +119,7 @@
                     <a href="mailto:biz@ascreation.kro.kr">E-MAIL</a>
                 </li>
                 <li>
-                    <a href="/English/Apply.html">ENGLISH</a>
+                    <a href="/News.html">KOREAN</a>
                 </li>
             </div>
             <p class="footer-copy">
@@ -94,16 +131,6 @@
             </p>
         </footer>
     </div>
-    
-    <!--=== [ MOBILE HEADER TOGGLE SCRIPT ] ===-->
-    <script>
-        $(document).ready( function() {
-          $( '.mobilenavbutton' ).click( function() {
-            $( '.mobilenav' ).fadeToggle();
-          });
-        });
-    </script>
-
     <!--=== [ END WEB BODY ] ===-->
 </body>
 </html>

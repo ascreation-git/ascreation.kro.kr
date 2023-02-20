@@ -5,6 +5,10 @@
     color: rgb(120, 120, 120)
 }
 
+.navigation > li > a[href="/English/Creators.html"] {
+    color: rgb(120, 120, 120)
+}
+
 /*=== [ INTRO ] ===*/
 .creators {
     height: 100vh;
