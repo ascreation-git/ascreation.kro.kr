@@ -31,7 +31,8 @@
     animation: FadeIn 1s;
 }
 
-.about-subtext {
+.about-subtext,
+.about-subtext-en {
     position: relative;
     transform: translateY(-50%);
     top: 48.5%;
@@ -42,7 +43,8 @@
     animation: FadeIn 1s;
 }
 
-.about-subtext > strong {
+.about-subtext > strong,
+.about-subtext-en > strong {
     font-weight: bolder;
     color: #fff;
 }
@@ -176,9 +178,21 @@
         animation: FadeIn 1s;
     }
 
-    .about-subtext > strong {
+    .about-subtext > strong,
+    .about-subtext-en > strong {
         font-weight: bolder;
         color: #fff;
+    }
+
+    .about-subtext-en {
+        position: relative;
+        transform: translateY(-50%);
+        top: 50.5%;
+        color: #fff;
+        font-weight: normal;
+        font-size: 19px;
+        text-align: center;
+        animation: FadeIn 1s;
     }
 
     /*=== [ ABOUT ] ===*/
