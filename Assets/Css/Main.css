@@ -148,7 +148,8 @@ html::-webkit-scrollbar {
 
 .footer-nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 30px;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -168,10 +169,15 @@ html::-webkit-scrollbar {
 
 .footer-nav > li:nth-child(1) > a:hover {
     color: #41cc99;
+    margin-right: 30px;
 }
 
 .footer-nav > li:nth-child(2) > a {
     margin-right: 25px;
+}
+
+.footer-nav > li:nth-child(2) > a:hover {
+    margin-right: 30px;
 }
 
 .footer-nav > li > a:hover {
@@ -181,7 +187,8 @@ html::-webkit-scrollbar {
 .footer-copy {
     color: #707070;
     font-size: 15px;
-    text-align: center;
+    margin-left: 30px;
+    text-align: left;
 }
 
 .footer-copy > a {
@@ -229,11 +236,11 @@ html::-webkit-scrollbar {
 
     /*=== [ MOBILE FOOTER CSS ] ===*/
     .footer {
-        height: 63px
+        height: 60px
     }
     .footer-nav {
         justify-content: flex-start;
-        margin: 0 0px 10px 10px;
+        margin: 0 0px 10px 8px;
         text-align: center;
     }
     
@@ -256,8 +263,9 @@ html::-webkit-scrollbar {
     
     .footer-copy {
         color: #707070;
-        font-size: 11.6px;
-        text-align: center;
+        font-size: 11.3px;
+        margin-left: 8px;
+        text-align: left;
     }
     
     .footer-copy > a {
