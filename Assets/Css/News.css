@@ -80,6 +80,20 @@
     color: white;
 }
 
+.new {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #4fffbe;
+    color: #000;
+    border-radius: 0 100% 100% 100%;
+}
+
+.none {
+    display: none;
+}
+
 .error {
     display: none;
 }
