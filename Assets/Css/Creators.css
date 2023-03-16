@@ -1,14 +1,5 @@
 /*=== [ CREATORS STYLESHEET START ] ===*/
 
-/*=== [ ACTIVE NAVIGATION ] ===*/
-.navigation > li > a[href="/Creators.html"] {
-    color: rgb(120, 120, 120)
-}
-
-.navigation > li > a[href="/English/Creators.html"] {
-    color: rgb(120, 120, 120)
-}
-
 /*=== [ INTRO ] ===*/
 .creators {
     height: 100vh;

@@ -98,6 +98,12 @@ html::-webkit-scrollbar {
     transition: 0.4s;
 }
 
+/*=== [ ACTIVE NAVIGATION ] ===*/
+.disabled {
+    color: rgb(120, 120, 120) !important;
+    cursor: default;
+}
+
 .navigation > li > a:hover {
     color: rgb(120, 120, 120)
 }

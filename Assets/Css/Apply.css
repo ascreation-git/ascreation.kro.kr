@@ -1,14 +1,5 @@
 /*=== [ APPLY STYLESHEET START ] ===*/
 
-/*=== [ ACTIVE NAVIGATION ] ===*/
-.navigation > li > a[href="/Apply.html"] {
-    color: rgb(120, 120, 120)
-}
-
-.navigation > li > a[href="/English/Apply.html"] {
-    color: rgb(120, 120, 120)
-}
-
 /*=== [ INTRO ] ===*/
 .apply-int {
     height: 100vh;
