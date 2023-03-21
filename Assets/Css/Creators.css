@@ -79,11 +79,6 @@
 /*=== [ MOBILE CSS ] ===*/
 
 @media (min-width: 320px) and (max-width: 480px) {
-    /*=== [ MOBILE ACTIVE NAVIGATION ] ===*/
-    .mobilenav > li > a[href="/Creators.html"] {
-        color: rgb(120, 120, 120)
-    }
-
     /*=== [ MOBILE INTRO ] ===*/
     .creator-title {
         font-size: 34px;
@@ -95,7 +90,7 @@
 
     /*=== [ MOBILE VIEW CREATORS ] ===*/
     .view-creators {
-        height: 4600px;
+        height: 5100px;
     }
     
     .contents-grid {
