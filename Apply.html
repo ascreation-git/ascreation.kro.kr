@@ -36,23 +36,20 @@
                 if ( e.keyCode == 123 ) {
                     e.preventDefault();
                     e.returnValue = false;
-                    alert("⛔ | 본 페이지에서는 보안 정책 등을 이유로 F12 버튼을 금지하고 있습니다.");
                 }
             });
         });
         
         document.onmousedown=disableclick;
-        status="⛔ | 본 페이지에서는 보안 정책 등을 이유로 우측 버튼 클릭을 금지하고 있습니다.";
         
         function disableclick(event){
             if (event.button==2) {
-                alert(status);
                 return false;
             }
         }
     </script>
 </head> 
-<body>
+<body oncontextmenu="return false">
     <!--=== [ START WEB BODY ] ===-->
     <div class="wrap">
         <div class="container">
