@@ -28,6 +28,31 @@
     <link rel="stylesheet" href="/Assets/Css/Main.css">
     <link rel="stylesheet" href="/Assets/Css/Apply.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+    <!--=== [ HTML PROTECTION ] ===-->
+    <script lang="JavaScript">
+        $(document).ready(function(){
+            $(document).bind('keydown',function(e){
+                status="⛔ | The F12 Button Is Prohibited On This Page For Reasons Such As Security Policy.";
+
+                if ( e.keyCode == 123 ) {
+                    e.preventDefault();
+                    e.returnValue = false;
+                    alert(status);
+                }
+            });
+        });
+        
+        document.onmousedown=disableclick;
+        status="⛔ | On This Page, Right-Clicking Is Prohibited For Reasons Such As Security Policy.";
+        
+        function disableclick(event){
+            if (event.button==2) {
+                alert(status);
+                return false;
+            }
+        }
+    </script>
 </head> 
 <body>
     <!--=== [ START WEB BODY ] ===-->
