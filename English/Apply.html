@@ -33,12 +33,10 @@
     <script lang="JavaScript">
         $(document).ready(function(){
             $(document).bind('keydown',function(e){
-                status="⛔ | The F12 Button Is Prohibited On This Page For Reasons Such As Security Policy.";
-
                 if ( e.keyCode == 123 ) {
                     e.preventDefault();
                     e.returnValue = false;
-                    alert(status);
+                    alert("⛔ | The F12 Button Is Prohibited On This Page For Reasons Such As Security Policy.");
                 }
             });
         });

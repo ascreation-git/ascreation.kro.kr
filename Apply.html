@@ -33,12 +33,10 @@
     <script lang="JavaScript">
         $(document).ready(function(){
             $(document).bind('keydown',function(e){
-                status="⛔ | 본 페이지에서는 보안 정책 등을 이유로 F12 버튼을 금지하고 있습니다.";
-
                 if ( e.keyCode == 123 ) {
                     e.preventDefault();
                     e.returnValue = false;
-                    alert(status);
+                    alert("⛔ | 본 페이지에서는 보안 정책 등을 이유로 F12 버튼을 금지하고 있습니다.");
                 }
             });
         });
