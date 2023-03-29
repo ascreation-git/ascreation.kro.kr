@@ -41,6 +41,10 @@
     animation: FadeIn 1s;
 }
 
+.int-btn {
+    top: 48%;
+}
+
 /*=== [ APPLY FORM SECTION ] ===*/
 .apply-form {
     height: 1228px;
