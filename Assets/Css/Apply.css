@@ -1,5 +1,31 @@
 /*=== [ APPLY STYLESHEET START ] ===*/
 
+/*=== [ NOTICE CSS ] ===*/
+.notice {
+    display: flex;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 35px;
+    background: linear-gradient(90deg, #4fffbe, #41ff96);
+    z-index: 1;
+    animation: FadeIn 1s;
+}
+
+.notice > p {
+    font-family: 'NanumSquareNeo-Variable';
+    position: relative;
+    left: 0.5%;
+    line-height: 35px;
+}
+
+.header {
+    top: 35px;
+}
+
 /*=== [ INTRO ] ===*/
 .apply-int {
     height: 100vh;
@@ -32,11 +58,11 @@
 }
 
 /*=== [ MOBILE CSS ] ===*/
-
 @media (min-width: 320px) and (max-width: 480px) {
-    /*=== [ MOBILE ACTIVE NAVIGATION ] ===*/
-    .mobilenav > li > a[href="/Apply.html"] {
-        color: rgb(120, 120, 120)
+    /*=== [ NOTICE CSS ] ===*/
+    .notice > p {
+        left: 2%;
+        font-size: 0.77rem;
     }
 
     /*=== [ INTRO ] ===*/
@@ -55,7 +81,6 @@
 }
 
 /*=== [ 3440 X 1440 RW CSS ] ===*/
-
 @media (min-width: 3439px) and (max-width: 3440px) {
 
     /*=== [ APPLY ] ===*/
