@@ -12,13 +12,13 @@
     height: 35px;
     background: linear-gradient(90deg, #4fffbe, #41ff96);
     z-index: 1;
+    justify-content: center;
     animation: FadeIn 1s;
 }
 
 .notice > p {
     font-family: 'NanumSquareNeo-Variable';
     position: relative;
-    left: 0.5%;
     line-height: 35px;
 }
 
