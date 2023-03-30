@@ -5,6 +5,10 @@
     height: 100vh;
 }
 
+.int-btn {
+    top: 47.5%;
+}
+
 .int-title {
     position: relative;
     transform: translateY(-50%);
@@ -148,7 +152,7 @@
     }
 
     .int-btn {
-        margin-top: 3px;
+        top: 50%;
     }
 
     /*=== [ ABOUT INTRO ] ===*/
