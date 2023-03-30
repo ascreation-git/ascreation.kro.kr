@@ -5,6 +5,10 @@
     height: 100vh;
 }
 
+.int-btn {
+    top: 48%
+}
+
 .int-title {
     position: relative;
     transform: translateY(-50%);

@@ -73,6 +73,10 @@
         font-size: 34px;
     }
 
+    .int-btn {
+        top: 49.5%;
+    }
+
     /*=== [ APPLY ] ===*/
     .apply-form {
         height: 1336px;

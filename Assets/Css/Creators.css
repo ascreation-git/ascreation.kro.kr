@@ -5,6 +5,10 @@
     height: 100vh;
 }
 
+.creator-btn {
+    top: 48%;
+}
+
 .creator-title {
     position: relative;
     transform: translateY(-50%);
@@ -85,7 +89,7 @@
     }
 
     .creator-btn {
-        margin-top: -15px;
+        margin-top: -10px;
     }
 
     /*=== [ MOBILE VIEW CREATORS ] ===*/
