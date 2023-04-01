@@ -101,7 +101,7 @@
                     </li>
                     <li>
                         <div class="stat-sub">V I E W S</div>
-                        <div data-count="492129" class="stat-result result2">0</div>
+                        <div data-count="492129" class="stat-result">0</div>
                     </li>
                 </ul>
             </section>
@@ -139,38 +139,43 @@
             $(".about-wrap").delay(100).fadeIn(200);
         });
     </script>
-
+    
     <script>
-        let observer = new IntersectionObserver((e)=>{
-            e.forEach((object)=>{
-                if(object.isIntersecting) {
-                    /*
-                        + THANKS FOR ' https://kincoding.com/ ' / 즐코딩
-                    */
-                    $('.stat-result').each(function () {
-                    const $this = $(this),
-                        countTo = $this.attr('data-count');
-        
-                    $({
-                        countNum: $this.text()
-                    }).animate({
-                        countNum: countTo
-                    }, {
-                        duration: 3000,
-                        easing: 'linear',
-                        step: function () {
-                            $this.text(Math.floor(this.countNum));
-                        },
-                        complete: function () {
-                            $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
-                        }
-                    });
+        /*
+            + THANKS FOR ' https://codepen.io/dmcreis/pen/VLLYPo ' / David Reis
+        */
+        var a = 0;
+        $(window).scroll(function() {
+
+        var oTop = $('.stat').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            $('.stat-result').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+            $({
+                countNum: $this.text()
+            }).animate({
+                countNum: countTo
+                },
+
+                {
+
+                duration: 2000,
+                easing: 'swing',
+                step: function() {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                    $this.text(this.countNum);
+                    $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+                }
+
                 });
-            }
-        })
-    })
-        let stat = document.querySelector('.stat-result')
-        observer.observe(stat)
+            });
+            a = 1;
+        }
+
+        });
     </script>
 
     <!--=== [ MOBILE HEADER TOGGLE SCRIPT ] ===-->
