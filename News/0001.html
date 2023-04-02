@@ -43,35 +43,71 @@
                 </ul>
 
                 <!--=== [ MOBILE HEADER ] ===-->
-                <div class="mobilenavbutton">
-                    <!--=== [ MOBILE HEADER MENU IMG ] ===-->
-                </div>
+                <input type="checkbox" class="m-btn" id="m-btn">
+                <label for="m-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 
-                <!--=== [ MOBILE NAVIGATION ] ===-->
-                <ul class="mobilenav">
-                    <li><a href="/index.html">HOME</a></li>
-                    <li><a href="/Creators.html">CREATORS</a></li>
-                    <li><a href="/Apply.html">APPLY</a></li>
-                </ul>
+                <!--=== [ MOBILE NAVIGATION ( SIDEBAR ) ] ===-->
+                <div class="sidebar">
+                    <span class="sidebar-area">
+                        <ul class="mobile-nav">
+                            <li><a href="/">HOME</a></li>
+                            <li><a href="/Creators.html">CREATORS</a></li>
+                            <li><a href="/Apply.html">APPLY</a></li>
+                        </ul>
+                    </span>
+                </div>
             </div>
 
             <!--=== [ INTRO SECTION ] ===-->
             <section class="int">
                 <p class="int-title">
-                    T I T L E
+                    AS CREAT!ON 공개 안내
                 </p>
             </section>
             <hr class="int-line">
 
             <!--=== [ CONTENT SECTION ] ===-->
-            <section class="content">
-                Input Your Content.
-            </section>
+            <section class="content" style="height: 1280px">
+                안녕하세요! " AS CREAT!ON " 입니다!<br>
+                <br>
+                2023년 01월부터 시작했던 AS CREAT!ON V-MCN 프로젝트가 드디어 완성되었습니다!<br>
+                <br>
+                그래서 본론으로는, 오늘인 2023년 04월 02일부터 크리에이터 여러분들을 모집하고 있습니다!<br>
+                <br>
+                지원 자격 등 지원 안내는 아래와 같이 안내드립니다 : }
+                <br>
+                <br>================
+                <br>: [ 📌  ] 지원 자격
+                <br>- YouTuber ( 구독자 수 150명 이상 / 평균 조회수 200회 이상 )
+                <br>- Streamer ( 팔로워 수 150명 이상 / 평균 시청자 수 10명 이상 )
+                <br>
+                <br>* 지원 자격에 상관 없이, 창작에 관심이 있거나 창의적인 크리에이터 분들의 지원도 받고 있습니다.
+                <br> * 마인크래프트 유튜버 뿐만 아닌, 다양한 장르의 크리에이터 분들도 지원이 가능합니다.
+                <br>
+                <br>: [ 📩 ] 지원 사이트
+                <br>- <a href="https://ascreation.kro.kr/Apply" target="_blank" rel="noreferrer noopener">https://ascreation.kro.kr/Apply</a>
+                <br>- 본 사이트의 양식에 따라서 지원해주세요!
+                <br>
+                <br>  * 본 지원에 대해서 장난이라고 판단되는 지원은 무통보 파기됩니다.
+                <br>
+                <br>: [ 😄 ] 혜택
+                <br>- 크리에이터 및 AS CREAT!ON 관계자의 영상 및 썸네일 피드백 또는 수정
+                <br>- 영상 제목 및 영상 컨텐츠 등의 피드백 지원
+                <br>- 다양한 크리에이터와의 자유로운 소통
+                <br>- 영상 및 썸네일 제작 시 필요한 소스 지원
+                <br>- 크리에이터의 성장 기회 지원
+                <br>
+                <br>* 이 외 크리에이터 분들이 필요한 많은 혜택을 지원하고 있습니다.
+                <br>
+                <br>: [ ✉ ] 문의
+                <br>- 문의 사항은 <a href="mailto:business@ascreation.kro.kr">Business@ascreation.kro.kr</a>로 문의주시면 신속하고 친절하게 답변드리도록 노력하겠습니다!
+                <br>================
 
-            <!--=== [ BUTTONS SECTION ] ===-->
-            <section class="buttons">
-                <button class="content-btn btn" onclick="location.href = '/News.html' ">| List</button>
-                <button class="content-btn btn" onclick="location.href = '0002.html' ">> Next</button>
+                <button style="position: relative; top: 2.5%;" class="content-btn btn" onclick="location.href = '/News.html' ">| List</button>
             </section>
         </div>
 
@@ -97,18 +133,6 @@
             </p>
         </footer>
     </div>
-
-    <!--=== [ CONNECT HTML SCRIPT ] ===-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
-
-    <!--=== [ MOBILE HEADER TOGGLE SCRIPT ] ===-->
-    <script>
-        $(document).ready( function() {
-          $( '.mobilenavbutton' ).click( function() {
-            $( '.mobilenav' ).fadeToggle();
-          });
-        });
-    </script>
     <!--=== [ END WEB BODY ] ===-->
 </body>
 </html>

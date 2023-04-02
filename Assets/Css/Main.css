@@ -25,6 +25,16 @@
     color: #000;
 }
 
+a {
+    text-decoration: none;
+    color: #4fffbe;
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: #41cc99;
+}
+
 ::selection {
     background: #3e4358;
     color: #fff;
