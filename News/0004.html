@@ -4,7 +4,7 @@
     <!--=== [ HTML INFO / META ] ===-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AS CREAT!ON | News 0003</title>
+    <title>AS CREAT!ON | News 0004</title>
 
     <!--=== [ HTML FAVICON ] ===-->
     <link rel="shortcut icon" href="../Assets/Images/Favicon/favicon.ico"> 
@@ -22,8 +22,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="../Assets/Images/Favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../Assets/Images/Favicon/favicon-16x16.png">
     <link rel="manifest" href="../Assets/Images/Favicon/manifest.json">
-    <link rel="manifest" href="Assets/Images/Favicon/manifest.json">
-    <meta name="msapplication-TileImage" content="../Assets/Images/Favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="Assets/Images/Favicon/ms-icon-144x144.png">
 
     <!--=== [ CONNECT HTML CSS ] ===-->
     <link rel="stylesheet" href="../Assets/Css/Main.css">
@@ -44,16 +43,23 @@
                 </ul>
 
                 <!--=== [ MOBILE HEADER ] ===-->
-                <div class="mobilenavbutton">
-                    <!--=== [ MOBILE HEADER MENU IMG ] ===-->
-                </div>
+                <input type="checkbox" class="m-btn" id="m-btn">
+                <label for="m-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 
-                <!--=== [ MOBILE NAVIGATION ] ===-->
-                <ul class="mobilenav">
-                    <li><a href="/index.html">HOME</a></li>
-                    <li><a href="/Creators.html">CREATORS</a></li>
-                    <li><a href="/Apply.html">APPLY</a></li>
-                </ul>
+                <!--=== [ MOBILE NAVIGATION ( SIDEBAR ) ] ===-->
+                <div class="sidebar">
+                    <span class="sidebar-area">
+                        <ul class="mobile-nav">
+                            <li><a href="/">HOME</a></li>
+                            <li><a href="/Creators.html">CREATORS</a></li>
+                            <li><a href="/Apply.html">APPLY</a></li>
+                        </ul>
+                    </span>
+                </div>
             </div>
 
             <!--=== [ INTRO SECTION ] ===-->
@@ -65,14 +71,9 @@
             <hr class="int-line">
 
             <!--=== [ CONTENT SECTION ] ===-->
-            <section class="content">
-                Input Your Content.
-            </section>
+            <section class="content" style="height: auto"> <!--< Edit Please-->
 
-            <!--=== [ BUTTONS SECTION ] ===-->
-            <section class="buttons">
-                <button class="content-btn btn" onclick="location.href = '0003.html' ">< Previous</button>
-                <button class="content-btn btn" onclick="location.href = '/News.html' ">| List</button>
+                <button style="position: relative; top: 2.5%;" class="content-btn btn" onclick="location.href = '/News.html' ">| List</button>
             </section>
         </div>
 
@@ -98,18 +99,6 @@
             </p>
         </footer>
     </div>
-
-    <!--=== [ CONNECT HTML SCRIPT ] ===-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
-
-    <!--=== [ MOBILE HEADER TOGGLE SCRIPT ] ===-->
-    <script>
-        $(document).ready( function() {
-          $( '.mobilenavbutton' ).click( function() {
-            $( '.mobilenav' ).fadeToggle();
-          });
-        });
-    </script>
     <!--=== [ END WEB BODY ] ===-->
 </body>
 </html>
