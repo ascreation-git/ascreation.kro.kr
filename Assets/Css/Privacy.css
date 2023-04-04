@@ -15,6 +15,16 @@
     animation: FadeIn 1s;
 }
 
+.int-subtitle {
+    position: relative;
+    transform: translateY(-50%);
+    top: 48%;
+    color: #ff8080;
+    font-size: 20px;
+    text-align: center;
+    animation: FadeIn 1s;
+}
+
 /*=== [ POLICY CONTENTS ] ===*/
 .policy-wrap {
     height: 3100px;
@@ -103,6 +113,11 @@ a:hover {
     
     .int-title {
         font-size: 34px;
+    }
+
+    .int-subtitle {
+        top: 48.5%;
+        font-size: 14px;
     }
     
     /*=== [ MOBILE POLICY CONTENTS ] ===*/

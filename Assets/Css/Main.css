@@ -124,6 +124,28 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+/*=== [ NOTICE CSS ] ===*/
+.notice {
+    display: flex;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 35px;
+    background: linear-gradient(90deg, #4fffbe, #41ff96);
+    z-index: 1;
+    justify-content: center;
+    animation: FadeIn 1s;
+}
+
+.notice > p {
+    font-family: 'NanumSquareNeo-Variable';
+    position: relative;
+    line-height: 35px;
+}
+
 /*=== [ Button CSS ] ===*/
 
 .btn {
@@ -308,6 +330,11 @@ html::-webkit-scrollbar {
         font-size: 25px;
         font-weight: bolder;
         color: #fff;
+    }
+
+    /*=== [ NOTICE CSS ] ===*/
+    .notice > p {
+        font-size: 0.77rem;
     }
 
     /*=== [ MOBILE FOOTER CSS ] ===*/
