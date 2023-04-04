@@ -25,6 +25,10 @@
     animation: FadeIn 1s;
 }
 
+.int-btn {
+    top: 48%;
+}
+
 /*=== [ POLICY CONTENTS ] ===*/
 .policy-wrap {
     height: 3100px;
@@ -118,6 +122,10 @@ a:hover {
     .int-subtitle {
         top: 48.5%;
         font-size: 14px;
+    }
+
+    .int-btn {
+        top: 49%;
     }
     
     /*=== [ MOBILE POLICY CONTENTS ] ===*/
