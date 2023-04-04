@@ -53,12 +53,13 @@
     margin: 10px 25px 0 25px;
     width: 300px;
     height: 300px;
+    border-radius: 0 30px 10px 30px;
     background: white;
     transition: 0.4s;
 }
 
 .card-image:hover {
-    box-shadow: 0px 0.5px 5px rgb(79 255 190 / 50%);
+    box-shadow: 0px 0.5px 5px rgb(0 0 0 / 80%);
 }
 
 .card-subject {
@@ -79,6 +80,23 @@
     background: #4fffbe;
     color: #000;
     border-radius: 0 100% 100% 100%;
+}
+
+/*=== [ NEWS CONTENTS IMG ] ===*/
+.news1 { 
+    
+}
+
+.news2 {
+    
+}
+
+.news3 {
+    
+}
+
+.news4 {
+    background: url(/Assets/Images/News/News4.png)
 }
 
 .none {
