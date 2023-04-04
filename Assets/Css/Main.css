@@ -314,7 +314,7 @@ html::-webkit-scrollbar {
     
     .mobile-nav {
         position: relative;
-        top: 15%;
+        top: 150px;
         left: 35px;
     }
 
