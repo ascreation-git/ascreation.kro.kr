@@ -29,15 +29,14 @@
     <link rel="stylesheet" href="/Assets/Css/Apply.css">
 
     <!--=== [ HTML PROTECTION ] ===-->
-    <script lang="JavaScript">
-        $(document).ready(function(){
-            $(document).bind('keydown',function(e){
-                if ( e.keyCode == 123 ) {
-                    e.preventDefault();
-                    e.returnValue = false;
-                }
-            });
-        });
+    <script type="text/javascript">
+        function CheckKey() {
+            var result = true;
+            var keycode = event.keyCode;
+                if(123 == keycode) {
+                result = false;
+            } return result;
+            }
         
         document.onmousedown=disableclick;
         
@@ -55,7 +54,7 @@
         }
     }
 </style>
-<body oncontextmenu="return false">
+<body oncontextmenu="return false" onkeydown="return CheckKey();">
     <!--=== [ START WEB BODY ] ===-->
     <div class="wrap">
         <div class="container">
@@ -63,7 +62,7 @@
             <div class="header">
                 <!--=== [ NAVIGATION ] ===-->
                 <ul class="navigation">
-                    <li><a href="/English/index.html">HOME</a></li>
+                    <li><a href="/English/">HOME</a></li>
                     <li><a href="/English/Creators.html">CREATORS</a></li>
                     <li><a href="/English/News.html">NEWS</a></li>
                     <li><a class="disabled">APPLY</a></li>
