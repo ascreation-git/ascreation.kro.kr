@@ -15,6 +15,10 @@
     animation: FadeIn 1s;
 }
 
+.news-btn {
+    top: 48.5%;
+}
+
 /*=== [ NEWS CONTENTS ] ===*/
 .news-wrap {
     display: none;
