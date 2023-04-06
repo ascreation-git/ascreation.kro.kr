@@ -29,15 +29,14 @@
     <link rel="stylesheet" href="./Assets/Css/Apply.css">
 
     <!--=== [ HTML PROTECTION ] ===-->
-    <script lang="JavaScript">
-        $(document).ready(function(){
-            $(document).bind('keydown',function(e){
-                if ( e.keyCode == 123 ) {
-                    e.preventDefault();
-                    e.returnValue = false;
-                }
-            });
-        });
+    <script type="text/javascript">
+        function CheckKey() {
+            var result = true;
+            var keycode = event.keyCode;
+                if(123 == keycode) {
+                result = false;
+            } return result;
+            }
         
         document.onmousedown=disableclick;
         
@@ -48,7 +47,7 @@
         }
     </script>
 </head> 
-<body oncontextmenu="return false">
+<body oncontextmenu="return false" onkeydown="return CheckKey();">
     <!--=== [ START WEB BODY ] ===-->
     <div class="wrap">
         <div class="container">
@@ -56,7 +55,7 @@
             <div class="header">
                 <!--=== [ NAVIGATION ] ===-->
                 <ul class="navigation">
-                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/">HOME</a></li>
                     <li><a href="/Creators.html">CREATORS</a></li>
                     <li><a href="/News.html">NEWS</a></li>
                     <li><a class="disabled">APPLY</a></li>
@@ -90,7 +89,7 @@
             <!--=== [ INTRO SECTION ] ===-->
             <section class="apply-int">
                 <h1 class="int-title">
-                    APPLY CREATOR
+                    크리에이터 지원하기
                 </h1>
                 <button class="int-btn btn" onclick="location.href = '#Form' ">> 지금 지원하기</button>
             </section>
