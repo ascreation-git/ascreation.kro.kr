@@ -12,7 +12,8 @@
     color: #fff;
     font-size: 58px;
     text-align: center;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .int-subtitle {
@@ -22,7 +23,8 @@
     color: #ff8080;
     font-size: 20px;
     text-align: center;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .int-btn {
@@ -40,20 +42,23 @@
     text-align: center;
     font-size: 30px;
     color: #fff;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .line {
     width: 83%;
     margin: 0 auto 15px;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .sub {
     margin-left: 5%;
     margin-bottom: -10px;
     font-size: 28px;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .first,
@@ -63,27 +68,31 @@
 
 .sub{
     margin-top: 30px;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 custag {
     color: #fff;
     font-size: 20px;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .content {
     font-weight: normal;
     margin-right: 6.2%;
     margin-left: 6.2%;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .content2 {
     font-weight: normal;
     margin-right: 8%;
     margin-left: 8%;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .content,
@@ -96,7 +105,8 @@ span {
 a {
     color: #4fffbe;
     transition: 0.4s;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 a:hover {

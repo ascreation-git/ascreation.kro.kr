@@ -12,7 +12,8 @@
     color: #fff;
     font-size: 58px;
     text-align: center;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .error-detail {
@@ -23,7 +24,8 @@
     font-size: 25px;
     font-weight: lighter;
     text-align: center;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 /*=== [ MOBILE CSS ] ===*/

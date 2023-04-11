@@ -17,7 +17,8 @@
     color: #fff;
     font-size: 58px;
     text-align: center;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .int-btn {
