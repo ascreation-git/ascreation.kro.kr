@@ -348,6 +348,10 @@ html::-webkit-scrollbar {
         display: none;
     }
 
+    label[for="header-btn"] {
+        display: none !important;
+    }
+
     .m-btn {
         display: none;
     }
