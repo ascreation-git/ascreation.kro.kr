@@ -248,8 +248,7 @@ html::-webkit-scrollbar {
     line-height: 35px;
 }
 
-/*=== [ Button CSS ] ===*/
-
+/*=== [ BUTTON CSS ] ===*/
 .btn {
     display: block;
     position: relative;
@@ -276,8 +275,47 @@ html::-webkit-scrollbar {
     font-size: 17px;
 }
 
-/*=== [ FOOTER CSS ] ===*/
+/*=== [ SCROLL TOP BUTTON CSS ] ===*/
+.top-button-wrap {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 70px;
+    width: 70px;
+    visibility: hidden;
+    opacity: 0;
+    place-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+}
 
+.top-button-wrap:hover {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.top-button:hover {
+    font-size: 45px;
+}
+
+.top-button {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #4fffbe, #00ff77);
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    font-weight: bolder;
+    font-size: 40px;
+    transition: 0.5s;
+    color: #000;
+}
+
+/*=== [ FOOTER CSS ] ===*/
 .footer {
     position: absolute;
     width: 100%;
