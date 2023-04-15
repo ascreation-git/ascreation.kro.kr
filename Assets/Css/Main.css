@@ -478,9 +478,9 @@ html::-webkit-scrollbar {
         position: relative;
         display: flex;
         flex-direction: column;
+        opacity: 0;
         top: 50%;
         transform: translateY(-50%);
-        opacity: 0;
         visibility: hidden;
         transition: 0.5s;
     }
@@ -488,6 +488,7 @@ html::-webkit-scrollbar {
     .mobile-nav > li {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-bottom: 20px;
     }
 
