@@ -479,8 +479,7 @@ html::-webkit-scrollbar {
         display: flex;
         flex-direction: column;
         opacity: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        margin-top: 75%;
         visibility: hidden;
         transition: 0.5s;
     }
@@ -488,7 +487,6 @@ html::-webkit-scrollbar {
     .mobile-nav > li {
         display: flex;
         justify-content: center;
-        align-items: center;
         margin-bottom: 20px;
     }
 
@@ -498,6 +496,7 @@ html::-webkit-scrollbar {
 
     .mobile-nav > li > a {
         font-size: 2.4rem;
+        text-align: center;
         font-weight: bolder;
         color: #4fffbe;
     }
