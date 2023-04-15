@@ -54,6 +54,26 @@
                         </ul>
                     </span>
                 </div>
+
+                <!--Mobile Header Button & Navigation-->
+                <input type="checkbox" class="m-btn" id="m-btn">
+                <label for="m-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                
+                <div class="sidebar">
+                    <span class="sidebar-area">
+                        <ul class="mobile-nav">
+                            <li><a href="/">HOME</a></li>
+                            <li><a href="/Creators.html">CREATORS</a></li>
+                            <li><a class="disabled">NEWS</a></li>
+                            <li><a href="/Apply.html">APPLY</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <!--// Mobile Header Button & Navigation-->
             </div>
 
             <!--=== [ INTRO SECTION ] ===-->
@@ -62,10 +82,10 @@
                     AS CREAT!ON 소식
                 </h1>
                 <button class="news-btn btn" style="top: 48%;">> 최신 뉴스</button>
+            </section>
 
-                <!--=== [ VIEW NEWS ] ===-->
+            <section class="news-contents">
                 <div class="news-wrap">
-
                     <!--=== [ PAGE SELECTOR ] ===-->
                     <input type="radio" class="page-button" id="page-set" name="page-select" checked>
                     <label class="page-selector" for="page-set">1</label>
@@ -170,21 +190,13 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
-
-            <!--=== [ CONNECTION ERROR ] ===-->
-            <section class="error">
-                <h2 class="error-title">This Page Is Not Available On Mobile.</h2>
-            </section>
-
             
             <!--=== [ NEWS SCRIPT ] ===-->
             <script>
                 $(".news-btn").click(function(){
-                    $(".int-title").fadeOut(100);
-                    $(".news-btn").fadeOut(100);
+                    $(".news-int").fadeOut(200);
                     $(".news-wrap").delay(100).fadeIn(200);
                 });
             </script>

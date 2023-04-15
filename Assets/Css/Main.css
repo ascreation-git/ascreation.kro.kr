@@ -123,7 +123,6 @@ html::-webkit-scrollbar {
     width: 100%;
     height: 3px;
     z-index: 2;
-    border-radius: 2px;
     background: #fff;
     transition: all 0.5s;
 }
@@ -134,6 +133,7 @@ html::-webkit-scrollbar {
 
 .header-btn + label[for="header-btn"] > span:nth-child(2) {
     top: 50%;
+    width: 85%;
     transform: translateY(-50%);
 }
 
@@ -143,16 +143,17 @@ html::-webkit-scrollbar {
 
 .header-btn:checked + label[for="header-btn"] > span:nth-child(1) {
     top: 50%;
-    transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(135deg);
 }
 
 .header-btn:checked + label[for="header-btn"] > span:nth-child(2) {
-    opacity: 0;
+    width: 0;
+    transition: all 0.4s;
 }
 
 .header-btn:checked + label[for="header-btn"] > span:nth-child(3) {
     bottom: 50%;
-    transform: translateY(50%) rotate(-45deg);
+    transform: translateY(50%) rotate(-135deg);
 }
 
 .layer-area {
@@ -170,7 +171,7 @@ html::-webkit-scrollbar {
     background: linear-gradient(45deg, rgba(34,34,34,0.95), rgba(0,0,0,1));
     position: fixed;
     z-index: 1;
-    transition: all 0.8s;
+    transition: all 1s cubic-bezier(1, 0, 0.65, 1);
 }
 
 .navigation {
@@ -189,7 +190,7 @@ html::-webkit-scrollbar {
 
 .navigation > li > a {
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: 3.05rem;
 }
 
 .header-btn:checked + label[for="header-btn"] + .navigation-layer {
@@ -201,12 +202,12 @@ html::-webkit-scrollbar {
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
-    transition-delay: 0.6s;
+    transition-delay: 1s;
 }
 
 .navigation > li > a:hover {
     color: #41cc99;
-    letter-spacing: 2px;
+    letter-spacing: 3.5px;
 }
 
 .disabled:hover {
@@ -414,9 +415,8 @@ html::-webkit-scrollbar {
         display: block;
         position: absolute;
         width: 100%;
-        height: 4px;
+        height: 3px;
         z-index: 2;
-        border-radius: 2px;
         background: #fff;
         transition: all 0.5s;
     }
@@ -427,6 +427,7 @@ html::-webkit-scrollbar {
 
     .m-btn + label[for="m-btn"] > span:nth-child(2) {
         top: 50%;
+        width: 85%;
         transform: translateY(-50%);
     }
 
@@ -436,42 +437,57 @@ html::-webkit-scrollbar {
 
     .m-btn:checked + label[for="m-btn"] > span:nth-child(1) {
         top: 50%;
-        transform: translateY(-50%) rotate(45deg);
+        transform: translateY(-50%) rotate(135deg);
     }
 
     .m-btn:checked + label[for="m-btn"] > span:nth-child(2) {
-        opacity: 0;
+        width: 0;
+        transition: all 0.4s;
     }
 
     .m-btn:checked + label[for="m-btn"] > span:nth-child(3) {
         bottom: 50%;
-        transform: translateY(50%) rotate(-45deg);
+        transform: translateY(50%) rotate(-135deg);
     }
 
     .sidebar {
         display: block;
-        width: 300px;
+        width: 100%;
         height: 100vh;
-        background: linear-gradient(45deg, #222, #000);
+        background: linear-gradient(45deg, rgba(34,34,34,0.95), rgba(0,0,0,1));
         position: fixed;
         top: 0;
-        left: -300px;
+        left: -100%;
         border-radius: 0 30px 0 0;
         z-index: 1;
-        transition: all 0.5s;
+        transition: all 0.8s cubic-bezier(1, 0, 0.6, 0.9);
     }
 
     .m-btn:checked + label[for="m-btn"] + .sidebar {
         left: 0;
     }
+
+    .m-btn:checked + label[for="m-btn"] + .sidebar .mobile-nav {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.5s;
+        transition-delay: 0.8s;
+    }
     
     .mobile-nav {
         position: relative;
-        top: 150px;
-        left: 35px;
+        display: flex;
+        flex-direction: column;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
     }
 
     .mobile-nav > li {
+        display: flex;
+        justify-content: center;
         margin-bottom: 20px;
     }
 
@@ -480,9 +496,13 @@ html::-webkit-scrollbar {
     }
 
     .mobile-nav > li > a {
-        font-size: 25px;
+        font-size: 2.4rem;
         font-weight: bolder;
-        color: #fff;
+        color: #4fffbe;
+    }
+
+    .mobile-nav > li > a:hover {
+        letter-spacing: 3.5px;
     }
 
     /*=== [ NOTICE CSS ] ===*/

@@ -64,11 +64,15 @@
 }
 
 /*=== [ NEWS CONTENTS ] ===*/
+.news-contents {
+    height: 100vh;
+}
+
 .news-wrap {
     display: none;
     position: relative;
-    transform: translateY(-50%);
     top: 50%;
+    transform: translateY(-50%);
 }
 
 .news-grid {
@@ -145,47 +149,87 @@
 }
 
 .news4 {
-    background: url(/Assets/Images/News/News4.png)
+    background: url(/Assets/Images/News/News4.png);
+    background-size: cover;
 }
 
 .none {
     display: none;
 }
 
-.error {
-    display: none;
-}
-
 /*=== [ MOBILE CSS ] ===*/
 @media (min-width: 320px) and (max-width: 480px) {
-    /*=== [ ERROR CONTENT ] ===*/
-    body{
-        width: 100%;
+    .int-title {
+        font-size: 32px;
+    }
+
+    .news-btn {
+        top: 49.5% !important;
+    }
+
+    .news-contents {
         height: 100vh;
     }
 
-    .news-int,
-    .header,
-    .footer {
-        display: none;
-    }
-
-    .error {
-        display: block !important;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .error-title {
-        position: relative;
-        transform: translateY(-50%);
+    .news-wrap {
         top: 50%;
-        color: #fff;
-        font-size: 30px;
-        text-align: center;
-        margin: 0 3.5%;
-        -webkit-animation: FadeIn 1s;
-                animation: FadeIn 1s;
+        transform: translateY(-50%);
+    }
+
+    .page-selector {
+        left: 75%;
+    }
+
+    .page-button + .page-selector {
+        padding: 0 20px 5px !important;
+    }
+
+    .news-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .news-card {
+        margin: 0 10px 20px 0 !important;
+        width: 180px;
+        height: 205px;
+    }
+
+    .news-card:nth-child(2),
+    .news-card:nth-child(4) {
+        margin-right: 0 !important;
+    }
+
+    .card-image {
+        border-radius: 0;
+        margin: 5px;
+        width: 170px;
+        height: 170px;
+    }
+
+    .news-card > .card-subject {
+        font-size: 15px;
+    }
+    
+    .card-image:hover {
+        box-shadow: 0px 0.5px 5px rgb(0 0 0 / 80%);
+        border-radius: 0;
+    }
+
+    .news-card:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;  
+    }
+
+    .page-1 > .news-grid > .news-card:nth-child(4) {
+        height: 210px;
+    }
+
+    .new {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
     }
 }
 
