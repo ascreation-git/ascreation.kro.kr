@@ -317,6 +317,11 @@ html::-webkit-scrollbar {
     color: #000;
 }
 
+.top-button > p {
+    position: relative;
+    top: 3px;
+}
+
 /*=== [ FOOTER CSS ] ===*/
 .footer {
     position: absolute;
@@ -505,6 +510,10 @@ html::-webkit-scrollbar {
 
     .top-button {
         font-size: 18px;
+    }
+
+    .top-button > p {
+        top: 1px;
     }
 
     /*=== [ MOBILE FOOTER CSS ] ===*/
