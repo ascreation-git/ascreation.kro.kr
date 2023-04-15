@@ -479,7 +479,7 @@ html::-webkit-scrollbar {
         display: flex;
         flex-direction: column;
         opacity: 0;
-        margin-top: 50%;
+        margin-top: 70%;
         visibility: hidden;
         transition: 0.5s;
     }
