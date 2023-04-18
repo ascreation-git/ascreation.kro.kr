@@ -20,12 +20,7 @@
             animation: FadeIn 1s;
 }
 
-.header {
-    top: 35px;
-}
-
 /*=== [ MOBILE CSS ] ===*/
-
 @media (min-width: 320px) and (max-width: 480px) {
     /*=== [ MOBILE ACTIVE NAVIGATION ] ===*/
     .mobilenav > li > a[href="/index.html"] {
