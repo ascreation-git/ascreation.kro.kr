@@ -128,7 +128,7 @@
                     </div>
                     <div class="discord">
                         <p class="contact-contents discord-title">DISCORD INQUIRY</p>
-                        <span>-</span> <span class="discord-name">AS CREAT!ON#3879</span> 
+                        <span>-</span> <span class="discord-name" id="discord-name">AS CREAT!ON#3879</span> 
                     </div>
                 </div>
             </section>
@@ -154,6 +154,18 @@
             </p>
         </footer>
         <!--// Footer-->
+
+        <!--Script-->
+        <script type="text/javascript">
+            const copy = document.getElementById("discord-name");
+
+            document.getElementById("discord-name").onclick = () => {
+            window.navigator.clipboard.writeText('AS CREAT!ON#3879').then(() => {
+                    alert("✅ | 디스코드 이름이 복사되었습니다!");
+                });
+            };
+        </script>
+        <!--// Script-->
     </div>
 </body>
 </html>
