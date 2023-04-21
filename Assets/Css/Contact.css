@@ -1,0 +1,97 @@
+/*
+    ============ [ START ] ============ 
+        + Contact Style Sheet
+    ===================================
+*/
+
+/* Intro Section */
+.int {
+    height: 100vh;
+}
+
+.int-btn {
+    top: 48%;
+}
+
+.int-title {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    color: #fff;
+    font-size: 58px;
+    text-align: center;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
+}
+/* // Intro Section */
+
+/* Contents Section */
+.contents {
+    height: 100vh;
+}
+
+p,
+.contents span {
+    color: #fff;
+}
+
+.contents-grid {
+    position: relative;
+    transform: translateY(-50%);
+    top: calc(50% - 65px);
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
+}
+
+.email,
+.youtube,
+.discord {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    width: 1200px;
+    height: 200px;
+}
+
+.contact-contents {
+    font-weight: bolder;
+    padding-top: 50px;
+    font-size: 35px;
+}
+
+.link-contents,
+.contents span {
+    font-size: 25px;
+}
+
+.email-title {
+    padding-bottom: 6px;
+}
+
+.discord-name {
+    color: #4fffbe !important;
+}
+/* // Contents Section */
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Mobile Intro Section */
+    .int-title {
+        font-size: 30px;
+    }
+
+    .int-btn {
+        margin-top: -10px;
+    }
+    /* // Mobile Intro Section */
+}
+/* // Mobile */
+
+/*
+    ============ [ End ] ============ 
+        + Contact Style Sheet
+    ===================================
+*/

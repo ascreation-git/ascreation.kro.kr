@@ -1,6 +1,10 @@
-/*=== [ HOME STYLESHEET START ] ===*/
+/*
+    ============ [ START ] ============ 
+        + Home Style Sheet
+    ===================================
+*/
 
-/*=== [ INTRO ] ===*/
+/* Intro Section */
 .int {
     height: 100vh;
 }
@@ -19,15 +23,11 @@
     -webkit-animation: FadeIn 1s;
             animation: FadeIn 1s;
 }
+/* // Intro Section */
 
-/*=== [ MOBILE CSS ] ===*/
+/* Mobile */
 @media (min-width: 320px) and (max-width: 480px) {
-    /*=== [ MOBILE ACTIVE NAVIGATION ] ===*/
-    .mobilenav > li > a[href="/index.html"] {
-        color: rgb(120, 120, 120)
-    }
-
-    /*=== [ MOBILE INTRO ] ===*/
+    /* Mobile Intro Section */
     .int-title {
         font-size: 30px;
     }
@@ -35,6 +35,12 @@
     .int-btn {
         margin-top: -10px;
     }
+    /* // Mobile Intro Section */
 }
+/* // Mobile */
 
-/*=== [ HOME STYLESHEET END ] ===*/
+/*
+    ============ [ End ] ============ 
+        + Home Style Sheet
+    ===================================
+*/
