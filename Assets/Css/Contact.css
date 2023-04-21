@@ -85,9 +85,31 @@ p,
     }
 
     .int-btn {
-        margin-top: -10px;
+        margin-top: 12px;
     }
     /* // Mobile Intro Section */
+
+    /* Mobile Contents Section */
+    .contents-grid {
+        top: calc(50% - 25px);
+    }
+
+    .email,
+    .youtube,
+    .discord {
+        width: 335px;
+    }
+
+    .contact-contents {
+        font-size: 25px;
+    }
+
+    .link-contents,
+    .contents span {
+        font-size: 16px;
+    }
+    /* // Mobile Contents Section */
+        
 }
 /* // Mobile */
 

@@ -183,6 +183,7 @@
 
     .page-button + .page-selector {
         padding: 0 20px 5px !important;
+        font-size: 20px;
     }
 
     .news-grid {
