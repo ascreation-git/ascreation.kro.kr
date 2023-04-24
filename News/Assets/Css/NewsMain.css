@@ -7,10 +7,12 @@
 /* Intro Section */
 .int {
     background: linear-gradient(to bottom right, #000, transparent);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
     border-radius: 0 0 10px 10px;
     height: 450px;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .int-title {
@@ -21,14 +23,16 @@
     font-size: 58px;
     font-weight: bolder;
     text-align: center;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .int-line {
     border: 1px solid #4fffbe;
     margin-left: 50%;
     width: 50%;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 /* // Intro Section */
 
@@ -37,7 +41,8 @@
     margin: 1% 3% 0;
     color: #fff;
     font-size: 1.4rem;
-    animation: FadeIn 1s;
+    -webkit-animation: FadeIn 1s;
+            animation: FadeIn 1s;
 }
 
 .content-btn:not(:nth-child(4)) {
