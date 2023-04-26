@@ -1,6 +1,10 @@
-/*=== [ MAIN STYLESHEET START ] ===*/
+/*
+    ============ [ START ] ============ 
+        + Main Style Sheet
+    ===================================
+*/
 
-/*=== [ BASE CSS ] ===*/
+/* Base Style */
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -60,7 +64,14 @@ html::-webkit-scrollbar {
     display: none;
 }
 
-/*=== [ ANIMATE CSS ] ===*/
+.wrap {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+/* // Base Style */
+
+/* Animation */
 @-webkit-keyframes FadeIn {
     from {
         opacity: 0;
@@ -81,15 +92,9 @@ html::-webkit-scrollbar {
     }
 
 }
+/* // Animation */
 
-/*=== [ WRAP CSS ] ===*/
-.wrap {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-}
-
-/*=== [ HEADER CSS ] ===*/
+/* PC & Mobile Header */
 .header {
     display: flex;
     position: fixed;
@@ -210,12 +215,6 @@ html::-webkit-scrollbar {
 
 .disabled:hover {
     letter-spacing: 0 !important;
-}   
-
-/*=== [ ACTIVE NAVIGATION ] ===*/
-.disabled {
-    color: rgb(120, 120, 120) !important;
-    cursor: default;
 }
 
 .m-btn,
@@ -224,7 +223,13 @@ html::-webkit-scrollbar {
     display: none;
 }
 
-/*=== [ NOTICE CSS ] ===*/
+.disabled {
+    color: rgb(120, 120, 120) !important;
+    cursor: default;
+}
+/* // PC & Mobile Header */
+
+/* Notices */
 .notice {
     display: flex;
     position: fixed;
@@ -246,8 +251,9 @@ html::-webkit-scrollbar {
     position: relative;
     line-height: 35px;
 }
+/* // Notices */
 
-/*=== [ BUTTON CSS ] ===*/
+/* Buttons */
 .btn {
     display: block;
     position: relative;
@@ -273,8 +279,9 @@ html::-webkit-scrollbar {
     border-bottom: 1px solid #fff !important;
     font-size: 17px;
 }
+/* // Buttons */
 
-/*=== [ SCROLL TOP BUTTON CSS ] ===*/
+/* Scroll Top Button */
 .top-button-wrap {
     position: fixed;
     bottom: 30px;
@@ -320,8 +327,9 @@ html::-webkit-scrollbar {
     position: relative;
     top: 3px;
 }
+/* // Scroll Top Button */
 
-/*=== [ FOOTER CSS ] ===*/
+/* Footer */
 .footer {
     position: absolute;
     width: 100%;
@@ -493,11 +501,12 @@ html::-webkit-scrollbar {
     color: #304dcc;
 }
 /* // Footer Contact Popup */
+/* // Footer */
 
 
-/*=== [ MOBILE CSS ] ===*/
+/* Mobile */
 @media (min-width: 320px) and (max-width: 480px) {
-    /*=== [ MOBILE HEADER / NAVIGATION CSS ] ===*/
+    /* Mobile Header */
     .navigation {
         display: none;
     }
@@ -612,13 +621,15 @@ html::-webkit-scrollbar {
     .mobile-nav > li > a:hover {
         letter-spacing: 3.5px;
     }
+    /* // Mobile Header */
 
-    /*=== [ NOTICE CSS ] ===*/
+    /* Notices */
     .notice > p {
         font-size: 0.77rem;
     }
+    /* // Notices */
 
-    /*=== [ SCROLL TOP BUTTON CSS ] ===*/
+    /* Scroll Top Button */
     .top-button-wrap {
         position: fixed;
         bottom: 15px;
@@ -643,8 +654,9 @@ html::-webkit-scrollbar {
     .top-button > p {
         top: 1px;
     }
+    /* // Scroll Top Button */
 
-    /*=== [ MOBILE FOOTER CSS ] ===*/
+    /* Mobile Footer */
     .footer {
         height: 60px
     }
@@ -733,8 +745,12 @@ html::-webkit-scrollbar {
     .discord-name {
         font-size: 15px;
     }
-
     /* // Mobile Popup */
+    /* // Mobile Footer */
 }
 
-/*=== [ MAIN STYLESHEET END ] ===*/
+/*
+    ============ [ END ] ============ 
+        + Main Style Sheet
+    ===================================
+*/
