@@ -593,6 +593,7 @@ html::-webkit-scrollbar {
     }
 
     .m-btn:checked + label[for="m-btn"] + .sidebar {
+        border-radius: 0;
         left: 0;
     }
 
