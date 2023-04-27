@@ -6,6 +6,10 @@
 }
 
 /*=== [ INTRO ] ===*/
+.container {
+    max-width: 100%;
+}
+
 .apply-int {
     height: 100vh;
 }

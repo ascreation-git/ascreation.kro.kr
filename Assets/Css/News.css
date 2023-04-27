@@ -250,4 +250,30 @@
     }
 }
 
+/* 2560 RW */
+@media (min-width: 2558px) {
+    .news-grid {
+        max-width: 2558px;
+    }
+
+    .news-card {
+        width: 400px;
+        height: 395px;
+    }
+
+    .news-card:not(:last-child) {
+        margin-right: 150px;
+    }
+
+    .card-image {
+        margin: 10px 25px 0 25px;
+        width: 330px;
+        height: 330px;
+    }
+
+    .page-button + .page-selector {
+        font-size: 28px;
+    }
+}
+/* // 2560 RW */
 /*=== [ NEWS STYLESHEET END ] ===*/

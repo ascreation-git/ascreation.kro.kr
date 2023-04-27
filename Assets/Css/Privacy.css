@@ -189,11 +189,24 @@ a:hover {
     }
 }
 
-/*=== [ 3440 X 1440 RW CSS ] ===*/
-@media (min-width: 3439px) and (max-width: 3440px) {
+/*=== [ 2560 RW CSS ] ===*/
+@media (min-width: 2558px) {
     /*=== [ POLICY CONTENTS ] ===*/
+    .explain {
+        font-size: 40px;
+    }
+
     .policy-wrap {
-        height: 2930px;
+        height: 3300px;
+    }
+
+    .sub {
+        font-size: 30px;
+    }
+
+    .content,
+    .content2 {
+        font-size: 20px;
     }
 }
 

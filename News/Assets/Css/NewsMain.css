@@ -5,6 +5,10 @@
 */
 
 /* Intro Section */
+.container {
+    max-width: 100%;
+}
+
 .int {
     background: linear-gradient(to bottom right, #000, transparent);
     -webkit-backdrop-filter: blur(5px);
