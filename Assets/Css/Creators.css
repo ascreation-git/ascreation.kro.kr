@@ -1,6 +1,10 @@
-/*=== [ CREATORS STYLESHEET START ] ===*/
+/*
+    ============ [ START ] ============ 
+        + Creators Style Sheet
+    ===================================
+*/
 
-/*=== [ INTRO ] ===*/
+/* Intro Section */
 .creators {
     height: 100vh;
 }
@@ -19,8 +23,9 @@
     -webkit-animation: FadeIn 1s;
             animation: FadeIn 1s;
 }
+/* // Intro Section */
 
-/*=== [ VIEW CREATORS ] ===*/
+/* Contents Section */
 .view-creators {
     height: 2200px;
 }
@@ -84,9 +89,9 @@
 .noprofile {
     display: none;
 }
+/* // Contents Section */
 
-/*=== [ MOBILE CSS ] ===*/
-
+/* Mobile */
 @media (min-width: 320px) and (max-width: 480px) {
     /*=== [ MOBILE INTRO ] ===*/
     .creator-title {
@@ -127,18 +132,18 @@
         transform: scale(1.0);
         transition: transform 0.5s;  
     }
-    
 }
+/* // Mobile */
 
-
-/*=== [ 2560 X 1440 RW CSS ] ===*/
+/* 2560 RW */
 @media (min-width: 2558px) and (max-width: 2560px) {
     .profile:not(:nth-child(4)) {
         margin-right: 280px;
     }    
 }
+/* // 2560 RW */
 
-/*=== [ 3440 X 1440 RW CSS ] ===*/
+/* 3440 RW */
 @media (min-width: 3439px) and (max-width: 3440px) {
     .view-creators {
         height: 2200px;
@@ -148,5 +153,10 @@
         margin-right: 450px;
     }    
 }
+/* // 3440 RW */
 
-/*=== [ CREATORS STYLESHEET END ] ===*/
+/*
+    ============ [ END ] ============ 
+        + Creators Style Sheet
+    ===================================
+*/
