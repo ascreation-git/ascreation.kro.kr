@@ -513,7 +513,8 @@ html::-webkit-scrollbar {
 @media (min-width: 320px) and (max-width: 480px) {
     /* Base Style */
     .container {
-        max-width: 100%;
+        min-width: 320px;
+        max-width: 480px;
     }
     /* // Base Style */
 

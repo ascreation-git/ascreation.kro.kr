@@ -233,8 +233,8 @@
     /* Contents Section */
     /* Contents Common */
     .contents {
-        height: 2800px;
-        padding-top: 85vh;
+        height: 2565px;
+        padding-top: 90vh;
     }
 
     .about-title {
@@ -249,7 +249,7 @@
     }
 
     .part-section {
-        height: 100vh;
+        height: auto;
     }
 
     .center-wrap {
@@ -290,7 +290,8 @@
 
     /* Color Section */
     .color-section {
-        padding-top: 70vh;
+        padding-top: 5%;
+        height: 830px;
     }
 
     .about-color {
@@ -328,8 +329,7 @@
 
     /* Stat Section */
     .stat-section {
-        height: auto;
-        padding-top: 10vh;
+        padding-top: 5%
     }
 
     .stat {
