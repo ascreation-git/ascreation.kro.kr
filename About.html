@@ -222,27 +222,7 @@
                     <a href="/Privacy.html">PRIVACY POLICY</a>
                 </li>
                 <li>
-                    <input type="checkbox" id="contact-popup">
-                    <label class="contact-button" for="contact-popup">CONTACT</label>
-                    <div class="contact-contents">
-                        <div class="contents-area">
-                            <label class="close" for="contact-popup"></label>
-                            <div class="contact">
-                                <p class="title">CONTACT INFO</p>
-                                <hr class="popup-line">
-                                <div class="popup-grid">
-                                    <div class="email">
-                                        <p class="email-title">M A I L</p>
-                                        <a class="email-address" href="mailto:business@ascreation.kro.kr">BUSINESS@ASCREATION.KRO.KR</a>
-                                    </div>
-                                    <div class="discord">
-                                        <p class="discord-title">D I S C O R D</p>
-                                        <p class="discord-name">AS CREAT!ON#3879</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <a id="email">E-MAIL</a>
                 </li>
             </div>
             <p class="footer-copy">
@@ -254,6 +234,16 @@
             </p>
         </footer>
         <!--// Footer-->
+
+        <!--Script-->
+        <script type="text/javascript" async>
+            document.getElementById("email").onclick = () => {
+            window.navigator.clipboard.writeText("Business@ascreation.kro.kr").then(() => {
+                    alert("✅ | 메일 주소를 성공적으로 복사하였습니다!");
+                });
+            };
+        </script>
+        <!--// Script-->
     </div>
     
     <script>
