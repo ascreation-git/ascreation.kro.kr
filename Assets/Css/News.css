@@ -143,24 +143,22 @@
     justify-content: center;
     width: 100%;
     height: 80px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     border-bottom: 0.5px solid #353535;
     transition: all 0.5s;
 }
 
 .news:hover {
     border-bottom: 0.5px solid #d6d6d6;
-    margin-bottom: 45px;
+    padding-bottom: 25px;
 }
 
 .news:last-child {
-    margin-bottom: 0;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .news:last-child:hover {
-    margin-bottom: 0;
-    margin-top: 45px;
+    padding-top: 25px;
 }
 
 .news > li {
@@ -234,12 +232,11 @@
     }
 
     .news:hover {
-        margin-bottom: 20px;
+        padding-bottom: 15px;
     }
     
     .news:last-child:hover {
-        margin-bottom: 0;
-        margin-top: 20px;
+        padding-top: 15px;
     }
 
     .news > li {
