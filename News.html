@@ -54,14 +54,20 @@
     <!--// Favicon-->
 
     <!--Import Sources-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="/Assets/Css/Main.css">
     <link rel="stylesheet" href="/Assets/Css/News.css">
+    <script src="/Assets/JS/Main.js" async>// Import Main JavaScript</script>
     <!--// Import Sources-->
 </head> 
 <body>
     <div class="wrap">
         <div class="container">
+            <!--Back To Top Button-->
+            <div id="top-button-wrap" class="top-button-wrap">
+                <div id="top-button" class="top-button"><p>TOP</p></div>
+            </div>
+            <!--// Back To Top Button-->
+
             <!--Header-->
             <div class="header">
                 <!--PC Header Button & Navigation-->
@@ -111,133 +117,105 @@
                 <h1 class="int-title">
                     AS CREAT!ON 소식
                 </h1>
-                <button class="news-btn btn" style="top: 48%;">> 최신 뉴스</button>
+                <button class="news-btn btn" style="top: 48%;" onclick="location.href = '#List' ">> 최신 뉴스</button>
             </section>
             <!--// Intro Section-->
 
             <!--Contents Section-->
-            <section class="news-contents">
+            <section class="news-contents" id="List">
                 <div class="news-wrap">
-                    <!--Page Selector-->
-                    <input type="radio" class="page-button" id="page-set" name="page-select" checked>
-                    <label class="page-selector" for="page-set">1</label>
+                    <div class="contents-wrap">
+                        <!--Page Selector-->
+                        <input type="radio" class="page-button" id="page-set" name="page-select" checked>
+                        <label class="page-selector" for="page-set">1</label>
 
-                    <input type="radio" class="page-button" id="page-set-2" name="page-select">
-                    <label class="page-selector" for="page-set-2">2</label>
-                    <!--Page Selector-->
+                        <input type="radio" class="page-button" id="page-set-2" name="page-select">
+                        <label class="page-selector" for="page-set-2">2</label>
+                        <!--Page Selector-->
 
-                    <!--News Page 1-->
-                    <div class="contents-box page-1">
-                        <div class="news-grid">
-                            <div class="news-card">
-                                <a href="#" class="news-link">
-                                    <div class="card-wrap">
-                                        <div class="card-image news1">
-                                            <div class="new none">N</div>
-                                        </div>
-                                    </div>
+                        <div class="table">
+                            <ul class="table-header">
+                                <li class="table-header-contents category">C A T E G O R Y</li>
+                                <li class="table-header-contents title">T I T L E</li>
+                                <li class="table-header-contents date">D A T E</li>
+                            </ul>
+                        </div>
+
+                        <div class="table-contents page1">
+                            <ul class="table-list">
+                                <a href="#None">
+                                    <ul class="news">
+                                        <li class="contents-category"></li>
+                                        <li class="contents-title"></li>
+                                        <li class="contents-date"></li>
+                                    </ul>
                                 </a>
-                                <h4 class="card-subject">Not Found</h4>
-                            </div>
 
-                            <div class="news-card">
-                                <a href="#" class="news-link">
-                                    <div class="card-wrap">
-                                        <div class="card-image news2">
-                                            <div class="new none">N</div>
-                                        </div>
-                                    </div>
+                                <a href="#None">
+                                    <ul class="news">
+                                        <li class="contents-category"></li>
+                                        <li class="contents-title"></li>
+                                        <li class="contents-date"></li>
+                                    </ul>
                                 </a>
-                                <h4 class="card-subject">Not Found</h4>
-                            </div>
+                                
+                                <a href="#None">
+                                    <ul class="news">
+                                        <li class="contents-category"></li>
+                                        <li class="contents-title"></li>
+                                        <li class="contents-date"></li>
+                                    </ul>
+                                </a>
 
-                            <div class="news-card">
-                                <a href="#" class="news-link">
-                                    <div class="card-wrap">
-                                        <div class="card-image news3">
-                                            <div class="new none">N</div>
-                                        </div>
-                                    </div>
+                                <a href="/News/0001.html">
+                                    <ul class="news">
+                                        <li class="contents-category">Notice</li>
+                                        <li class="contents-title">AS CREAT!ON 공개 안내 및 크리에이터 모집 안내</li>
+                                        <li class="contents-date">2023년 04월 02일</li>
+                                    </ul>
                                 </a>
-                                <h4 class="card-subject">Not Found</h4>
-                            </div>
+                            </ul>
+                        </div>
 
-                            <div class="news-card">
-                                <a href="/News/0001.html" class="news-link">
-                                    <div class="card-wrap">
-                                        <div class="card-image news4">
-                                            <div class="new">N</div>
-                                        </div>
-                                    </div>
+                        <div class="table-contents page2">
+                            <ul class="table-list">
+                                <a href="#None">
+                                    <ul class="news">
+                                        <li class="contents-category"></li>
+                                        <li class="contents-title"></li>
+                                        <li class="contents-date"></li>
+                                    </ul>
                                 </a>
-                                <h4 class="card-subject">AS CREAT!ON 공개 안내 및 크리에이터 모집 안내</h4>
-                            </div>
+
+                                <a href="#None">
+                                    <ul class="news">
+                                        <li class="contents-category"></li>
+                                        <li class="contents-title"></li>
+                                        <li class="contents-date"></li>
+                                    </ul>
+                                </a>
+                                
+                                <a href="#None">
+                                    <ul class="news">
+                                        <li class="contents-category"></li>
+                                        <li class="contents-title"></li>
+                                        <li class="contents-date"></li>
+                                    </ul>
+                                </a>
+
+                                <a href="#None">
+                                    <ul class="news">
+                                        <li class="contents-category"></li>
+                                        <li class="contents-title"></li>
+                                        <li class="contents-date"></li>
+                                    </ul>
+                                </a>
+                            </ul>
                         </div>
                     </div>
-                    <!--// News Page 1-->
-
-                    <!--News Page 2-->
-                    <div class="contents-box page-2">
-                        <div class="news-grid">
-                            <div class="news-card">
-                                <a href="#" class="news-link">
-                                    <div class="card-wrap">
-                                        <div class="card-image news5">
-                                            <div class="new none">N</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <h4 class="card-subject">Not Found</h4>
-                            </div>
-
-                            <div class="news-card">
-                                <a href="#" class="news-link">
-                                    <div class="card-wrap">
-                                        <div class="card-image news6">
-                                            <div class="new none">N</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <h4 class="card-subject">Not Found</h4>
-                            </div>
-
-                            <div class="news-card">
-                                <a href="#" class="news-link">
-                                    <div class="card-wrap">
-                                        <div class="card-image news7">
-                                            <div class="new none">N</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <h4 class="card-subject">Not Found</h4>
-                            </div>
-
-                            <div class="news-card">
-                                <a href="#" class="news-link">
-                                    <div class="card-wrap">
-                                        <div class="card-image news8">
-                                            <div class="new none">N</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <h4 class="card-subject">Not Found</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!--// News Page 2-->
                 </div>
             </section>
             <!--// Contents Section-->
-            
-            <!--Script-->
-            <script>
-                $(".news-btn").click(function(){
-                    $(".news-int").fadeOut(200);
-                    $(".news-contents").delay(100).fadeIn(200);
-                    $(".news-wrap").delay(100).fadeIn(200);
-                });
-            </script>
-            <!--// Script-->
         </div>
 
         <!--Footer-->
