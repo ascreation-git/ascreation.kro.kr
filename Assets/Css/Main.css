@@ -506,7 +506,7 @@ html::-webkit-scrollbar {
         display: flex;
         flex-direction: column;
         opacity: 0;
-        margin-top: 75%;
+        margin-top: 67%;
         visibility: hidden;
         transition: 0.5s;
     }
