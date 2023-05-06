@@ -16,6 +16,10 @@
             animation: FadeIn 1s;
 }
 
+.int-btn {
+    top: 48%;
+}
+
 .int-subtitle {
     position: relative;
     transform: translateY(-50%);
@@ -25,10 +29,6 @@
     text-align: center;
     -webkit-animation: FadeIn 1s;
             animation: FadeIn 1s;
-}
-
-.int-btn {
-    top: 48%;
 }
 
 /*=== [ POLICY CONTENTS ] ===*/

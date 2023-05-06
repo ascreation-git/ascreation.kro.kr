@@ -278,13 +278,13 @@ html::-webkit-scrollbar {
     border-bottom: 1px solid #5c5c5c !important;
     width: 200px;
     height: 50px;
+    cursor: pointer;
     transition: 0.4s;
     -webkit-animation: FadeIn 1s;
             animation: FadeIn 1s;
 }
 
 .btn:hover {
-    cursor: pointer;
     color: #fff;
     border-bottom: 1px solid #fff !important;
     font-size: 17px;
