@@ -180,6 +180,9 @@
 
 .contents-title {
     flex: 7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .contents-date {
@@ -240,7 +243,7 @@
     }
 
     .news > li {
-        font-size: 0.8rem;
+        font-size: 15px;
         white-space: nowrap;
     }
 
