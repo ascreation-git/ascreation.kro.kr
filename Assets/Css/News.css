@@ -212,6 +212,12 @@
     }
     /* // Mobile Intro Section */
 
+    /* Page Selector */
+    .page-button + .page-selector {
+        font-size: 20px;
+    }
+    /* // Page Selector */
+
     /* Contents Section */
     .table {
         width: 90%;
