@@ -81,6 +81,28 @@
 }
 /* // Mobile */
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet Intro Section */
+    .int {
+        height: 350px;
+    }
+    
+    .int-title {
+        padding: 0 30px;
+        font-size: 35px;
+    }
+    /* // Tablet Intro Section */
+
+    /* Tablet Content Section */
+    .content {
+        margin-top: 3.5%;
+        font-size: 1.45rem;
+    }
+    /* // Tablet Content Section */
+}
+/* // Tablet */
+
 /*
     ============ [ END ] ============ 
         - News Main Style Sheet

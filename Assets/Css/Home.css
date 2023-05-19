@@ -39,6 +39,20 @@
 }
 /* // Mobile */
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet Intro Section */
+    .int-title {
+        font-size: 45px;
+    }
+
+    .int-btn {
+        top: 45.5%;
+    }
+    /* // Tablet Intro Section */
+}
+/* // Tablet */
+
 /*
     ============ [ End ] ============ 
         + Home Style Sheet

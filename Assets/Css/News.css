@@ -269,6 +269,30 @@
 }
 /* // Mobile */
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet Intro Section */
+    .int-title {
+        font-size: 45px;
+    }
+
+    .news-btn {
+        top: 48.2% !important;
+    }
+    /* // Tablet Intro Section */
+
+    /* Tablet Contents Section*/
+    .category {
+        display: none;
+    }
+
+    .contents-category {
+        display: none;
+    }
+    /* // Tablet Contents Section*/
+}
+/* // Tablet */
+
 /* 3440 RW */
 @media (min-width: 3439px) and (max-width: 3440px) {
     /* Contents Section */

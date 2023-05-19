@@ -146,6 +146,43 @@
     }
 }
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet Intro Section */
+    .creator-title {
+        font-size: 40px;
+    }
+
+    .creator-btn {
+        top: 49%;
+    }
+    /* // Tablet Intro Section */
+    
+    /* Tablet Contents Section */
+    .view-creators {
+        height: 6500px
+    }
+
+    .contents-grid {
+        display: block;
+        margin-left: 28% !important;
+    }
+
+    .mt-grid {
+        margin: 0;
+    }
+
+    .first {
+        margin-top: 0 !important;
+    }
+
+    .profile {
+        margin-top: 50px;
+    }
+    /* Tablet Contents Section */
+}
+/* // Tablet */
+
 /*
     ============ [ END ] ============ 
         + Creators Style Sheet

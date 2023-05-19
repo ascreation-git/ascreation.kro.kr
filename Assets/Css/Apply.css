@@ -71,6 +71,30 @@
     }
 }
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet Intro Section */
+    .int-title {
+        font-size: 45px;
+    }
+
+    .int-btn {
+        top: 48.4%;
+    }
+    /* // Tablet Intro Section */
+
+    /* Tablet Contents Section */
+    .apply-form {
+        height: 1315px;
+    }
+
+    .form {
+        height: 1111px;
+    }
+    /* // Tablet Contents Section */
+}
+/* // Tablet */
+
 /*=== [ 3440 X 1440 RW CSS ] ===*/
 @media (min-width: 3439px) and (max-width: 3440px) {
 

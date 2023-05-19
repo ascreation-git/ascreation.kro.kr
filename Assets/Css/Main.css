@@ -615,6 +615,25 @@ html::-webkit-scrollbar {
 }
 /* // Mobile */
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Container / Navigation / Footer */
+    .container {
+        max-width: 768px;
+    }
+
+    .navigation > li > a {
+        font-size: 2.8rem;
+    }
+
+    .footer-nav,
+    .footer-copy {
+        margin-left: 15px;
+    }
+    /* // Container / Navigation / Footer */
+}
+/* // Tablet */
+
 /* 2560 RW */
 @media (min-width: 2558px) {
     .container {
