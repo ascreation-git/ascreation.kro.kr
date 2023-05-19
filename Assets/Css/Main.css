@@ -619,7 +619,8 @@ html::-webkit-scrollbar {
 @media (min-width: 768px) and (max-width: 1023px) {
     /* Container / Navigation / Footer */
     .container {
-        max-width: 768px;
+        min-width: 768px;
+        max-width: 1023px;
     }
 
     .m-btn,
