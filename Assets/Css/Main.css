@@ -622,6 +622,11 @@ html::-webkit-scrollbar {
         max-width: 768px;
     }
 
+    .m-btn,
+    .sidebar {
+        display: none;
+    }
+
     .navigation > li > a {
         font-size: 2.8rem;
     }
