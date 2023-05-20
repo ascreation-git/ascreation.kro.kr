@@ -49,4 +49,23 @@
     }
 }
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet Intro Section */
+    .error-title {
+        font-size: 43px;
+    }
+
+    .error-detail {
+        top: 47.8%;
+        font-size: 23px;
+    }
+
+    .error-btn {
+        top: 48.5%;
+    }
+    /* // Tablet Intro Section */
+}
+/* // Tablet */
+
 /*=== [ ERROR STYLESHEET END ] ===*/

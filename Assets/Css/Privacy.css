@@ -189,6 +189,32 @@ a:hover {
     }
 }
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet Intro Section */
+    .int-title {
+        font-size: 43px;
+    }
+
+    .int-btn {
+        top: 48.7%;
+    }
+    /* // Tablet Intro Section */
+
+    /* Contents Section */
+    .policy-wrap {
+        height: 4300px;
+    }
+    
+    .explain {
+        margin: 0 40px;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    /* // Contents Section */
+}
+/* // Tablet */
+
 /*=== [ 2560 RW CSS ] ===*/
 @media (min-width: 2558px) {
     /*=== [ POLICY CONTENTS ] ===*/

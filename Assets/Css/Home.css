@@ -43,11 +43,11 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     /* Tablet Intro Section */
     .int-title {
-        font-size: 45px;
+        font-size: 43px;
     }
 
     .int-btn {
-        top: 45.5%;
+        top: 45.8%;
     }
     /* // Tablet Intro Section */
 }
