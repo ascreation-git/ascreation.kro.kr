@@ -618,20 +618,132 @@ html::-webkit-scrollbar {
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     /* Container / Navigation / Footer */
-    *::after,
-    *::before {
-        content: none;
-    }
-
     .container {
         min-width: 768px;
         max-width: 1023px;
         z-index: 2;
     }
 
-    .m-btn,
-    .sidebar {
+    .navigation {
         display: none;
+    }
+
+    .navigation-layer {
+        display: none;
+    }
+
+    label[for="header-btn"] {
+        display: none !important;
+    }
+
+    .m-btn {
+        display: none;
+    }
+    
+    .m-btn + label[for="m-btn"] {
+        display: block;
+        margin: 15px 0 0 15px;
+        width: 35px;
+        height: 26px;
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .m-btn + label[for="m-btn"] > span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        right: 0;
+        z-index: 2;
+        background: #fff;
+        transition: all 0.5s;
+    }
+
+    .m-btn + label[for="m-btn"] > span:nth-child(1) {
+        top: 0;
+    }
+
+    .m-btn + label[for="m-btn"] > span:nth-child(2) {
+        top: 50%;
+        width: 85%;
+        transform: translateY(-50%);
+    }
+
+    .m-btn + label[for="m-btn"] > span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .m-btn:checked + label[for="m-btn"] > span:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(135deg);
+    }
+
+    .m-btn:checked + label[for="m-btn"] > span:nth-child(2) {
+        width: 0;
+        transition: all 0.4s;
+    }
+
+    .m-btn:checked + label[for="m-btn"] > span:nth-child(3) {
+        bottom: 50%;
+        transform: translateY(50%) rotate(-135deg);
+    }
+
+    .sidebar {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(45deg, rgba(34,34,34,0.95), rgba(0,0,0,1));
+        position: fixed;
+        top: 0;
+        right: -100%;
+        border-radius: 0 30px 0 0;
+        z-index: 1;
+        transition: all 0.8s cubic-bezier(1, 0, 0.6, 0.9);
+    }
+
+    .m-btn:checked + label[for="m-btn"] + .sidebar {
+        border-radius: 0;
+        right: 0;
+    }
+
+    .m-btn:checked + label[for="m-btn"] + .sidebar .mobile-nav {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.5s;
+        transition-delay: 0.8s;
+    }
+    
+    .mobile-nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        margin-top: 45%;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .mobile-nav > li {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .mobile-nav > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .mobile-nav > li > a {
+        font-size: 2.8rem;
+        text-align: center;
+        font-weight: bolder;
+        color: #4fffbe;
+    }
+
+    .mobile-nav > li > a:hover {
+        letter-spacing: 3.5px;
     }
 
     .navigation > li > a {
