@@ -366,12 +366,12 @@
     }
 
     .subtext {
-        top: 45.3%;
+        top: 45.8%;
         font-size: 23px;
     }
 
     .int-btn {
-        top: 46%;
+        top: 47%;
     }
     /* // Tablet Intro Section */
 
@@ -490,8 +490,12 @@
     }
 
     .stat {
-        margin-left: 2%;
+        width: 100%;
         flex-direction: row;
+    }
+
+    .stat li:first-child {
+        margin-left: 5%;
     }
 
     .stat-sub {
