@@ -1,0 +1,137 @@
+/*
+    ======================================
+    + 404 Error Style CSS
+        - Create : 2023. 06. 12
+    ======================================
+*/
+
+/* 1024 ~ Resolution */
+/* Contents Section */
+body {
+    background: linear-gradient(270deg, #111420, #0D0E12);
+}
+
+.contents-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.contents-item {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75vh;
+    border-radius: 15px;
+    background: #fdfdfd;
+    box-shadow: 5px 5px 50px #4263f750;
+}
+
+.item-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    border-radius: 15px 15px 0 0;
+    background: #dddddd;
+}
+
+.button {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    background: #DF5F5B;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.item-header-title {
+    position: relative;
+    transform: translateX(-50%);
+    left: calc(50% - 40px);
+    line-height: 45px;
+    font-family: 'NanumSquareNeo-Variable';
+    text-align: center;
+}
+
+.help {
+    margin: 5px 0 0 20px;
+    color: #3a3a3a;
+    font-size: 14px;
+}
+
+.item-wrap {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: calc(50% - 65px);
+    left: 50%;
+    text-align: center;
+}
+
+.title {
+    letter-spacing: 35px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 10em;
+}
+
+.error-code {
+    color: #7c7c7c;
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.error-title {
+    color: #4263f7;
+    margin-top: 0.8px;
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.line {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.error-detail {
+    line-height: 25px;
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: bold;;
+    font-size: 18px;
+}
+/* // Contents Section */
+/* // 1024 ~ Resolution */
+
+/* ~ 390 Mobile Resolution */
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Contents Section */
+    .contents-item {
+        width: 85%;
+    }
+
+    .title {
+        letter-spacing: 5px;
+        font-size: 3.5rem;
+    }
+
+    .error-title {
+        display: none;
+    }
+
+    .error-detail {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+    /* // Contents Section */
+}
+/* // ~ 390 Mobile Resolution */

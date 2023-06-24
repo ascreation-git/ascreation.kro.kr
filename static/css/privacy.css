@@ -1,0 +1,151 @@
+/*
+    ======================================
+    + Privacy Style CSS
+        - Create : 2023. 06. 12
+    ======================================
+*/
+
+/* Import */
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+/* // Import */
+
+/* 1024 ~ Resolution */
+/* Header */
+.header-button + label[for="header-button"] > span {
+    background: #fdfdfd;
+}
+/* // Header */
+
+/* Intro Section */
+.intro-section {
+    width: 100%;
+    height: 100vh;
+    background: url('/static/images/background/lock.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.intro-contents {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.subtitle {
+    color: #fff;
+    font-family: 'Galmuri11';
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+.title,
+.title > span {
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'PyeongChangPeace-Bold';
+    text-align: center;
+    font-size: 5.5rem;
+}
+
+.title > span {
+    padding: 2.5px 10px;
+    background: #4fffbe;
+    color: #000;
+}
+
+.button {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    background: #4263f7;
+    box-shadow: 5px 5px 0 rgba(255, 255, 255);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    box-shadow: none;
+    opacity: 0.85;
+}
+/* // Intro Section */
+
+/* Contents Section */
+.contents-section {
+    display: none;
+    width: 100%;
+    height: 350vh;
+    background: linear-gradient(180deg, #111420, #000);
+}
+
+.contents-wrap {
+    width: 85.5%;
+    margin: 0 auto;
+}
+
+.sub {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.sub > span {
+    font-size: 1.15rem;
+    color: #fff;
+}
+
+.content,
+.content2 {
+    font-size: 1.15rem;
+    color: #fff;
+}
+
+.content > span,
+.content2 > span {
+    font-weight: bold;
+    color: #fff;
+}
+/* // Contents Section */
+/* // 1024 ~ Resolution */
+
+/* ~ 390 Mobile Resolution */
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Intro Section */
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .title,
+    .title > span {
+        font-size: 5rem;
+    }
+    /* // Intro Section */
+    
+    /* Contents Section */
+    .contents-section {
+        height: 700vh;
+    }
+
+    .sub {
+        font-size: 1.25rem;
+    }
+
+    .content,
+    .content > span {
+        font-size: 1rem;
+    }
+
+    .content2,
+    .content2 > span {
+        font-size: 1rem;
+    }
+    /* // Contents Section */
+}
+/* // ~ 390 Mobile Resolution */
