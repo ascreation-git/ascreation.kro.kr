@@ -29,7 +29,6 @@ form.addEventListener("submit", function (event) {
     const discordValue = getValue('discord');
     const emailValue = getValue('email');
     const youtubeValue = getValue('youtube');
-    const platformValue = getValue('platform');
     const introduceValue = getValue('introduce');
     const checkboxValue = getValue('checkbox-result');
     const errorAlert = document.querySelector(".error-alert");
@@ -50,7 +49,6 @@ form.addEventListener("submit", function (event) {
       !isNumeric(birthdayValue) ||
       !isValidEmail(emailValue) ||
       !isValidUrl(youtubeValue) ||
-      !isValidUrl(platformValue) ||
       !youtubeValue.includes("youtube.com")
     ) {
       errorAlert.style.display = "block";
