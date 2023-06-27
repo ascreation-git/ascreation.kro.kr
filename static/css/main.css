@@ -71,6 +71,25 @@ a:hover { color: #3047af; }
 /* // Common Style */
 
 /* Common Animation */
+@-webkit-keyframes FadeUp {
+    0%{
+        opacity: 0;
+        transform:translateY(50px);
+    }
+
+    4%{
+        transform:translateY(0%);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 @keyframes FadeUp {
     0%{
         opacity: 0;
@@ -79,6 +98,26 @@ a:hover { color: #3047af; }
 
     4%{
         transform:translateY(0%);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes FadeDown {
+    0%{
+        opacity: 0;
+        transform:translateY(100px);
+    }
+
+    4%{
+        opacity: 0.25;
+        transform:translateY(-100px);
     }
 
     50% {
@@ -110,6 +149,16 @@ a:hover { color: #3047af; }
     }
 }
 
+@-webkit-keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes FadeIn {
     from {
         opacity: 0;
@@ -120,10 +169,34 @@ a:hover { color: #3047af; }
     }
 }
 
+@-webkit-keyframes ToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 @keyframes ToLeft {
     0% {
         opacity: 0;
         transform: translateX(300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes ToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
     }
 
     100% {
@@ -145,23 +218,28 @@ a:hover { color: #3047af; }
 }
 
 .animation-up {
-    animation: FadeUp 1.5s;
+    -webkit-animation: FadeUp 1.5s;
+            animation: FadeUp 1.5s;
 }
 
 .animation-down {
-    animation: FadeDown 1.5s;
+    -webkit-animation: FadeDown 1.5s;
+            animation: FadeDown 1.5s;
 }
 
 .animation-fade {
-    animation: FadeIn 1.5s;
+    -webkit-animation: FadeIn 1.5s;
+            animation: FadeIn 1.5s;
 }
 
 .animation-left {
-    animation: ToLeft 1.5s;
+    -webkit-animation: ToLeft 1.5s;
+            animation: ToLeft 1.5s;
 }
 
 .animation-right {
-    animation: ToRight 1.5s;
+    -webkit-animation: ToRight 1.5s;
+            animation: ToRight 1.5s;
 }
 /* // Common Animation */
 
