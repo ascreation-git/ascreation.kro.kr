@@ -4,3 +4,69 @@
         - Create : 2023. 06. 25
     ======================================
 */
+
+/* Profile Images */
+.profile-wrap > div[class*="profile"] {
+    background-position: center;
+    background-size: cover;
+}
+
+.profile1 {
+    background: url(/static/images/profiles/crownk.png);
+}
+
+.profile2 {
+    background: url(/static/images/profiles/lomun.png);
+}
+
+.profile3 {
+    background: #fff;
+}
+
+.profile4 {
+    background: url(/static/images/profiles/rktch.png);
+}
+
+.profile5 {
+    background: url(/static/images/profiles/adwer.png);
+}
+
+.profile6 {
+    background: url(/static/images/profiles/0man.png);
+}
+
+.profile7 {
+    background: url(/static/images/profiles/kenang.png);
+}
+
+.profile8 {
+    background: url(/static/images/profiles/mqrka.png);
+}
+
+.profile9 {
+    background: url(/static/images/profiles/sogak.png);
+}
+
+.profile10 {
+    background: url(/static/images/profiles/haramii.png);
+}
+
+.profile11 {
+    background: url(/static/images/profiles/geonbbang.png);
+}
+
+.profile12 {
+    background: url(/static/images/profiles/serim.png);
+}
+
+.profile13 {
+    background: url(/static/images/profiles/plasutic.png);
+}
+
+.profile14 {
+    background: url(/static/images/profiles/one1hana.png);
+}
+
+.profile15 {
+    background: #fff;
+}
