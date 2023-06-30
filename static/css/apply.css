@@ -97,8 +97,8 @@
 
 /* Contents Section */
 .contents-section {
+    display: table;
     width: 100%;
-    height: 200vh;
     background: #0d0e12;
 }
 
@@ -111,6 +111,7 @@
 
 /* Form Contents */
 .applyform {
+    display: table;
     width: 80%;
     height: 100vh;
     margin: 50px auto 0;
@@ -124,6 +125,7 @@
 
 .genderbox .row {
     width: 100%;
+    flex-wrap: nowrap;
 }
 
 .applyform .row > .col:nth-child(1),
@@ -316,6 +318,7 @@
     border: 1px solid #fff;
     line-height: 55px;
     font-size: 16.5px;
+    margin-bottom: 35px;
     text-align: center;
     cursor: pointer;
     transition: all 0.5s;
@@ -328,7 +331,6 @@
 .resultwrap {
     display: none;
 }
-
 /* // Form Contents */
 /* // Contents Section */
 /* // 1024 ~ Resolution */
@@ -359,9 +361,6 @@
     /* // Intro Section */
 
     /* Contents Section */
-    .contents-section {
-        height: 285vh;
-    }
 
     .form-title {
         margin: 80px 0 0 0;

@@ -86,6 +86,7 @@
 }
 
 .contents-wrap {
+    display: table;
     width: 85.5%;
     margin: 0 auto;
 }
@@ -129,10 +130,6 @@
     /* // Intro Section */
     
     /* Contents Section */
-    .contents-section {
-        height: 915vh;
-    }
-
     .sub {
         font-size: 1.25rem;
     }
