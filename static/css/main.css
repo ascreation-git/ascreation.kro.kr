@@ -365,7 +365,7 @@ a:hover { color: #3047af; }
 }
 
 .header-button:checked + label[for="header-button"] + .navigation-layer {
-    width: 35%;
+    width: 555px;
     border-right: 5px solid #4fffbe;
     border-radius: 0;
 }
