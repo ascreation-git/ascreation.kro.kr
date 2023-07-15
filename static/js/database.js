@@ -48,7 +48,6 @@ form.addEventListener("submit", function (event) {
       (birthdayValue.length !== 6 && birthdayValue.length !== 8) ||
       !isNumeric(birthdayValue) ||
       !isValidEmail(emailValue) ||
-      !isValidUrl(youtubeValue) ||
       !youtubeValue.includes("youtube.com")
     ) {
       errorAlert.style.display = "block";
@@ -72,11 +71,6 @@ function isNumeric(value) {
 function isValidEmail(email) {
   var emailRegex = /\S+@\S+\.\S+/;
   return emailRegex.test(email);
-}
-
-function isValidUrl(url) {
-  var urlRegex = /^(http(s)?:\/\/)?([\w-]+\.\w{2,4})(\/.*)?$/;
-  return urlRegex.test(url);
 }
   
 // Submit Form
