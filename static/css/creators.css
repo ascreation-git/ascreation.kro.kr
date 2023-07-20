@@ -7,6 +7,8 @@
 
 /* Import */
 @import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 /* // Import */
 
 /* Header */
@@ -50,7 +52,7 @@
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 50vh;
+    height: 50.5vh;
     background: url(/static/images/background/wave.png);
     background-size: cover;
     background-position: center;
@@ -66,17 +68,45 @@
 
 /* Before Contents */
 .before-contents-section {
+    height: 20vh;
+    margin-bottom: 8%;
+}
+
+.animation-text {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
     width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+@keyframes TextAnimationSidetoSide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.animation-text .text-track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: TextAnimationSidetoSide 60s linear infinite;
 }
 
 .before-contents-title {
-    color: #fff;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: bold;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
     font-style: italic;
-    font-size: 8.5rem;
+    color: #fff;
+    opacity: 0.3 !important;
+    font-size: 15rem;
+    font-weight: 900;
 }
 
 .before-contents-title > span {
@@ -97,15 +127,20 @@
 
 .contents-title {
     color: #fff;
-    text-align: center;
+    margin-left: 5%;
     letter-spacing: 1.5px;
     font-size: 5rem;
     font-weight: bold;
 }
 
+.contents-title > span {
+    color: #4263f7;
+    margin-left: 8px;
+}
+
 .contents-line {
-    margin: 0 auto;
-    width: 65%;
+    margin: 20px 0 0 5%;
+    width: 50%;
     height: 3.5px;
     border: none;
     background: #4fffbe;
@@ -120,7 +155,7 @@
 }
 
 .first {
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .profile {
@@ -223,28 +258,26 @@
     /* Contents Section */
     /* Before Contents */
     .before-contents-title {
-        text-align: center;
-        font-size: 2.6rem;
-    }
-
-    .before-contents-line {
-        margin-bottom: 8px;
+        font-size: 8.5rem;
     }
     /* // Before Contents */
 
     /* Contents */
     .contents-title {
         padding-top: 0;
+        margin: 0;
+        text-align: center;
         font-size: 3rem;
     }
     
     .contents-line {
-        width: 85%;
+        margin: 10px auto;
+        width: 90%;
     }
 
     /* Profiles */
     .first {
-        padding-top: 30px;
+        padding-top: 10px;
     }
 
     .profile-contents-wrap > .row {
