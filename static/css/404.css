@@ -90,14 +90,6 @@ body {
     font-size: 18px;
 }
 
-.error-title {
-    color: #4263f7;
-    margin-top: 0.8px;
-    font-family: 'NanumSquareNeo-Variable';
-    font-weight: normal;
-    font-size: 16px;
-}
-
 .line {
     width: 50%;
     margin: 20px auto;
@@ -122,10 +114,6 @@ body {
     .title {
         letter-spacing: 5px;
         font-size: 3.5rem;
-    }
-
-    .error-title {
-        display: none;
     }
 
     .error-detail {

@@ -82,6 +82,16 @@
     overflow: hidden;
 }
 
+@-webkit-keyframes TextAnimationSidetoSide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 @keyframes TextAnimationSidetoSide {
     from {
         transform: translateX(0);
@@ -96,7 +106,8 @@
     position: absolute;
     white-space: nowrap;
     will-change: transform;
-    animation: TextAnimationSidetoSide 60s linear infinite;
+    -webkit-animation: TextAnimationSidetoSide 60s linear infinite;
+            animation: TextAnimationSidetoSide 60s linear infinite;
 }
 
 .before-contents-title {
