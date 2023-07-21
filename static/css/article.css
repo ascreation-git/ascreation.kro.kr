@@ -1,0 +1,193 @@
+/*
+    ======================================
+    + Article Style CSS
+        - Create : 2023. 07. 20
+    ======================================
+*/
+
+/* Import */
+@font-face {
+    font-family: 'CWDangamAsac-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* // Import */
+
+/* Header */
+.header-button + label[for="header-button"] > span {
+    background: #fdfdfd;
+}
+/* // Header */
+
+/* 1024 ~ Resolution */
+/* Container */
+.container {
+    background: #0d0e12;
+}
+/* // Container */
+
+/* Contents Section */
+.contents-section {
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+/* // Information */
+.title-wrap {
+    display: table;
+    width: 90%;
+    height: 10vh;
+    margin: 6.5% auto;
+}
+
+.information {
+    color: #c5c5c5;
+    font-size: 1.15rem;
+    font-family: 'Pretendard-Regular';
+    margin-bottom: 2.5px;
+}
+
+.information > span {
+    color: #c5c5c5;
+    font-family: 'Pretendard-Regular';
+    margin-left: 25px;
+}
+
+.title {
+    color: #fff;
+    font-size: 4.5rem;
+    font-family: 'CWDangamAsac-Bold';
+}
+
+.title-line {
+    width: 80%;
+    border: 1px solid #4fffbe;
+    margin-top: 15px;
+}
+/* Information */
+
+/* Contents */
+.article-contents {
+    display: table;
+    width: 85%;
+    height: 100vh;
+    margin: -3.5% auto 0;
+}
+
+.article-contents-wrap > p {
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+    font-size: 1.25rem;
+}
+/* // Contents */
+
+/* Button */
+.btn-wrap {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.list-btn {
+    position: relative;
+    width: 135px;
+    height: 50px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: 50px;
+    font-size: 16.5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-right: 65px;
+}
+
+.btn-text {
+    position: relative;
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+.btn-gage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #fff;
+    background: #4263f7;
+    transition: all 0.5s;
+}
+
+.list-btn:hover {
+    border: 1px solid #c5c5c5;
+}
+
+.list-btn:hover > .btn-gage {
+    width: 100%;
+}
+/* // Button */
+/* // Contents Section */
+/* // 1024 ~ Resolution */
+
+/* ~ 390 Mobile Resolution */
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Contents Section */
+    /* // Information */
+    .title-wrap {
+        margin: 25% auto 7.5%;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.08rem;
+        margin-bottom: 10px;
+    }
+
+    .information > span {
+        margin-top: 2.5px;
+        margin-left: 0;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .title-line {
+        width: 90%;
+        margin-top: 10px;
+    }
+    /* Information */
+
+    /* Contents */
+    .article-contents > p {
+        font-size: 1.15rem;
+    }
+    /* // Contents */
+
+    /* Button */
+    .list-btn {
+        width: 120px;
+        height: 45px;
+        margin-right: 30px;
+    }
+
+    .btn-text {
+        line-height: 45px;
+    }
+    /* // Button */
+    /* // Contents Section */
+}
+
