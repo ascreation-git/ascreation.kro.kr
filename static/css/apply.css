@@ -63,19 +63,8 @@
 
 .intro-contents { width: 100%; height: 50vh; transition: all 0.5s; }
 
-.title {
-    position: relative;
-    transform: translateY(-50%);
-    top: 55%;
-    color: #fff;
-    font-family: 'PyeongChangPeace-Bold';
-    text-align: center;
-    font-size: 8.5rem;
-}
-
 .subtitle {
     position: relative;
-    transform: translateY(-50%);
     color: #fff;
     font-family: 'NanumSquareNeo-Variable';
     text-align: center;
@@ -83,12 +72,20 @@
     font-weight: lighter;
 }
 
+.title {
+    position: relative;
+    color: #fff;
+    font-family: 'PyeongChangPeace-Bold';
+    text-align: center;
+    font-size: 8.5rem;
+}
+
 .contents-background {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 50vh;
+    height: 50.5vh;
     background: url(/static/images/background/wave.png);
     background-size: cover;
     background-position: center;

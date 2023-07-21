@@ -6,8 +6,8 @@ const intersectionCallback = (entries, observer) => {
         if (entry.isIntersecting) {
         const target = entry.target;
         if (target.classList.contains('intro-section')) {
-            target.querySelector('.title').classList.add('animation-up');
-            target.querySelector('.subtitle').classList.add('animation-up');
+            target.querySelector('.subtitle').classList.add('animation-down');
+            target.querySelector('.title').classList.add('animation-right');
         } else if (target.classList.contains('contents-section')) {
             target.querySelector('.form-title').classList.add('animation-right');
             target.querySelector('.applyform').classList.add('animation-down');
