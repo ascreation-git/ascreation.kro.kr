@@ -172,7 +172,7 @@
     /* Information */
 
     /* Contents */
-    .article-contents > p {
+    .article-contents-wrap > p {
         font-size: 1.15rem;
     }
     /* // Contents */
