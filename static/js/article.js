@@ -7,10 +7,10 @@ const intersectionCallback = (entries, observer) => {
         const target = entry.target;
         if (target.classList.contains('title-wrap')) {
             target.querySelector('.information').classList.add('animation-down');
-            target.querySelector('.title').classList.add('animation-right');
-            target.querySelector('.title-line').classList.add('animation-left');
+            target.querySelector('.title').classList.add('animation-left');
+            target.querySelector('.title-line').classList.add('animation-right');
         } else if (target.classList.contains('article-contents')) {
-            target.querySelector('.article-contents-wrap').classList.add('animation-right');
+            target.querySelector('.article-contents-wrap').classList.add('animation-left');
         } else if (target.classList.contains('btn-wrap')) {
             target.querySelector('.list-btn').classList.add('animation-left');
         }
