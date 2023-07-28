@@ -35,8 +35,76 @@
 }
 
 .intro-contents {
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    width: 85%;
+    height: 100vh;
+}
+
+.intro-subtitle {
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+    font-size: 27.5px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin-left: 2%;
+}
+
+.intro-subtitle > span {
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+}
+
+.intro-title {
+    color: #4fffbe;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10rem;
+    margin-top: -2.5rem;
+    letter-spacing: -5px;
+}
+
+.mobile-recruit-icon {
+    display: none;
+    width: 80%;
+    
+}
+
+.recruit-icon {
+    margin-left: 10%;
+}
+
+.button-wrap {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 35%;
+    align-items: flex-end;
+    justify-content: center;
+    width: 75%;
+    max-width: calc(2560px - 25%);
+}
+
+.intro-button {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16.5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.intro-button:hover {
+    opacity: 0.8;
+}
+/* // Intro Section */
+
+/* Contents Section */
+.before-contents {
     width: 100%;
-    height: 60vh;
+    height: 40vh;
 }
 
 .animation-text {
@@ -45,7 +113,7 @@
     top: 50%;
     width: 100%;
     max-width: 100%;
-    height: 475px;
+    height: 430px;
     overflow: hidden;
 }
 
@@ -75,10 +143,11 @@
     will-change: transform;
     -webkit-animation: TextAnimationSidetoSide 60s linear infinite;
             animation: TextAnimationSidetoSide 60s linear infinite;
-    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
-.intro-animated-title {
+.before-contents-animated-title {
     position: relative;
     font-family: 'Poppins', sans-serif;
     font-style: italic;
@@ -88,47 +157,10 @@
     font-weight: 900;
 }
 
-.intro-animated-title > span {
+.before-contents-animated-title > span {
     color: #4fffbe;
 }
 
-.intro-title-section {
-    width: 85%;
-    height: 30vh;
-    margin: 0 auto;
-}
-
-.intro-subtitle {
-    color: #fff;
-    font-family: 'Pretendard-Regular';
-    font-size: 26.5px;
-    font-weight: 300;
-}
-
-.intro-subtitle > span {
-    color: #fff;
-    font-family: 'Pretendard-Regular';
-    font-weight: bold;
-}
-
-.intro-title-wrap {
-    flex: 1.25;
-}
-
-.intro-title {
-    color: #4fffbe;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 9.5rem;
-    margin-top: -2.5rem;
-    letter-spacing: -5px;
-}
-
-.intro-img-wrap {
-    flex: 1;
-}
-/* // Intro Section */
-
-/* Contents Section */
 .contents-section {
     display: table;
     height: 50vh;
@@ -212,18 +244,18 @@
 /* ~ 390 Mobile Resolution */
 @media (min-width: 320px) and (max-width: 480px) {
     /* Intro Section */
-    .intro-title-section {
-        width: 100%;
+    .intro-contents {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: 90%;
     }
 
-    .intro-title-wrap {
-        flex: none;
-        width: 100%;
-    }
-    
     .intro-subtitle {
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1.08rem;
+        letter-spacing: 0;
+        margin-left: 0;
     }
 
     .intro-title {
@@ -234,24 +266,41 @@
         letter-spacing: 0;
     }
 
-    .intro-img-wrap {
-        display: none;
+    .mobile-recruit-icon {
+        display: block;
+    }
+
+    .recruit-icon {
+        width: 80%;
+        margin: 0 auto 30px auto;
+    }
+
+    .button-wrap {
+        align-items: center;
+        top: 23.5%;
+    }
+
+    .intro-button {
+        width: 225px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 15.5px;
+        margin-right: 0;
     }
     /* // Intro Section */
 
     /* Contents Section */
     .job-amount {
         text-align: center;
-        font-weight: bold;
         font-size: 1.45rem;
-        color: #fff;
+        margin-top: 45px;
     }
 
     .job-list {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 60px;
     }
 
     .job-card {

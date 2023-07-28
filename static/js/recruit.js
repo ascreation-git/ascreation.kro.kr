@@ -6,10 +6,12 @@ const intersectionCallback = (entries, observer) => {
         if (entry.isIntersecting) {
         const target = entry.target;
         if (target.classList.contains('intro-section')) {
-            target.querySelector('.intro-animated-title').classList.add('animation-left');
-            target.querySelector('.intro-title-wrap').classList.add('animation-right');
-            target.querySelector('.intro-img-wrap').classList.add('animation-left');
+            target.querySelector('.intro-subtitle').classList.add('animation-right');
+            target.querySelector('.intro-title').classList.add('animation-right');
+            target.querySelector('.recruit-icon').classList.add('animation-left');
+            target.querySelector('.intro-button').classList.add('animation-down');
         } else if (target.classList.contains('contents-section')) {
+            target.querySelector('.before-contents-animated-title').classList.add('animation-left');
             target.querySelector('.job-amount').classList.add('animation-down');
             target.querySelector('.job-list').classList.add('animation-left');
         }
@@ -18,7 +20,7 @@ const intersectionCallback = (entries, observer) => {
 };
 
 const observer = new IntersectionObserver(intersectionCallback, {
-    threshold: 0.02,
+    threshold: 0.46,
 });
 
 const introSection = document.querySelector('.intro-section');
