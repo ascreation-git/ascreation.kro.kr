@@ -7,6 +7,20 @@
 
 /* Import */
 @import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CWDangamAsac-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* // Import */
 
 /* 1024 ~ Resolution */
@@ -16,6 +30,39 @@
 }
 /* // Header */
 
+/* Container */
+.container {
+    background: #0d0e12;
+}
+/* // Container */
+
+/* Animation */
+@-webkit-keyframes ToRightNofade {
+    0% {
+        transform: translateX(-300px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes ToRightNofade {
+    0% {
+        transform: translateX(-300px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.animation-right-nofade {
+    -webkit-animation: ToRightNofade 1.5s;
+            animation: ToRightNofade 1.5s;
+}
+/* // Animation */
+
 /* Intro Section */
 .intro-section {
     width: 100%;
@@ -23,12 +70,6 @@
     background: url('/static/images/background/lock.png');
     background-size: cover;
     background-position: center;
-}
-
-.intro-contents {
-    position: relative;
-    transform: translateY(-50%);
-    top: 50%;
 }
 
 .subtitle {
@@ -55,18 +96,18 @@
 }
 
 .button {
-    position: relative;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 45px;
-    line-height: 45px;
+    position: absolute;
+    bottom: 350px;
+    width: 280px;
+    height: 55px;
+    font-family: 'Pretendard-Regular';
+    line-height: 50px;
     border: none;
-    background: #4263f7;
-    box-shadow: 5px 5px 0 rgba(255, 255, 255);
-    color: #fff;
-    font-size: 16px;
+    background: #fff;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0);
+    border-radius: 30px;
+    color: #000;
+    font-size: 16.5px;
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -81,12 +122,12 @@
 .contents-section {
     display: none;
     width: 100%;
-    background: linear-gradient(180deg, #111420, #000);
+    margin: 0 auto;
 }
 
 .contents-wrap {
     display: table;
-    width: 85.5%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -101,16 +142,49 @@
     color: #fff;
 }
 
+.content-title > span,
+.content-title {
+    color: #fff;
+    font-size: 4.5rem;
+    font-family: 'CWDangamAsac-Bold';
+    margin-top: 1.18%;
+}
+
+.title-line {
+    width: 250px;
+    border: 1px solid #4fffbe;
+    margin: 15px 0;
+}
+
 .content,
-.content2 {
-    font-size: 1.15rem;
+.content2,
+.content3 {
+    line-height: 26.5px;
+    font-family: 'Pretendard-Regular';
+    font-size: 1.2rem;
     color: #fff;
 }
 
+.content2 {
+    margin-left: 2.5%;
+}
+
+.content3 {
+    margin-left: 4.5%;
+}
+
+.content-subtitle > span,
 .content > span,
 .content2 > span {
+    font-family: 'Pretendard-Regular';
     font-weight: bold;
     color: #fff;
+}
+
+.content-subtitle > a,
+.content > a,
+.content2 > a {
+    font-family: 'Pretendard-Regular';
 }
 /* // Contents Section */
 /* // 1024 ~ Resolution */
@@ -126,21 +200,46 @@
     .title > span {
         font-size: 5rem;
     }
+
+    .button {
+        bottom: 850px;
+    }
     /* // Intro Section */
     
     /* Contents Section */
+    .contents-section {
+        width: 92.5%;
+    }
+
+    .contents-wrap {
+        width: 92.5%;
+    }
+
+    .content-title > span {
+        display: none;
+    }
+
+    .content-title {
+        text-align: center;
+        font-size: 2.25rem;
+    }
+
+    .title-line {
+        width: 100%;
+        margin: 10px;
+    }
+
     .sub {
         font-size: 1.25rem;
     }
 
     .content,
-    .content > span {
-        font-size: 1rem;
-    }
-
+    .content > span,
     .content2,
-    .content2 > span {
+    .content2 > span,
+    .content3 {
         font-size: 1rem;
+        margin: 0;
     }
     /* // Contents Section */
 }
