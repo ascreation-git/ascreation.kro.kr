@@ -1,0 +1,264 @@
+/*
+    ======================================
+    + Recruit Style CSS
+        - Create : 2023. 07. 25
+    ======================================
+*/
+
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* // Import */
+
+/* Header */
+.header-button + label[for="header-button"] > span {
+    background: #fdfdfd;
+}
+/* // Header */
+
+/* 1024 ~ Resolution */
+/* Intro Section */
+.intro-section {
+    width: 100%;
+    height: 100vh;
+    background: #0e0e0e;
+}
+
+.intro-contents {
+    width: 100%;
+    height: 60vh;
+}
+
+.animation-text {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 100%;
+    max-width: 100%;
+    height: 475px;
+    overflow: hidden;
+}
+
+@-webkit-keyframes TextAnimationSidetoSide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes TextAnimationSidetoSide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.animation-text .text-track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    -webkit-animation: TextAnimationSidetoSide 60s linear infinite;
+            animation: TextAnimationSidetoSide 60s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+.intro-animated-title {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color: #fff;
+    opacity: 0.3 !important;
+    font-size: 18rem;
+    font-weight: 900;
+}
+
+.intro-animated-title > span {
+    color: #4fffbe;
+}
+
+.intro-title-section {
+    width: 85%;
+    height: 30vh;
+    margin: 0 auto;
+}
+
+.intro-subtitle {
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+    font-size: 26.5px;
+    font-weight: 300;
+}
+
+.intro-subtitle > span {
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+}
+
+.intro-title-wrap {
+    flex: 1.25;
+}
+
+.intro-title {
+    color: #4fffbe;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 9.5rem;
+    margin-top: -2.5rem;
+    text-shadow: -1px 1px 10px;
+    letter-spacing: -5px;
+}
+
+.intro-img-wrap {
+    flex: 1;
+}
+/* // Intro Section */
+
+/* Contents Section */
+.contents-section {
+    display: table;
+    height: 50vh;
+    background: linear-gradient(to top,  #111420, #0e0e0e);
+}
+
+.contents-wrap {
+    display: table;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.job-amount {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.job-amount > span {
+    color: #4fffbe;
+}
+
+.job-list {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 65px auto 0 auto;
+}
+
+.job-card {
+    width: 500px;
+    height: 140px;
+    border-radius: 8px;
+    background: #e7e7e7;
+    margin-bottom: 50px;
+    transition: all 0.5s;
+}
+
+.job-card:hover {
+    transform: scale(1.05);
+    margin-top: -5%;
+    background: #fff;
+}
+
+.job-name {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 15px 0 15px;
+}
+
+.job-detail {
+    height: 45px;
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    margin: 3.5px 16px 0 16px;
+}
+
+.job-date {
+    color: #707070;
+    font-family: 'Pretendard-Regular';
+    font-size: 15.5px;
+    margin: 20px 10px 0 10px;
+}
+
+.check-available {
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+    font-size: 16.8px;
+}
+
+.available {
+    color: #00b300;
+}
+
+.unavailable {
+    color: #ff3c00;
+}
+/* // Contents Section */
+/* // 1024 ~ Resolution */
+
+/* ~ 390 Mobile Resolution */
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Intro Section */
+    .intro-title-section {
+        width: 100%;
+    }
+
+    .intro-title-wrap {
+        flex: none;
+        width: 100%;
+    }
+    
+    .intro-subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .intro-title {
+        margin: -3.5% 0 0 0;
+        width: 100%;
+        font-size: 5rem;
+        text-align: center;
+        letter-spacing: 0;
+    }
+
+    .intro-img-wrap {
+        display: none;
+    }
+    /* // Intro Section */
+
+    /* Contents Section */
+    .job-amount {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.45rem;
+        color: #fff;
+    }
+
+    .job-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .job-card {
+        width: 100%;
+        height: 160px;
+    }
+    /* // Contents Section */
+}
+/* // ~ 390 Mobile Resolution */
