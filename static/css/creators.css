@@ -204,13 +204,13 @@
 }
 
 .profile-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.035);
     box-shadow: 3px 3px 0 #4263f7;
 }
 
 .profile-image:hover:after {
     opacity: 0.45;
-    transform: scale(1.05);
+    transform: scale(1.035);
 }
 
 .info {
