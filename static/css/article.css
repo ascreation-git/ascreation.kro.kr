@@ -99,8 +99,13 @@
 }
 
 .article-contents-wrap a {
+    color: #4fffbe;
     font-family: 'Pretendard-Regular';
     font-size: 1.18rem;
+}
+
+.article-contents-wrap a:hover {
+    color: #44dda5;
 }
 
 .article-contents-wrap > p:not(:last-child) {
