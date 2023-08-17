@@ -8,7 +8,7 @@ const intersectionCallback = (entries, observer) => {
         if (target.classList.contains('intro-section')) {
             target.querySelector('.title').classList.add('animation-down');
             target.querySelector('.subtitle').classList.add('animation-down');
-            target.querySelector('.button').classList.add('animation-left');
+            target.querySelector('.loading-wrap').classList.add('animation-right');
         } else if (target.classList.contains('contents-section')) {
             target.querySelector('.contents-wrap').classList.add('animation-right-nofade');
         }

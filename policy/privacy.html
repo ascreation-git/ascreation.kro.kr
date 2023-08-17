@@ -93,7 +93,11 @@
                 </div>
 
                 <!--Button-->
-                <button class="button">🔐 | CLICK TO UNLOCK</button>
+                <div class="row loading-wrap">
+                    <span class="loading first"> <!--Loading Circle--> </span>
+                    <span class="loading second"> <!--Loading Circle--> </span>
+                    <span class="loading third"> <!--Loading Circle--> </span> 
+                </div>
                 <!--// Button-->
             </section>
 
@@ -377,11 +381,13 @@
     <script src="/static/js/privacy.js"></script>
     <script src="/static/js/jquery.min.js"></script>
     <script>
-        $(".button").click(function() {
-            $(".intro-section").fadeOut(500);
-            $(".contents-section").css("display", "none");
-            $(".contents-section").delay(600).fadeIn(500);
-            $(".contents-section").delay(700).css("display", "table");
+        $(document).ready(function() {
+            setTimeout(function() {
+                $(".intro-section").fadeOut(500);
+                $(".contents-section").css("display", "none");
+                $(".contents-section").delay(600).fadeIn(500);
+                $(".contents-section").delay(700).css("display", "table");
+            }, 2500);
         });
     </script>
     <!--// Script-->
