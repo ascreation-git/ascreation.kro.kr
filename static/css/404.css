@@ -5,6 +5,15 @@
     ======================================
 */
 
+/* Import */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* // Import */
+
 /* 1024 ~ Resolution */
 /* Contents Section */
 body {
@@ -97,9 +106,9 @@ body {
 
 .error-detail {
     line-height: 25px;
-    font-family: 'NanumSquareNeo-Variable';
-    font-weight: bold;;
-    font-size: 18px;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+    font-size: 20px;
 }
 /* // Contents Section */
 /* // 1024 ~ Resolution */
@@ -111,9 +120,17 @@ body {
         width: 85%;
     }
 
+    .item-header-title {
+        font-size: 14.5px;
+    }
+
     .title {
         letter-spacing: 5px;
         font-size: 3.5rem;
+    }
+
+    .error-code {
+        font-size: 16px;
     }
 
     .error-detail {
