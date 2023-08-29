@@ -92,10 +92,15 @@
     margin: -3.5% auto 0;
 }
 
-.article-contents-wrap > p {
+.article-contents-wrap p {
     color: #fff;
     font-family: 'Pretendard-Regular';
     font-size: 1.18rem;
+}
+
+.article-contents-wrap strong {
+    color: #fff;
+    font-size: 1.25rem;
 }
 
 .article-contents-wrap a {
@@ -108,7 +113,7 @@
     color: #44dda5;
 }
 
-.article-contents-wrap > p:not(:last-child) {
+.article-contents-wrap p:not(:last-child) {
     margin-bottom: 21px;
 }
 /* // Contents */
