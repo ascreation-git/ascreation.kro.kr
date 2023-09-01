@@ -282,7 +282,7 @@
 
     .button-wrap {
         align-items: center;
-        top: 31.5%;
+        top: 30%;
     }
 
     .intro-button {
@@ -297,7 +297,7 @@
     /* Contents Section */
     .job-amount {
         text-align: center;
-        font-size: 1.45rem;
+        font-size: 1.35rem;
         margin-top: 45px;
     }
 
