@@ -78,7 +78,7 @@
 .button-wrap {
     position: absolute;
     transform: translateY(-50%);
-    top: 36.5%;
+    top: 38.5%;
     align-items: flex-end;
     justify-content: center;
     width: 75%;
@@ -165,6 +165,7 @@
     display: table;
     height: 50vh;
     background: linear-gradient(to top,  #111420, #0e0e0e);
+
 }
 
 .contents-wrap {
@@ -238,6 +239,10 @@
 .unavailable {
     color: #ff3c00;
 }
+
+.none {
+    display: none;
+}
 /* // Contents Section */
 /* // 1024 ~ Resolution */
 
@@ -253,7 +258,7 @@
 
     .intro-subtitle {
         text-align: center;
-        font-size: 1.08rem;
+        font-size: 1.06rem;
         letter-spacing: 0;
         margin-left: 0;
     }
@@ -277,7 +282,7 @@
 
     .button-wrap {
         align-items: center;
-        top: 23.5%;
+        top: 31.5%;
     }
 
     .intro-button {
@@ -306,6 +311,10 @@
     .job-card {
         width: 100%;
         height: 160px;
+    }
+
+    .check-available {
+        font-size: 15.5px;
     }
     /* // Contents Section */
 }
