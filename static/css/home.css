@@ -66,9 +66,7 @@
 }
 
 .about-title {
-    position: relative;
-    top: 30%;
-    transform: translateY(-50%);
+    margin-top: 13%;
     margin-left: 60px;
     font-size: 70px;
     font-weight: bold;
@@ -77,7 +75,7 @@
 }
 
 .about-text {
-    margin-top: 15%;
+    margin-top: 3%;
     margin-left: 60px;
     margin-bottom: 5%;
     font-size: 30px;
