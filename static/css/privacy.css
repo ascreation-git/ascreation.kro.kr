@@ -37,29 +37,35 @@
 /* // Container */
 
 /* Animation */
-@-webkit-keyframes ToRightNofade {
-    0% {
-        transform: translateX(-300px);
+@-webkit-keyframes FadeUp-Privacy {
+    from {
+        transform: translateY(150px);
     }
-
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-@keyframes ToRightNofade {
-    0% {
-        transform: translateX(-300px);
-    }
-
-    100% {
-        transform: translateX(0px);
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-.animation-right-nofade {
-    -webkit-animation: ToRightNofade 1.5s;
-            animation: ToRightNofade 1.5s;
+@keyframes FadeUp-Privacy {
+    from {
+        transform: translateY(150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animation-up-privacy {
+    opacity: 0;
+    -webkit-animation: FadeUp-Privacy 1.5s;
+            animation: FadeUp-Privacy 1.5s;
+    transition-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 /* // Animation */
 

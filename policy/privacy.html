@@ -87,13 +87,13 @@
             <section class="col center intro-section">
                 <div class="col center intro-contents">
                     <!--Title-->
-                    <p class="subtitle">개인정보를 보다 안전하게,</p>
-                    <h1 class="title"><span>개인정보</span> 처리방침</h1>
+                    <p class="subtitle animation-before">개인정보를 보다 안전하게,</p>
+                    <h1 class="title animation-before"><span>개인정보</span> 처리방침</h1>
                     <!--// Title-->
                 </div>
 
                 <!--Button-->
-                <div class="row loading-wrap">
+                <div class="row loading-wrap animation-before">
                     <span class="loading first"> <!--Loading Circle--> </span>
                     <span class="loading second"> <!--Loading Circle--> </span>
                     <span class="loading third"> <!--Loading Circle--> </span> 
@@ -102,7 +102,7 @@
             </section>
 
             <section class="contents-section">
-                <div class="contents-wrap">
+                <div class="contents-wrap animation-before">
                     <br>
                     <br>
                     <br>
@@ -384,10 +384,9 @@
         $(document).ready(function() {
             setTimeout(function() {
                 $(".intro-section").fadeOut(500);
-                $(".contents-section").css("display", "none");
-                $(".contents-section").delay(600).fadeIn(500);
-                $(".contents-section").delay(700).css("display", "table");
-            }, 2500);
+                $(".contents-section").delay(800).fadeIn(500);
+                
+            }, 2350);
         });
     </script>
     <!--// Script-->

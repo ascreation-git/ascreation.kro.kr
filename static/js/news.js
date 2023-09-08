@@ -12,7 +12,7 @@ const intersectionCallback = (entries, observer) => {
             target.querySelector('.button').classList.add('animation-up');
         } else if (target.classList.contains('contents-section')) {
             target.querySelector('.before-contents').classList.add('animation-down');
-            target.querySelector('.contents-item').classList.add('animation-down');
+            target.querySelector('.contents-item').classList.add('animation-up');
         }
         }
     });

@@ -10,9 +10,9 @@ const intersectionCallback = (entries, observer) => {
             target.querySelector('.title').classList.add('animation-left');
             target.querySelector('.title-line').classList.add('animation-right');
         } else if (target.classList.contains('article-contents')) {
-            target.querySelector('.article-contents-wrap').classList.add('animation-left');
+            target.querySelector('.article-contents-wrap').classList.add('animation-up');
         } else if (target.classList.contains('btn-wrap')) {
-            target.querySelector('.list-btn').classList.add('animation-left');
+            target.querySelector('.list-btn').classList.add('animation-down');
         }
         }
     });

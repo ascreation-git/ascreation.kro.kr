@@ -78,16 +78,17 @@
     position: relative;
     transform: translate(-50%, -50%);
     top: 65%;
-    left: 50%;
     background-color: #fff;
     height: 1.5px;
 }
 
-.button {
+.button-wrap {
     position: relative;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     top: 65%;
-    left: 50%;
+}
+
+.button {
     width: 300px;
     height: 45px;
     line-height: 45px;

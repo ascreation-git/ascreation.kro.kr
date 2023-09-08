@@ -8,7 +8,6 @@ const intersectionCallback = (entries, observer) => {
         if (target.classList.contains('intro-section')) {
             target.querySelector('.title').classList.add('animation-up');
             target.querySelector('.subtitle').classList.add('animation-up');
-            target.querySelector('.mobile-button').classList.add('animation-up');
         } else if (target.classList.contains('mobile-intro')) {
             target.querySelector('.mobile-title').classList.add('animation-down');
         } else if (target.classList.contains('about-section')) {
@@ -19,7 +18,7 @@ const intersectionCallback = (entries, observer) => {
             target.querySelector('.creators-text-wrap').classList.add('animation-left');
         } else if (target.classList.contains('video-section')) {
             target.querySelector('.video-text-wrap').classList.add('animation-right');
-            target.querySelector('.video-contents-wrap').classList.add('animation-down');
+            target.querySelector('.video-contents-wrap').classList.add('animation-up');
           }
         }
     });

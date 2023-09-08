@@ -9,7 +9,7 @@ const intersectionCallback = (entries, observer) => {
             target.querySelector('.intro-subtitle').classList.add('animation-right');
             target.querySelector('.intro-title').classList.add('animation-right');
             target.querySelector('.recruit-icon').classList.add('animation-left');
-            target.querySelector('.intro-button').classList.add('animation-down');
+            target.querySelector('.intro-button').classList.add('animation-up');
         } else if (target.classList.contains('contents-section')) {
             target.querySelector('.before-contents-animated-title').classList.add('animation-left');
             target.querySelector('.job-amount').classList.add('animation-down');

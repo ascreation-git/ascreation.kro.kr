@@ -7,8 +7,7 @@ const intersectionCallback = (entries, observer) => {
         const target = entry.target;
         if (target.classList.contains('intro-section')) {
             target.querySelector('.subtitle').classList.add('animation-down');
-            target.querySelector('.title').classList.add('animation-left');
-            target.querySelector('.button').classList.add('animation-right');
+            target.querySelector('.title').classList.add('animation-up');
         } else if (target.classList.contains('before-contents-section')) {
             target.querySelector('.before-contents-title').classList.add('animation-left');
         } else if (target.classList.contains('contents-wrap')) {
