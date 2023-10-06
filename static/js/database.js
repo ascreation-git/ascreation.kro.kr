@@ -86,8 +86,9 @@ function formSubmit(event) {
     const platform = getValue('platform');
     const introduce = getValue('introduce');
     const privacy = getValue('checkbox-result');
+    const timestamp = new Date().toString();
 
-    sendData(name, birthday, gender, discord, email, youtube, platform, introduce, privacy);
+    sendData(name, birthday, gender, discord, email, youtube, platform, introduce, privacy, timestamp);
 
     document.querySelector(".alert").style.display = "block";
 
@@ -98,7 +99,8 @@ function formSubmit(event) {
     document.getElementById("applyform").reset();
 }
 
-const sendData = (name, birthday, gender, discord, email, youtube, platform, introduce, privacy) => {
+// Send Data
+const sendData = (name, birthday, gender, discord, email, youtube, platform, introduce, privacy, timestamp) => {
     var newForm = applyFormDatabase.push();
   
     newForm.set({
@@ -110,10 +112,12 @@ const sendData = (name, birthday, gender, discord, email, youtube, platform, int
       유튜브: youtube,
       플랫폼: platform,
       자기소개: introduce,
-      개인정보처리방침: privacy,
+      개인정보처리동의: privacy,
+      제출시간: timestamp,
     });
   };
 
+// Get Input Value Function
 const getValue = (id => {
     return document.getElementById(id).value;
 })

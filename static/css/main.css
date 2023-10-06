@@ -461,7 +461,7 @@ a:hover { color: #3047af; }
 /* // Footer */
 /* // 1024 ~ Resolution */
 
-/* ~ 390 Mobile Resolution */
+/* ~ 480 Mobile Resolution */
 @media (min-width: 320px) and (max-width: 480px) {
     /* Container */
     .container {
@@ -542,4 +542,4 @@ a:hover { color: #3047af; }
     }
     /* // Footer */
 }
-/* // ~ 390 Mobile Resolution */
+/* // ~ 480 Mobile Resolution */
