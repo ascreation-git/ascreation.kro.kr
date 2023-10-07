@@ -100,57 +100,145 @@
     
             <!--Intro Section-->
             <section class="col center intro-section">
-                <div class="row intro-contents">
-                    <div class="col">
-                        <h2 class="intro-subtitle animation-before"><span>AS CREAT!ON</span>에서 창의적인 인재를 찾고 있습니다.</h2>
-                        <h1 class="intro-title animation-before">RECRUIT</h1>
-                    </div>
+               <div class="col center intro-titles">
+                    <p class="animation-before intro-subtitle">「 <span>AS CREAT!ON</span>은 현재 채용 중 」</p>
 
-                    <img class="recruit-icon animation-before" src="/static/images/icon/recruit.png" alt="Recruit Icon">
-                </div>
+                    <h1 class="animation-before intro-title">RECRUIT</h1>
 
-                <div class="col button-wrap">
-                    <button class="intro-button animation-before" onclick="location.href = '#Jobs';">✅ 채용 공고 보기</button>
-                </div>
+                    <a class="animation-before intro-arrow" href="#Checklist">
+                        <!-- CSS Arrow -->
+                    </a>
+               </div>
             </section>
             <!--// Intro Section-->
-    
-            <!--Contents Section-->
-            <section class="contents-section" id="Jobs">
-                <div class="col center before-contents">
-                    <div class="animation-text">
-                        <div class="text-track">
-                            <p class="before-contents-animated-title animation-before">
-                                &nbsp; UNLEASH YOUR POWER IN AS CREAT!ON<span>.</span> &nbsp; UNLEASH YOUR POWER IN AS CREAT!ON<span>.</span> &nbsp; UNLEASH YOUR POWER IN AS CREAT!ON<span>.</span> &nbsp; UNLEASH YOUR POWER IN AS CREAT!ON<span>.</span> &nbsp; UNLEASH YOUR POWER IN AS CREAT!ON<span>.</span> &nbsp; UNLEASH YOUR POWER IN AS CREAT!ON<span>.</span>
-                            </p>
+
+            <!--Before Contents Section-->
+            <section class="col center before-contents-section" id="Checklist">
+                <!-- Background Image -->
+                
+                <div class="col center before-contents-wrap">
+                    <p class="animation-before before-contents-title">AS C._에 <span>적합한 성격</span>이신가요?</p>
+
+                    <div class="col animation-before checklist-box">
+                        <div class="checklist-header">C H E C K L I S T</div>
+                        <div class="checklist-contents-box">
+                            <div class="checklist-contents">
+                                <p class="checklist-title"># AS C._가 일하는 방식</p>
+                                <p class="checklist-detail">각자의 <span>개성</span>이 들어간 <span>새로운 창작 환경</span>에서 다른 사람들과</p>
+                                <p class="checklist-detail">함께 가치 있는 창작!</p>
+                                <br>
+                                <br>
+                                <p class="checklist-title"># AS C._의 인재상</p>
+                                <p class="checklist-detail">창의적인 <span>아이디어</span>가 많으신 분</p>
+                                <p class="checklist-detail">개인의 <span>성장력</span>이 뛰어나신 분</p>
+                                <p class="checklist-detail">다른 사람들과의 <span>의사소통 능력</span>이 좋으신 분</p>
+                                <p class="checklist-detail">성공과 실패 속에서 끈기있게 <span>노력</span> 하시는 분</p>
+                                <p class="checklist-detail">AS CREAT!ON과의 <span>합</span>이 좋으신 분</p>
+                                <br>
+                                <br>
+                                <button class="checklist-btn" onclick="location.href = '#Jobs';">채용 바로가기</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <!--// Before Contents Section-->
+    
+            <!--Contents Section-->
+            <section class="contents-section" id="Jobs">
+                <div class="col center contents-titles">
+                    <p class="animation-before contents-title">원하는 <span>분야</span>를 선택해 주세요.</p>
+                    <p class="animation-before contents-subtitle">현재 <span class="job-amount"> <!--Auto Count --> </span>의 채용이 진행 중입니다. <span class="luck"><span class="pc-only">GOOD</span> LUCK!</span></p>
+                </div>
+
                 <div class="contents-wrap">
-                    <div class="row">
-                        <p class="job-amount animation-before">
-                            총 
-                            <span class="auto-amount">
-                                <!--Display Jobs Length After Auto Check-->
-                            </span>의 채용이 진행 중입니다.
-                        </p>
+                    <div class="row animation-before contents-jobs">
+                        <div class="col job-box">
+                            <div class="job-header">D E S I G N E R</div>
+                            <div class="job-contents-box">
+                                <div class="job-contents">
+                                    <p class="job-title"># DESIGNER의 일</p>
+                                    <p class="job-detail">AS C._의 겉모습과 첫인상을 만들고,</p>
+                                    <p class="job-detail">모든 것의 형태를 제작하는 디자이너입니다.</p>
+                                    <br>
+                                    <br>
+                                    <p class="job-title"># DESIGNER 채용</p>
+                                    <p class="job-detail"></p>
+                                    <p class="job-detail check-available" auto-available="00000000">
+                                        <!-- Auto Check Available -->
+                                    </p>
+                                    <button class="job-apply-btn" onclick="location.href = '/jobs/con_designer';"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col job-box">
+                            <div class="job-header">M A N A G E R</div>
+                            <div class="job-contents-box">
+                                <div class="job-contents">
+                                    <p class="job-title"># MANAGER의 일</p>
+                                    <p class="job-detail">AS C._의 크리에이터 분들과 AS C._를</p>
+                                    <p class="job-detail">보조하며, 책임을 지는 매니저입니다.</p>
+                                    <br>
+                                    <br>
+                                    <p class="job-title"># MANAGER 채용</p>
+                                    <p class="job-detail"></p>
+                                    <p class="job-detail check-available" auto-available="00000000">
+                                        <!-- Auto Check Available -->
+                                    </p>
+                                    <button class="job-apply-btn" onclick="location.href = '/jobs/con_manager';"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col job-box">
+                            <div class="job-header">CONTENTS MAKER</div>
+                            <div class="job-contents-box">
+                                <div class="job-contents">
+                                    <p class="job-title"># CONTENTS MAKER의 일</p>
+                                    <p class="job-detail">AS C._의 모든 콘텐츠들을 관리 및 제작하는</p>
+                                    <p class="job-detail">콘텐츠 제작자입니다.</p>
+                                    <br>
+                                    <br>
+                                    <p class="job-title"># CONTENTS MAKER 채용</p>
+                                    <p class="job-detail"></p>
+                                    <p class="job-detail check-available" auto-available="00000000">
+                                        <!-- Auto Check Available -->
+                                    </p>
+                                    <button class="job-apply-btn" onclick="location.href = '/jobs/con_contentsmaker';"></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="row job-list animation-before">
-                        <a href="/recruit/jobs/con_[Name]" class="none">
-                            <div class="job-card">
-                                <p class="job-name"></p>
-                                <p class="job-detail"></p>
-                                <p class="job-date">
-                                    <!--When You Create New One, Please Edit This * Require-->
-                                    🕒 
-                                    <span class="check-available" auto-available="00000000"> <!--" auto-available " Attribute Should be Edited (Write Exprire Date Of This Job Recruitment Date) * Require-->
-                                        <!--Display Status After Auto Check-->
-                                    </span>
-                                </p>
+                    <!-- <div class="row contents-jobs">
+                        <div class="col job-box">
+                            <div class="job-header">D E S I G N E R</div>
+                            <div class="job-contents-box">
+                                <div class="job-contents">
+                                    
+                                </div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+
+                        <div class="col job-box">
+                            <div class="job-header">D E S I G N E R</div>
+                            <div class="job-contents-box">
+                                <div class="job-contents">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col job-box">
+                            <div class="job-header">D E S I G N E R</div>
+                            <div class="job-contents-box">
+                                <div class="job-contents">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
                 <br>
                 <br>
