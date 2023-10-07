@@ -182,7 +182,7 @@
 /* Contents Section */
 .contents-section {
     display: table;
-    height: 75vh;
+    height: 80vh;
     background: linear-gradient(to top, #0e0e0e, #111420);
 }
 
@@ -218,7 +218,7 @@
 .contents-wrap {
     display: table;
     width: 100%;
-    height: 40vh;
+    height: 50vh;
 }
 
 .contents-jobs {
@@ -233,6 +233,7 @@
 }
 
 .job-box {
+    margin-top: 60px;
     transition: all 0.5s;
 }
 
