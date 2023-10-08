@@ -22,7 +22,7 @@ const intersectionCallback = (entries, observer) => {
 };
 
 const observer = new IntersectionObserver(intersectionCallback, {
-    threshold: 0.46,
+    threshold: 0.2,
 });
 
 const introSection = document.querySelector('.intro-section');
