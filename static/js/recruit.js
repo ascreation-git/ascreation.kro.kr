@@ -15,7 +15,7 @@ const intersectionCallback = (entries, observer) => {
         } else if (target.classList.contains('contents-section')) {
             target.querySelector('.contents-title').classList.add('animation-down');
             target.querySelector('.contents-subtitle').classList.add('animation-down');
-            target.querySelector('.contents-jobs').classList.add('animation-up');
+            target.querySelector('.contents-wrap').classList.add('animation-up');
         }
         }
     });
@@ -57,6 +57,7 @@ function updateStatus() {
     const jobApplyBtns = document.querySelectorAll('.job-apply-btn');
     const autoAvailableElements = document.querySelectorAll('.check-available[auto-available]');
     const jobAmountElement = document.querySelector('.job-amount');
+    const contentsSubtitleElement = document.querySelector('.contents-subtitle');
     let availableCount = 0;
 
     // Loop through each job-apply-btn
@@ -81,8 +82,12 @@ function updateStatus() {
         }
     });
 
-    if (jobAmountElement) {
+    if (availableCount === 0) {
+        contentsSubtitleElement.textContent = '현재 진행 중인 채용이 없습니다.';
+        contentsSubtitleElement.style.color = '#ff3c00'
+    } else {
         jobAmountElement.textContent = `${availableCount}개`;
+        contentsSubtitleElement.style.color = ''
     }
 }
 
