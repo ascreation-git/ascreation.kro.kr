@@ -225,7 +225,7 @@
 }
 
 .none {
-    display: none;
+    visibility: hidden;
 }
 
 .manager {
@@ -335,6 +335,10 @@
     .profile-name {
         top: 95%;
         font-size: 16.5px;
+    }
+
+    .none {
+        display: none;
     }
     /* // Profiles */
     /* // Contents */
