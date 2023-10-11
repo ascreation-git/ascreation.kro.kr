@@ -503,34 +503,38 @@ a:hover { color: #3047af; }
         width: 100%;
         min-width: 320px;
         max-width: 480px;
-        height: 700px;
+        height: 720px;
     }
 
     .footer-contents {
         flex-direction: column;
-        justify-content: space-between;
-        height: 635px;
+        height: 650px;
     }
 
     .footer-grid {
-        flex-direction: row;
         justify-content: center;
     }
 
-    .footer-title {
-        margin: 0 20px 0 0;
+    .footer-grid:not(.logo-contents) {
+        align-items: flex-start;
+        margin-left: 12.5%;
     }
 
-    .footer-title::before {
-        content: none;
+    .footer-title {
+        margin-bottom: 8px;
     }
 
     .logo-contents {
-        height: 180px;
+        height: 160px;
     }
 
     .logo-contents > a {
-        height: 180px
+        height: 160px
+    }
+
+    .footer-logo {
+        width: 160px;
+        height: 160px;
     }
 
     .footer-copyright {
