@@ -503,12 +503,12 @@ a:hover { color: #3047af; }
         width: 100%;
         min-width: 320px;
         max-width: 480px;
-        height: 720px;
+        height: 685px;
     }
 
     .footer-contents {
         flex-direction: column;
-        height: 650px;
+        height: 615px;
     }
 
     .footer-grid {
@@ -518,10 +518,11 @@ a:hover { color: #3047af; }
     .footer-grid:not(.logo-contents) {
         align-items: flex-start;
         margin-left: 12.5%;
+        height: auto;
     }
 
     .footer-title {
-        margin-bottom: 8px;
+        margin: 0 0 8px 0;
     }
 
     .logo-contents {
