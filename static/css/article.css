@@ -128,12 +128,12 @@
 
 .list-btn {
     position: relative;
-    width: 135px;
-    height: 50px;
+    width: 120px;
+    height: 42px;
     background: transparent;
     color: #fff;
     border: 1px solid #fff;
-    line-height: 50px;
+    line-height: 40px;
     font-size: 16.5px;
     text-align: center;
     cursor: pointer;
@@ -144,7 +144,9 @@
 .btn-text {
     position: relative;
     color: #fff;
-    font-size: 1.15rem;
+    font-family: 'Pretendard-Regular';
+    font-weight: lighter;
+    font-size: 1.2rem;
 }
 
 .btn-gage {
@@ -206,13 +208,7 @@
 
     /* Button */
     .list-btn {
-        width: 120px;
-        height: 45px;
         margin-right: 30px;
-    }
-
-    .btn-text {
-        line-height: 45px;
     }
     /* // Button */
     /* // Contents Section */

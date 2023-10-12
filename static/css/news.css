@@ -364,6 +364,21 @@
     font-family: 'NanumSquareNeo-Variable';
 }
 
+.page-number {
+    font-size: 1.2rem;  
+    font-family: 'NanumSquareNeo-Variable';
+    cursor: pointer;
+}
+
+.page-number.active {
+    color: #4263f7;
+    font-weight: bold;
+}
+
+.page-number:not(:first-child) {
+    margin-left: 8px;
+}
+
 .modal-close {
     width: 40px;
     height: 40px;

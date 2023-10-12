@@ -161,12 +161,8 @@
 .profile-grid {
     width: 85%;
     flex-wrap: wrap;
-    margin: 0 auto 30px;
+    margin: 50px auto 30px;
     justify-content: space-around;
-}
-
-.first {
-    padding-top: 50px;
 }
 
 .profile {
@@ -250,6 +246,24 @@
     transition: all 0.5s;
 }
 /* // Profiles */
+
+/* Pagination */
+.page-number {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'NanumSquareNeo-Variable';
+    cursor: pointer;
+}
+
+.page-number.active {
+    color: #4263f7;
+    font-weight: bold;
+}
+
+.page-number:not(:first-child) {
+    margin-left: 30px;
+}
+/* // Pagination */
 /* // Contents */
 /* // Contents Section */
 /* // 1024 ~ Resolution */
@@ -283,7 +297,7 @@
         padding-top: 0;
         margin: 0;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.65rem;
     }
     
     .contents-line {
@@ -292,8 +306,8 @@
     }
 
     /* Profiles */
-    .first {
-        padding-top: 10px;
+    .profile-grid {
+        margin-top: 30px;
     }
 
     .profile-contents-wrap > .row {
