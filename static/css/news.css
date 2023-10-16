@@ -365,18 +365,24 @@
 }
 
 .page-number {
-    font-size: 1.2rem;  
+    color: #adadad;
+    font-size: 1.2rem;
     font-family: 'NanumSquareNeo-Variable';
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.page-number:hover {
+    color: #000;
 }
 
 .page-number.active {
+    position: relative;
     color: #4263f7;
-    font-weight: bold;
 }
 
 .page-number:not(:first-child) {
-    margin-left: 8px;
+    margin-left: 25px;
 }
 
 .modal-close {

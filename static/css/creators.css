@@ -249,19 +249,24 @@
 
 /* Pagination */
 .page-number {
-    color: #fff;
-    font-size: 1.5rem;
+    color: #adadad;
+    font-size: 1.4rem;
     font-family: 'NanumSquareNeo-Variable';
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.page-number:hover {
+    color: #fff;
 }
 
 .page-number.active {
-    color: #4263f7;
-    font-weight: bold;
+    position: relative;
+    color: #4fffbe;
 }
 
 .page-number:not(:first-child) {
-    margin-left: 30px;
+    margin-left: 25px;
 }
 /* // Pagination */
 /* // Contents */
