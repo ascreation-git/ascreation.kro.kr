@@ -45,14 +45,14 @@ maleSelector.addEventListener("click", function(){
     maleSelector.classList.add("radioactive");
     femaleSelector.classList.remove("radioactive");
 
-    genderResult.value = male.value;
+    genderResult.value = "남성";
 });
 
 femaleSelector.addEventListener("click", function(){
     femaleSelector.classList.add("radioactive");
     maleSelector.classList.remove("radioactive");
 
-    genderResult.value = female.value;
+    genderResult.value = "여성";
 });
 
 // Privacy Agree 

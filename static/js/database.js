@@ -18,11 +18,11 @@ const applyFormDatabase = firebase.database().ref('ApplyForm-Data');
 
 // Validate Form
 const form = document.getElementById("applyform");
-const errorAlert = document.querySelector(".error-alert");
+const errorAlert = document.querySelector(".alert.error");
   
 form.addEventListener("submit", function (event) {
     event.preventDefault();
-  
+    
     const nameValue = getValue('name');
     const birthdayValue = getValue('birthday');
     const genderValue = getValue('gender-result');
@@ -31,9 +31,7 @@ form.addEventListener("submit", function (event) {
     const youtubeValue = getValue('youtube');
     const introduceValue = getValue('introduce');
     const checkboxValue = getValue('checkbox-result');
-    const errorAlert = document.querySelector(".error-alert");
-  
-    const isError = false;
+    let isError = false;
   
     if (
       nameValue.trim() === "" ||
@@ -50,13 +48,16 @@ form.addEventListener("submit", function (event) {
       !isValidEmail(emailValue) ||
       !youtubeValue.includes("youtube.com")
     ) {
-      errorAlert.style.display = "block";
+      errorAlert.style.visibility = "visible";
+      errorAlert.style.opacity = "1";
       setTimeout(function () {
-        errorAlert.style.display = "none";
-      }, 3000);
+        errorAlert.style.opacity = "0"
+        errorAlert.style.visibility = "hidden"
+      }, 5000);
       isError = true;
     } else {
-      errorAlert.style.display = "none";
+      errorAlert.style.opacity = "0"
+      errorAlert.style.visibility = "hidden"
     }
   
     if (!isError) {
@@ -72,11 +73,26 @@ function isValidEmail(email) {
   var emailRegex = /\S+@\S+\.\S+/;
   return emailRegex.test(email);
 }
+
+// Close Alert
+const alertClose = document.querySelectorAll('.alert-close-content');
+
+alertClose.forEach(function(element) {
+  element.addEventListener("click", function (event) {
+    const alerts = document.querySelectorAll('.alert');
+
+    alerts.forEach(function(alert) {
+      alert.style.setProperty("opacity", "0", "important");
+      alert.style.setProperty("visibility", "hidden", "important");
+    });
+  });
+});
   
 // Submit Form
 function formSubmit(event) {
     event.preventDefault();
 
+    const correctAlert = document.querySelector('.alert.correct');
     const name = getValue('name');
     const birthday = getValue('birthday');
     const gender = getValue('gender-result');
@@ -90,13 +106,16 @@ function formSubmit(event) {
 
     sendData(name, birthday, gender, discord, email, youtube, platform, introduce, privacy, timestamp);
 
-    document.querySelector(".alert").style.display = "block";
+    correctAlert.style.visibility = "visible";
+    correctAlert.style.opacity = "1";
 
     setTimeout(() => {
-        document.querySelector(".alert").style.display = "none";
-    }, 3000);
+      correctAlert.style.opacity = "0";
+      correctAlert.style.visibility = "hidden";
+    }, 5000);
 
     document.getElementById("applyform").reset();
+    document.querySelector('.radio').classList.remove('radioactive')
 }
 
 // Send Data

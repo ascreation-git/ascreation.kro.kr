@@ -14,43 +14,62 @@
 /* 1024 ~ Resolution */
 /* Alert */
 .alert {
-    display: none;
+    display: flex;
     position: fixed;
     transform: translateX(-50%);
-    top: 5%;
+    top: 7.5%;
     left: 50%;
-    width: 380px;
+    width: 50%;
     height: 60px;
-    background: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: -5px 5px 0 #4263f7;
-    z-index: 2;
+    border-radius: 15px;
+    background: #f2f1fd;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+    
+.alert-icon {
+    flex: 0.35;
+    font-size: 16px;
+    border-radius: 15px;
 }
 
-.alert-message {
-    line-height: 60px;
+.alert-icon > img {
+    width: 45px;
+    height: 45px;
+}
+
+.alert-content {
+    align-items: center;
+    flex: 2;
+    color: #000;
+    font-size: 17.5px;
     font-weight: bold;
-    font-size: 16.5px;
+}
+
+.alert-close {
+    flex: 0.35;
+    font-size: 30px;
     text-align: center;
-    color: #4263f7;
 }
 
-.error-alert {
-    display: none;
-    position: fixed;
-    transform: translateX(-50%);
-    top: 5%;
+.alert-close-content {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
     left: 50%;
-    width: 380px;
-    height: 60px;
-    background: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: -5px 5px 0 #f74242;
-    z-index: 2;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
-.error-alert .alert-message {
-    color: #f74242;
+.alert-close-content > img {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 40px;
+    height: 40px;
 }
 /* // Alert */
 
@@ -115,7 +134,7 @@
 }
 
 .applyform .row {
-    width: 80%;
+    width: 75%;
     height: 150px;
     margin: 0 auto;
 }
@@ -126,11 +145,7 @@
 }
 
 .applyform .row > .col:nth-child(1),
-.applyform .row > .col:nth-child(2) {
-    flex: 1;
-    margin-right: 80px;
-}
-
+.applyform .row > .col:nth-child(2),
 .applyform .row > .col:nth-child(3) {
     flex: 1;
 }
@@ -215,8 +230,18 @@
     color: transparent;
 }
 
+.namebox,
+.birthdaybox,
+.discordbox {
+    margin-right: 55px;
+}
+
+.genderbox {
+    flex: 0.65 !important;
+}
+
 .genderbox .row label {
-    width: 125px;
+    width: 50%;
     height: 55px;
     line-height: 55px;
     text-align: center;
@@ -251,6 +276,7 @@
     height: 300px;
     font-size: 13.5px !important;
     text-align: left !important;
+    color: #a5a5a5 !important;
 }
 
 .checkbox {
@@ -312,7 +338,8 @@
     height: 55px;
     background: transparent;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1.5px solid #fff;
+    border-radius: 8px;
     line-height: 55px;
     font-size: 16.5px;
     margin-bottom: 35px;
@@ -327,22 +354,25 @@
 
 .resultwrap {
     display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
 }
 /* // Form Contents */
 /* // Contents Section */
 /* // 1024 ~ Resolution */
 
-/* ~ 390 Mobile Resolution */
+/* ~ 480 Mobile Resolution */
 @media (min-width: 320px) and (max-width: 480px) {
     /* Alert */
     .alert {
-        top: 8%;
-        width: 315px;
+        top: 10%;
+        width: 85%;
+        height: 80px;
     }
 
-    .error-alert {
-        top: 8%;
-        width: 315px;
+    .alert-content {
+        font-size: 15px;
     }
     /* // Alert */
 
@@ -352,7 +382,6 @@
     }
 
     .subtitle {
-        top: 2.5%;
         font-size: 0.85rem;
     }
     /* // Intro Section */
@@ -414,6 +443,10 @@
     .privacy-label {
         font-size: 14px !important;
     }
+
+    .checkbox .privacy-description {
+        font-size: 15px;
+    }
     /* // Contents Section */
 }
-/* // 390 ~ Mobile Resolution */
+/* // 480 ~ Mobile Resolution */

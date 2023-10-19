@@ -99,12 +99,30 @@
             <!--// Header-->
 
             <!--Alert-->
-            <div class="alert">
-                <p class="alert-message">지원이 정상적으로 접수되었습니다.</p>
+            <!--// Correct Alert-->
+            <div class="row alert correct">
+                <div class="row center alert-icon">
+                    <img src="/static/images/icon/circle-green.png" alt="Success">
+                </div>
+                <div class="row alert-content">크리에이터 지원이 정상적으로 접수되었습니다.</div>
+                <div class="alert-close">
+                    <div class="row center alert-close-content">
+                        <img src="/static/images/icon/close.png" alt="Close">
+                    </div>
+                </div>
             </div>
-
-            <div class="error-alert">
-                <p class="alert-message">잘못된 입력 값이 있습니다.</p>
+            
+            <!--// Error Alert-->
+            <div class="row alert error">
+                <div class="row center alert-icon">
+                    <img src="/static/images/icon/circle-red.png" alt="Success">
+                </div>
+                <div class="row alert-content">올바르지 않은 입력 값이 있어 처리할 수 없습니다.</div>
+                <div class="alert-close">
+                    <div class="row center alert-close-content">
+                        <img src="/static/images/icon/close.png" alt="Close">
+                    </div>
+                </div>
             </div>
             <!--// Alert-->
     
@@ -124,26 +142,30 @@
             <!--Contents Section-->
             <section class="contents-section" id="Form">
                 <p class="form-title animation-before">CREATOR APPLY</p>
-                <form class="applyform animation-before" id="applyform" autocomplete="off" spellcheck="false" onsubmit="validateForm();">
+                <form class="applyform animation-before" id="applyform" autocomplete="off" spellcheck="false">
                     <div class="row identitywrap">
                         <div class="col namebox">
                             <label class="label name-label">이름 <span class="require">*</span></label>
-                            <input type="text" class="name" id="name" placeholder="이름이나 예명을 작성해 주세요." required>
+                            <input type="text" class="name" id="name" title="이름이나 예명을 작성해 주세요." placeholder="이름이나 예명을 작성해 주세요.">
                         </div>
 
                         <div class="col birthdaybox">
                             <label class="label birthday-label">생년월일 <span class="require">*</span></label>
-                            <input type="text" class="birthday" id="birthday" placeholder="YYYYMMDD" minlength="6" maxlength="8" required>
+                            <input type="text" class="birthday" id="birthday" title="생년월일을 작성해 주세요." placeholder="YYYYMMDD" minlength="6" maxlength="8">
                         </div>
 
                         <div class="col genderbox">
                             <label class="label gender-label">성별 <span class="require">*</span></label>
 
                             <div class="row">
-                                <input type="radio" class="gender" name="gender" id="male" value="남성" required>
-                                <label for="male" class="radio male-selector">남성</label>
-                                <input type="radio" class="gender" name="gender" id="female" value="여성" required>
-                                <label for="female" class="radio female-selector" id="female">여성</label>
+                                <label for="male" class="radio male-selector" title="성별을 선택해 주세요. ( 남성 )">
+                                    <input type="radio" class="gender" name="gender" id="male">
+                                    남성
+                                </label>
+                                <label for="female" class="radio female-selector" id="female" title="성별을 선택해 주세요. ( 여성 )">
+                                    <input type="radio" class="gender" name="gender" id="female">
+                                    여성
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -151,41 +173,41 @@
                     <div class="row contactwrap">
                         <div class="col discordbox">
                             <label class="label discord-label">디스코드 <span class="require">*</span></label>
-                            <input type="text" class="discord" id="discord" placeholder="디스코드 아이디를 작성해 주세요." required>
+                            <input type="text" class="discord" id="discord" title="디스코드 아이디를 작성해 주세요." placeholder="디스코드 아이디를 작성해 주세요.">
                         </div>
 
                         <div class="col emailbox">
                             <label class="label email-label">이메일 <span class="require">*</span></label>
-                            <input type="email" class="email" id="email" placeholder="이메일 주소를 작성해 주세요." required>
+                            <input type="email" class="email" id="email" title="이메일 주소를 작성해 주세요." placeholder="이메일 주소를 작성해 주세요.">
                         </div>
                     </div>
 
                     <div class="row channelwrap">
                         <div class="col youtubebox">
                             <label class="label youtube-label">YouTube 채널 <span class="require">*</span></label>
-                            <input type="url" class="youtube" id="youtube" placeholder="YouTube 채널 URL을 작성해 주세요. | Ex) https://youtube.com" required>
+                            <input type="url" class="youtube" id="youtube" title="YouTube 채널 URL을 작성해 주세요." placeholder="YouTube 채널 URL을 작성해 주세요. | Ex) https://youtube.com">
                         </div>
                     </div>
 
                     <div class="row channelwrap">
                         <div class="col platformbox">
                             <label class="label platform-label">YouTube 외 운영중인 플랫폼 채널</label>
-                            <input type="url" class="platform" id="platform" placeholder="운영중인 채널의 URL을 작성해 주세요. | Ex) https://twitch.tv">
+                            <input type="url" class="platform" id="platform" title="운영중인 채널의 URL을 작성해 주세요." placeholder="운영중인 채널의 URL을 작성해 주세요. | Ex) https://twitch.tv">
                         </div>
                     </div>
 
                     <div class="row introducewrap">
                         <div class="col introducebox">
                             <label class="label introduce-label">자기소개 <span class="require">*</span></label>
-                            <textarea class="introduce" id="introduce" placeholder="자기소개를 작성해 주세요." minlength="50" required></textarea>
+                            <textarea class="introduce" id="introduce" title="자기소개를 작성해 주세요." placeholder="자기소개를 작성해 주세요." minlength="50"></textarea>
                             <span class="input-description">- 최소 50글자 이상 작성해 주세요.</span>
                         </div>
                     </div>
 
                     <div class="row privacywrap">
                         <div class="col privacybox">
-                            <label class="label privacy-label">지원 시 다음의 개인정보 처리방침을 확인해주세요. <span class="require">*</span></label>
-                            <textarea class="privacy" spellcheck="false" readonly>
+                            <label class="label privacy-label">지원 시 다음의 개인정보 처리방침을 확인해 주세요. <span class="require">*</span></label>
+                            <textarea class="privacy" spellcheck="false" title="개인정보 처리방침을 확인해 주세요." readonly>
 
     | AS CREAT!ON은 크리에이터 지원 시 다음과 같은 개인정보를 수집 및 이용합니다.
     - 지원자는 본 개인정보 처리방침을 거부하실 수 있는 권리가 존재합니다. 다만, 거부할 시 지원이 제한될 수 있습니다.
@@ -215,8 +237,8 @@
     * 본 개인정보 처리방침은 원본 내용을 요약한 내용입니다.
                             </textarea>
 
-                            <label class="checkbox">
-                                <input class="privacy-checkbox" id="privacy-checkbox" type="checkbox" onclick='checboxCheck();' required>
+                            <label class="checkbox" title="개인정보 처리방침에 동의해 주세요.">
+                                <input class="privacy-checkbox" id="privacy-checkbox" type="checkbox" onclick='checboxCheck();'>
                                 <span for="privacy-checkbox" class="check"></span>
                                 <span for="privacy-checkbox" class="privacy-description">본 개인정보 처리방침에 동의합니다.</span>
                             </label>

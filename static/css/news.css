@@ -407,7 +407,7 @@
 /* // Contents Section */
 /* // 1024 ~ Resolution */
 
-/* ~ 390 Mobile Resolution */
+/* ~ 480 Mobile Resolution */
 @media (min-width: 320px) and (max-width: 480px) {
     /* Intro Section */
     .subtitle {
@@ -535,4 +535,4 @@
     /* // Modal News Contents */
     /* // Contents Section */
 }
-/* // ~ 390 Mobile Resolution */
+/* // ~ 480 Mobile Resolution */
