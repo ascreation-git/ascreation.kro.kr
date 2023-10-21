@@ -19,7 +19,8 @@ const applyFormDatabase = firebase.database().ref('ApplyForm-Data');
 // Validate Form
 const form = document.getElementById("applyform");
 const errorAlert = document.querySelector(".alert.error");
-  
+var setTimeoutID = null;
+
 form.addEventListener("submit", function (event) {
     event.preventDefault();
     
@@ -50,7 +51,7 @@ form.addEventListener("submit", function (event) {
     ) {
       errorAlert.style.visibility = "visible";
       errorAlert.style.opacity = "1";
-      setTimeout(function () {
+      setTimeoutID = setTimeout(function () {
         errorAlert.style.opacity = "0"
         errorAlert.style.visibility = "hidden"
       }, 5000);
@@ -85,6 +86,8 @@ alertClose.forEach(function(element) {
       alert.style.setProperty("opacity", "0", "important");
       alert.style.setProperty("visibility", "hidden", "important");
     });
+
+    clearTimeout(setTimeoutID);
   });
 });
   
