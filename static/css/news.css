@@ -322,12 +322,14 @@
 }
 
 .modal-news-list > a:hover {
-    margin-left: 3%;
     background: #a7a7a74b;
 }
 
-.modal-news-list > a:nth-child(2):hover,
-.modal-news-list > a:nth-child(4):hover {
+.modal-news-list > a:nth-child(odd):hover {
+    margin-left: 3%;
+}
+
+.modal-news-list > a:nth-child(even):hover {
     margin-left: -3%;
 }
 
