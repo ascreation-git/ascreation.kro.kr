@@ -44,7 +44,7 @@ if (contentsWrap) {
 /* Pagination Script */
 const pageNumbersElement1 = document.querySelector('.page-numbers');
 const items1 = document.querySelectorAll('.profile-grid');
-const itemsPerPage1 = 3;
+const itemsPerPage1 = 2;
 let currentPage1 = 1;
 
 function updatePage1() {
@@ -57,7 +57,8 @@ function updatePage1() {
 function updatePageNumbers1() {
     pageNumbersElement1.innerHTML = '';
 
-    const totalPages1 = Math.ceil(items1.length / itemsPerPage1);
+    const filteredItems = Array.from(items1).filter(item => !item.classList.contains('nopage'));
+    const totalPages1 = Math.ceil(filteredItems.length / itemsPerPage1);
 
     for (let i = 1; i <= totalPages1; i++) {
         const pageNumberElement = document.createElement('span');

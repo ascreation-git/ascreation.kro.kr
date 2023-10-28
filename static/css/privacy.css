@@ -113,17 +113,33 @@
     height: 25px;
     border-radius: 50%;
     background: #fff;
-    animation: LoadingAnimation 1.2s 0s linear infinite;  
+    -webkit-animation: LoadingAnimation 1.2s 0s linear infinite;
+            animation: LoadingAnimation 1.2s 0s linear infinite;  
 }
 
 .loading.second {
-    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
     background: #4fffbe;
 }
 
 .loading.third {
-    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
     background: #4263f7;
+}
+
+@-webkit-keyframes LoadingAnimation {
+    0%,
+    100% {
+      opacity: 0.2;
+      transform: scale(0.8);
+    }
+
+    50% {
+      opacity: 1;
+      transform: scale(1.25);
+    }
 }
 
 @keyframes LoadingAnimation {

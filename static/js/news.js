@@ -39,7 +39,7 @@ if (contentsSection) {
 // Pagination 1
 const pageNumbersElement1 = document.querySelector('.page-numbers-1');
 const newsItems1 = document.querySelectorAll('.link-1');
-const itemsPerPage1 = 4;
+const itemsPerPage1 = 3;
 let currentPage1 = 1;
 
 function updatePage1() {
@@ -79,7 +79,7 @@ updatePageNumbers1();
 // Pagination 2
 const pageNumbersElement2 = document.querySelector('.page-numbers-2');
 const newsItems2 = document.querySelectorAll('.link-2');
-const itemsPerPage2 = 4;
+const itemsPerPage2 = 3;
 let currentPage2 = 1;
 
 function updatePage2() {
@@ -119,7 +119,7 @@ updatePageNumbers2();
 // Pagination 3
 const pageNumbersElement3 = document.querySelector('.page-numbers-3');
 const newsItems3 = document.querySelectorAll('.link-3');
-const itemsPerPage3 = 4;
+const itemsPerPage3 = 3;
 let currentPage3 = 1;
 
 function updatePage3() {
