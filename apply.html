@@ -158,6 +158,7 @@
                             <label class="label gender-label">성별 <span class="require">*</span></label>
 
                             <div class="row">
+                                <input class="gender-focus" readonly> <!--// Gender Focus-->
                                 <label for="male" class="radio male-selector" title="성별을 선택해 주세요. ( 남성 )">
                                     <input type="radio" class="gender" name="gender" id="male">
                                     남성
@@ -252,8 +253,8 @@
                     </div>
 
                     <div class="row resultwrap">
-                        <input class="checkbox-result" id="checkbox-result" minlength="4" maxlength="5" type="text" required readonly>
-                        <input class="gender-result" id="gender-result" minlength="2" maxlength="2" type="text" required readonly>
+                        <input class="checkbox-result" id="checkbox-result" type="hidden" minlength="4" maxlength="5" type="text" required readonly>
+                        <input class="gender-result" id="gender-result" type="hidden" minlength="2" maxlength="2" type="text" required readonly>
                     </div>
                 </form>
                 <br>
@@ -308,7 +309,6 @@
     <!--Script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="/static/js/apply.js"></script>
-    <script src="/static/js/database.js"></script>
     <script src="/static/js/main.js"></script>
     <!--// Script-->
 </body>
