@@ -130,11 +130,11 @@
     position: relative;
     width: 120px;
     height: 42px;
-    background: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-    line-height: 40px;
-    font-size: 16.5px;
+    background: #4263f7;
+    border: none;
+    border-radius: 5px 5px 0 5px;
+    box-shadow: 5px 5px 0 #fff;
+    line-height: 42px;
     text-align: center;
     cursor: pointer;
     transition: all 0.5s;
@@ -144,9 +144,7 @@
 .btn-text {
     position: relative;
     color: #fff;
-    font-family: 'Pretendard-Regular';
-    font-weight: lighter;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 }
 
 .btn-gage {
@@ -155,17 +153,20 @@
     left: 0;
     width: 0;
     height: 100%;
-    color: #fff;
-    background: #4263f7;
+    border-radius: 5px 5px 0 5px;
+    background: linear-gradient(to left, #4263f7, #4f6fff);
     transition: all 0.5s;
 }
 
 .list-btn:hover {
-    border: 1px solid #c5c5c5;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: -5px -5px 0 #fff;
 }
 
 .list-btn:hover > .btn-gage {
     width: 100%;
+    border-radius: 0 5px 5px 5px;
+    transition-delay: 0.4s;
 }
 /* // Button */
 /* // Contents Section */
@@ -208,7 +209,13 @@
 
     /* Button */
     .list-btn {
-        margin-right: 30px;
+        width: 110px;
+        height: 42px;
+        margin-right: 35px;
+    }
+
+    .btn-text {
+        line-height: 42px;
     }
     /* // Button */
     /* // Contents Section */
