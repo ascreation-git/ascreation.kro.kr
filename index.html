@@ -109,32 +109,41 @@
             <section class="contents-section">
                 <!--About Contents-->
                 <div class="row about-section">
-                    <!--About Section Text-->
-                    <div class="col about-text-wrap animation-before">
-                        <p class="about-title">Better Create Makes<br>Better Creations.</p>
-    
-                        <p class="about-text">가치있는 창작물을 같이 만드는 시대,<br>AS CREAT!ON이 열어갑니다.</p>
-                        <p class="about-text">
-                            AS CREAT!ON은 크리에이터와 협력하여 가치 있는 콘텐츠를 만들며, 크리에이터를 도와드립니다.
-                            <br>저희의 목표는 크리에이터의 성장을 촉진하며, 디지털 플랫폼을 효과적으로 활용하여 영향력을 극대화하는 것입니다.
-                            <br>저희는 경험과 네트워크를 바탕으로 콘텐츠 제작과 퀄리티 향상 등 다양한 영역에서 크리에이터를 지원합니다.
-                            <br>또한, 더 많은 창작자들과 함께 혁신적이고 성공적인 여정을 나아갈 준비가 되어 있습니다.</p>
-                    </div>
-                    <!--// About Section Text-->
-                    
-                    <!--Stat-->
-                    <div class="col center about-contents animation-before">
-                        <div class="creator-stat">
-                            <p class="about-part-title">CREATORS</p>
-                            <p class="count" data-count="15">0</p>
-                        </div>
+                    <div class="row about-contents-wrap">
+                        <!--About Section Text-->
+                        <div class="col about-text-wrap animation-before">
+                            <p class="about-slogan">Creating Better Makes Better Creations.</p>
+        
+                            <p class="about-title">
+                                가치 있는 창작물을 같이 만드는 시대,
+                                <br> AS CREAT!ON이 열어갑니다.
+                            </p>
 
-                        <div class="view-stat">
-                            <p class="about-part-title">VIEWS</p>
-                            <p class="count" data-count="1490769">0</p>
+                            <p class="about-text">
+                                AS CREAT!ON은 크리에이터와 협력하여 가치 있는 콘텐츠를 만들며, 크리에이터를 도와드립니다.
+                                <br>저희의 목표는 크리에이터의 성장을 촉진하며, 디지털 플랫폼을 효과적으로 활용하여 영향력을 극대화하는 것입니다.
+                                <br>저희는 다양한 경험과 네트워크를 바탕으로 콘텐츠 제작과 퀄리티 향상 등 다양한 영역에서 크리에이터를 지원합니다.
+                                <br>또한, 더 많은 창작자들과 함께 혁신적이고 성공적인 여정을 나아갈 준비가 되어 있습니다.
+                            </p>
                         </div>
+                        <!--// About Section Text-->
+                        
+                        <!--Stat-->
+                        <div class="col center about-statistics animation-before">
+                            <div class="col center about-statistics-wrap">
+                                <div class="row about-count-wrap creators">
+                                    <p class="about-count-title creators">CREATORS</p>
+                                    <p class="about-count creators" data-count="15">0</p>
+                                </div>
+
+                                <div class="row about-count-wrap total-views">
+                                    <p class="about-count total-views" data-count="1490769">0</p>
+                                    <p class="about-count-title total-views">TOTAL VIEWS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Stat-->
                     </div>
-                    <!--// Stat-->
                 </div>
                 <!--// About Contents-->
 
@@ -321,7 +330,7 @@
 
         var oTop = $('.about-section').offset().top - window.innerHeight;
         if (a == 0 && $(window).scrollTop() > oTop) {
-            $('.count').each(function() {
+            $('.about-count').each(function() {
             var $this = $(this),
                 countTo = $this.attr('data-count');
             $({

@@ -51,74 +51,93 @@
     height: 100vh;
 }
 
-.about-text-wrap {
-    justify-content: center;
-    width: 60.5%;
-    height: 80.5vh;
+.about-contents-wrap {
+    align-items: center;
+    width: 90%;
+    height: 100vh;
     margin: 0 auto;
 }
 
-.about-title {
-    margin-top: 13%;
-    margin-left: 60px;
-    font-size: 70px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
+.about-text-wrap {
+    justify-content: center;
+    width: 65%;
+    height: 75vh;
+}
+
+.about-slogan {
     color: #4fffbe;
+    font-weight: bold;
+    font-size: 4rem;
+    text-wrap: balance;
+}
+
+.about-title {
+    margin-top: 5%;
+    font-size: 1.8rem;
+    color: #fff;
 }
 
 .about-text {
-    margin-top: 3%;
-    margin-left: 60px;
-    margin-bottom: 5%;
-    font-size: 30px;
-    font-weight: lighter;
+    margin-top: 5%;
+    font-size: 1.2rem;
     color: #fff;
 }
 
-.about-text:last-child {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 20px;
+.about-statistics {
+    width: 35%;
+    height: 75vh;
 }
 
-.about-contents {
-    width: 36.5%;
+.about-statistics-wrap {
+    width: 100%;
 }
 
-.creator-stat,
-.view-stat {
-    width: 531.5px;
-    height: 400px;
-    border: 2px solid #fff;
+.about-count-wrap {
+    align-items: center;
+    width: 90%;
+    height: 200px;
+    border: 3px solid #4263f7;
+}
+
+.about-count-title {
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.about-count {
+    text-align: center;
+    color: #4fffbe;
+    font-size: 2.8rem;
+}
+
+.about-count-wrap.creators {
     border-top: none;
-}
-
-.creator-stat {
-    border-top: 2px solid #fff;
     border-left: none;
 }
 
-.view-stat {
-    border-right: none
+.about-count-title.creators {
+    width: 60%;
 }
 
-.about-part-title {
-    margin-top: 30px;
-    font-size: 25px;
-    font-weight: light;
-    text-align: center;
-    color: #fff;
+.about-count.creators {
+    width: 30%;
 }
 
-.count {
-    position: relative;
-    transform: translateY(-50%);
-    top: 35.5%;
-    text-align: center;
-    font-size: 60px;
-    font-weight: bold;
-    color: #fff;
+.about-count-wrap.total-views {
+    margin-top: 10%;
+    border-right: none;
+    border-bottom: none;
+}
+
+.about-count.total-views {
+    width: 60%;
+}
+
+.about-count-title.total-views {
+    width: 40%;
 }
 /* // About */
 
@@ -303,7 +322,7 @@
 .video-title {
     text-align: center;
     color: #fff;
-    font-size: 70px;
+    font-size: 3.85rem;
     font-weight: bold;
     transition: all 0.5s;
 }

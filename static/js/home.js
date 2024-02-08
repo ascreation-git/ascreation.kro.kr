@@ -12,7 +12,7 @@ const intersectionCallback = (entries, observer) => {
             target.querySelector('.mobile-title').classList.add('animation-down');
         } else if (target.classList.contains('about-section')) {
             target.querySelector('.about-text-wrap').classList.add('animation-up');
-            target.querySelector('.about-contents').classList.add('animation-down');
+            target.querySelector('.about-statistics').classList.add('animation-down');
         } else if (target.classList.contains('creators-section')) {
             target.querySelector('.carousel').classList.add('animation-down');
             target.querySelector('.creators-text-wrap').classList.add('animation-left');
