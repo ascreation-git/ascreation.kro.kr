@@ -14,9 +14,9 @@
 }
 
 @font-face {
-    font-family: 'NanumSquareNeo-Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -65,9 +65,9 @@ a {
 
 a:hover { color: #3047af; }
 
-::-moz-selection { background: #0D0E12; color: #fff; }
+::-moz-selection { background: #f2f2f2; color: #000; }
 
-::selection { background: #0D0E12; color: #fff; }
+::selection { background-color: #f2f2f2; color: #000; }
 /* // Common Style */
 
 /* Common Animation */

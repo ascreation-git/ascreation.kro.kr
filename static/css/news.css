@@ -21,13 +21,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
 /* // Import */
 
 /* 1024 ~ Resolution */
@@ -278,7 +271,8 @@
     transform: translateX(-50%);
     left: 50%;
     line-height: 45px;
-    font-family: 'NanumSquareNeo-Variable';
+    font-family: 'Pretendard-Regular';
+    font-size: 1.12rem;
     text-align: center;
 }
 
@@ -339,11 +333,11 @@
 }
 
 .news-contents-box {
+    width: calc(100% - 40px);
     margin-left: 20px;
 }
 
 .news-title {
-    width: 750px;
     padding: 0;
     font-family: 'Pretendard-Regular';
     font-weight: bold;
@@ -363,13 +357,13 @@
 .news-category,
 .news-date {
     font-size: 15.5px;  
-    font-family: 'NanumSquareNeo-Variable';
+    font-family: 'Pretendard-Regular';
 }
 
 .page-number {
     color: #adadad;
     font-size: 1.2rem;
-    font-family: 'NanumSquareNeo-Variable';
+    font-family: 'Pretendard-Regular';
     cursor: pointer;
     transition: all 0.5s;
 }

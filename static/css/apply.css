@@ -5,6 +5,10 @@
     ======================================
 */
 
+/* Import */
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+/* // Import */
+
 /* Header */
 .header-button + label[for="header-button"] > span {
     background: #fdfdfd;
@@ -85,10 +89,15 @@
 .subtitle {
     position: relative;
     color: #fff;
-    font-family: 'NanumSquareNeo-Variable';
+    font-family: 'Galmuri9';
     text-align: center;
     font-size: 1.8rem;
     font-weight: lighter;
+}
+
+.subtitle > span {
+    font-family: 'Galmuri9';
+    color: #4fffbe;
 }
 
 .title {
@@ -96,7 +105,7 @@
     color: #fff;
     font-family: 'PyeongChangPeace-Bold';
     text-align: center;
-    font-size: 8.5rem;
+    font-size: 7.5rem;
 }
 
 .contents-background {
@@ -119,8 +128,8 @@
 }
 
 .form-title {
-    margin: 80px 0 0 80px;
-    font-family: 'PyeongChangPeace-Bold';
+    font-weight: bold;
+    text-align: center;
     font-size: 4.5rem;
     color: #fff;
 }
@@ -156,8 +165,8 @@
 
 .applyform .label {
     color: #fff;
-    font-size: 18px;
-    font-family: 'NanumSquareNeo-Variable';
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
     margin-bottom: 15px;
 }
 
@@ -186,13 +195,6 @@
 .applyform input:focus::-webkit-input-placeholder {
     opacity: 0;
     color: transparent;
-}
-
-.input-description {
-    font-family: 'NanumSquareNeo-Variable';
-    font-size: 15px;
-    color: #fff;
-    margin-top: 10px;
 }
 
 .applyform input[type="checkbox"],
@@ -264,7 +266,7 @@
 }
 
 .introducewrap {
-    height: 450px !important;
+    height: 400px !important;
 }
 
 .introduce {
@@ -320,9 +322,9 @@
 
 .checkbox .privacy-description {
     color: #fff;
-    font-family: 'NanumSquareNeo-Variable';
+    font-family: 'Pretendard-Regular';
     margin-left: 5px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .checkbox input[type="checkbox"]:checked ~ .check {
@@ -345,8 +347,7 @@
     height: 55px;
     background: transparent;
     color: #fff;
-    border: 1.5px solid #fff;
-    border-radius: 8px;
+    border: 1px solid #fff;
     line-height: 55px;
     font-size: 16.5px;
     margin-bottom: 35px;
@@ -354,9 +355,10 @@
     cursor: pointer;
     transition: all 0.5s;
 }
-
+  
 .button:hover {
-    box-shadow: 0 -55px 0 0 rgb(66, 99, 247) inset;
+    box-shadow: 0 -55px 0 0 #f2f2f2 inset;
+    color: #000;
 }
 
 .resultwrap {
@@ -384,17 +386,25 @@
     /* // Alert */
 
     /* Intro Section */
+    .intro-contents {
+        height: 65vh;
+    }
+
     .title {
-        font-size: 5.5rem;
+        font-size: 3rem;
     }
 
     .subtitle {
-        font-size: 0.85rem;
+        font-size: 1.25rem;
+        margin: 0 6% 1.8%;
+    }
+
+    .contents-background {
+        height: 35.5vh;
     }
     /* // Intro Section */
 
     /* Contents Section */
-
     .form-title {
         margin: 80px 0 0 0;
         text-align: center;
@@ -408,19 +418,16 @@
 
     .applyform .row {
         flex-direction: column;
-        height: 325px;
     }
 
-    .applyform > .row:not(:first-child) {
-        margin-top: 20px;
-    }
-
-    .applyform .row > .col:nth-child(1),
-    .applyform .row > .col:nth-child(2) {
-        flex: none;
+    div[class*="box"] {
         margin: 0 0 20px 0;
     }
-    
+
+    .identitywrap {
+        height: 360px !important;
+    }
+
     .genderbox .row {
         flex-direction: row;
         justify-content: center;
@@ -428,31 +435,39 @@
     }
 
     .male-selector {
-        margin-right: 16.5%;
+        margin-right: 16.5% !important;
     }
 
     .contactwrap {
-        height: 210px !important;
+        height: 240px !important;
     }
 
     .channelwrap {
-        height: 100px !important ;
+        height: 120px !important;
     }
 
     .introducewrap {
-        height: 375px !important;
+        height: 370px !important;
+    }
+
+    .introduce::-webkit-input-placeholder {
+        font-size: 0.8rem !important;
     }
 
     .privacywrap {
-        height: 410px !important;
+        height: 440px !important;
     }
 
-    .privacy-label {
-        font-size: 14px !important;
+    .privacy {
+        font-size: 12.5px !important;
     }
 
     .checkbox .privacy-description {
-        font-size: 15px;
+        font-size: 16.5px;
+    }
+
+    .applyform .label {
+        font-size: 1.1rem;
     }
     /* // Contents Section */
 }

@@ -80,7 +80,7 @@
     max-width: 100%;
     height: 350px;
     overflow: hidden;
-}
+} 
 
 @-webkit-keyframes TextAnimationSidetoSide {
     from {
@@ -217,7 +217,7 @@
 
 .info {
     visibility: hidden;
-    font-family: 'NanumSquareNeo-Variable';
+    font-family: 'Pretendard-Regular';
     line-height: 25px;
     color: #fff;
     font-size: 18px;
@@ -257,7 +257,7 @@
 .page-number {
     color: #adadad;
     font-size: 1.4rem;
-    font-family: 'NanumSquareNeo-Variable';
+    font-family: 'Pretendard-Regular';
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -282,12 +282,21 @@
 /* ~ 480 Mobile Resolution */
 @media (min-width: 320px) and (max-width: 480px) {
     /* Intro Section */
+    .intro-contents {
+        height: 65vh;
+    }
+
     .subtitle {
         font-size: 1.5rem;
+        margin-bottom: 1.8%;
     }
 
     .title {
         font-size: 3.5rem;
+    }
+    
+    .contents-background {
+        height: 35.5vh;
     }
     /* // Intro Section */
     

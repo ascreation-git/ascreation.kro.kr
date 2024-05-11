@@ -63,7 +63,8 @@ body {
     transform: translateX(-50%);
     left: calc(50% - 40px);
     line-height: 45px;
-    font-family: 'NanumSquareNeo-Variable';
+    font-family: 'Pretendard-Regular';
+    font-size: 1.12rem;
     text-align: center;
 }
 
@@ -91,7 +92,7 @@ body {
 
 .error-code {
     color: #7c7c7c;
-    font-family: 'NanumSquareNeo-Variable';
+    font-family: 'Pretendard-Regular';
     font-weight: bold;
     font-size: 18px;
 }
