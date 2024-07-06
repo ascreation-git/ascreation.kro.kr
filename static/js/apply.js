@@ -148,7 +148,7 @@ form.addEventListener("submit", function (event) {
         errorAlert.style.visibility = "hidden"
     }
     
-    // Insuccess Input Error
+    // Incorrect Input Error
     function focusAndSetStyle(element) {
         const commonBorderStyle = "solid 1px #ff4e4e";
         element.focus()
