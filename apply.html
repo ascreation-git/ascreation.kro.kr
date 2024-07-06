@@ -100,29 +100,20 @@
 
             <!--Alert-->
             <!--// Correct Alert-->
-            <div class="row alert correct">
-                <div class="row center alert-icon">
-                    <img src="/static/images/icon/circle-green.png" alt="Success">
+            <div class="row alert success">
+                <div class="row alert-content">
+                    <p>크리에이터 지원이 정상적으로 접수되었습니다.</p>        
                 </div>
-                <div class="row alert-content">크리에이터 지원이 정상적으로 접수되었습니다.</div>
-                <div class="alert-close">
-                    <div class="row center alert-close-content">
-                        <img src="/static/images/icon/close.png" alt="Close">
-                    </div>
-                </div>
+                <div class="alert-close"><!--Close Cross Line--></div>
             </div>
             
             <!--// Error Alert-->
             <div class="row alert error">
-                <div class="row center alert-icon">
-                    <img src="/static/images/icon/circle-red.png" alt="Fail">
+                <div class="row alert-content">
+                    <p>올바르지 않은 입력 값이 있어 처리할 수 없습니다.</p>        
                 </div>
-                <div class="row alert-content">올바르지 않은 입력 값이 있어 처리할 수 없습니다.</div>
-                <div class="alert-close">
-                    <div class="row center alert-close-content">
-                        <img src="/static/images/icon/close.png" alt="Close">
-                    </div>
-                </div>
+
+                <div class="alert-close"><!--Close Cross Line--></div>
             </div>
             <!--// Alert-->
     
@@ -141,7 +132,11 @@
     
             <!--Contents Section-->        
             <section class="contents-section" id="Form">
-                <p class="form-title animation-before">APPLICATION</p>
+                <!--Before Form-->
+                <p class="form-title animation-before"><span class="pc-only">여러분의</span> 창작, <span class="pc-only">AS CREAT!ON</span><span class="mobile-only">ASC._</span>에서 시작하세요.</p>
+                <!--// Before Form-->
+
+                <!--Apply Form-->
                 <form class="applyform animation-before" id="applyform" autocomplete="off" spellcheck="false">
                     <div class="row identitywrap">
                         <div class="col namebox">
@@ -184,16 +179,16 @@
                     </div>
 
                     <div class="row channelwrap">
-                        <div class="col youtubebox">
-                            <label class="label youtube-label">YouTube 채널 <span class="require">*</span></label>
-                            <input type="text" class="youtube" id="youtube" title="YouTube 채널 URL을 작성해 주세요." placeholder="YouTube 채널 URL을 작성해 주세요. | Ex) https://youtube.com">
+                        <div class="col opsnsbox">
+                            <label class="label youtube-label">운영 중인 SNS 채널 <span class="require">*</span></label>
+                            <input type="text" class="opsns" id="opsns" title="운영 중인 채널 URL을 작성해 주세요." placeholder="운영 중인 채널 URL을 작성해 주세요.">
                         </div>
                     </div>
 
                     <div class="row channelwrap">
                         <div class="col platformbox">
-                            <label class="label platform-label">YouTube 외 운영중인 플랫폼 채널</label>
-                            <input type="text" class="platform" id="platform" title="운영중인 채널의 URL을 작성해 주세요." placeholder="운영중인 채널의 URL을 작성해 주세요. | Ex) https://twitch.tv">
+                            <label class="label platform-label">추가 운영 중인 플랫폼 채널</label>
+                            <input type="text" class="platform" id="platform" title="추가로 운영 중인 채널의 URL을 작성해 주세요." placeholder="추가로 운영 중인 채널의 URL을 작성해 주세요. (실시간 전용, 추가 운영 중인 채널 등)">
                         </div>
                     </div>
 
@@ -214,8 +209,8 @@
 
     1. 개인정보 수집 및 이용
         [ 1 ] AS CREAT!ON은 아래와 같은 개인정보를 수집 및 이용합니다.
-        - 필수 항목 : 지원자의 이름 또는 예명, 지원자의 생년월일, 지원자의 성별, 지원자의 디스코드 아이디, 지원자의 전자우편 주소, 지원자의 YouTube 채널, 지원자의 자기소개, 지원 시간 등
-        - 선택 항목 : 지원자의 YouTube 외 운영중인 플랫폼 및 채널
+        - 필수 항목 : 지원자의 이름 또는 예명, 지원자의 생년월일, 지원자의 성별, 지원자의 디스코드 아이디, 지원자의 전자우편 주소, 지원자가 운영 중인 채널, 지원자의 자기소개, 지원 시간 등
+        - 선택 항목 : 지원자가 추가로 운영중인 플랫폼 및 채널
                 
         [ 2 ] AS CREAT!ON은 수집한 개인정보를 아래와 같이 이용합니다.
         - 지원자의 지원 의사를 확인하고, 지원자의 신원 확인 및 지원 서비스 부정 이용 방지와 중복 지원을 방지하고자 이용합니다.
@@ -229,8 +224,8 @@
         [ 1 ] AS CREAT!ON은 지원자의 개인정보를 안전하게 수집 및 보관하기 위해서 다음과 같은 국외 기관 또는 서비스에 개인정보를 제공할 수 있습니다.
         - 이전되는 개인정보 항목 : '1. 개인정보 수집 및 이용의 [ 1 ]'과 같은 항목
         - 이전되는 국가와 시기 및 방법 : Google의 데이터 센터 소재국, 지원자가 지원을 접수했을 때 API 호출을 통한 전달 및 처리
-        - 이전받는 기관 : Google LLC (구글유한회사) 및 Firebase Inc. (Firebase의 Firestore Database, Realtime Database)
-        - 이전받는 기관의 이용 목적 : 수집 항목의 안전한 수접 및 저장 (보관)
+        - 이전받는 기관 : Google LLC (구글유한회사) 및 Firebase Inc. (Firebase의 Firestore Database, Realtime Database)등과 같은 Google에서 선택한 기관 및 서비스
+        - 이전받는 기관의 이용 목적 : 수집 항목의 안전한 수집 및 저장 (보관)
         - 보관 또는 이용 기간 : 이용 목적 달성 후 최대 14일 보관
         - 개인정보의 이전 거부 방법 및 거부의 효과 : 본 개인정보 처리방침에 거부함으로써 거부할 수 있음. 다만, 거부 시 개인정보를 수집하거나 이용할 수 없으므로, 지원이 제한될 수 있음.
 
@@ -247,7 +242,7 @@
 
                     <div class="row center buttonwrap">
                         <div class="col center">
-                            <button class="button submitbtn" type="submit">지원하기</button>
+                            <button class="button submitbtn" type="submit">SEND</button>
                         </div>
                     </div>
 
@@ -256,6 +251,7 @@
                         <input class="gender-result" id="gender-result" type="hidden" minlength="2" maxlength="2" type="text" required readonly>
                     </div>
                 </form>
+                <!--// Apply Form-->
                 <br>
                 <br>
                 <br>

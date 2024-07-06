@@ -102,7 +102,7 @@ form.addEventListener("submit", function (event) {
     const genderRadio = document.querySelectorAll(".radio");
     const discordInput = document.querySelector(".discord");
     const emailInput = document.querySelector(".email");
-    const youtubeInput = document.querySelector(".youtube");
+    const opsnsInput = document.querySelector(".opsns");
     const introduceInput = document.querySelector(".introduce");
     const checkboxInput = document.querySelector(".privacy");
     const checkbox = document.querySelector(".check");
@@ -114,7 +114,7 @@ form.addEventListener("submit", function (event) {
     const genderValue = getValue('gender-result');
     const discordValue = getValue('discord');
     const emailValue = getValue('email');
-    const youtubeValue = getValue('youtube');
+    const opsnsValue = getValue('opsns');
     const introduceValue = getValue('introduce');
     const checkboxValue = getValue('checkbox-result');
     
@@ -127,14 +127,13 @@ form.addEventListener("submit", function (event) {
         genderValue.trim() === "" ||
         discordValue.trim() === "" ||
         emailValue.trim() === "" ||
-        youtubeValue.trim() === "" ||
+        opsnsValue.trim() === "" ||
         introduceValue.trim() === "" ||
         checkboxValue !== "동의" ||
         (genderValue !== "남성" && genderValue !== "여성") ||
         (birthdayValue.length !== 6 && birthdayValue.length !== 8) ||
         !isNumberic(birthdayValue) ||
         !isValidEmail(emailValue) ||
-        !youtubeValue.includes("youtube.com") ||
         introduceValue.length < 50
     ) {
         errorAlert.style.visibility = "visible";
@@ -174,8 +173,8 @@ form.addEventListener("submit", function (event) {
         focusAndSetStyle(discordInput)
     } else if(emailValue.trim() === "" || !isValidEmail(emailValue)) {
         focusAndSetStyle(emailInput)
-    } else if(youtubeValue.trim() === "" || !youtubeValue.includes("youtube.com")) {
-        focusAndSetStyle(youtubeInput)
+    } else if(opsnsValue.trim() === "") {
+        focusAndSetStyle(opsnsInput)
     } else if(introduceValue.trim() === "" || introduceValue.length < 50) {
         focusAndSetStyle(introduceInput)
     } else if(checkboxValue !== "동의") {
@@ -198,7 +197,7 @@ const genderInput = document.querySelector(".gender-focus");
 const genderRadio = document.querySelectorAll(".radio");
 const discordInput = document.querySelector(".discord");
 const emailInput = document.querySelector(".email");
-const youtubeInput = document.querySelector(".youtube");
+const opsnsInput = document.querySelector(".opsns");
 const introduceInput = document.querySelector(".introduce");
 const checkboxInput = document.querySelector(".privacy");
 const checkboxShape = document.querySelector(".check");
@@ -211,7 +210,7 @@ const birthdayValue = getValue('birthday');
 const genderValue = getValue('gender-result');
 const discordValue = getValue('discord');
 const emailValue = getValue('email');
-const youtubeValue = getValue('youtube');
+const opsnsValue = getValue('opsns');
 const introduceValue = getValue('introduce');
 const checkboxValue = getValue('checkbox-result');
 
@@ -271,13 +270,13 @@ emailInput.addEventListener('input', function (e) {
     }
 });
 
-youtubeInput.addEventListener('input', function (e) {
-    var youtubeValue = e.target.value;
+opsnsInput.addEventListener('input', function (e) {
+    var opsnsValue = e.target.value;
 
-    if(youtubeValue.trim() === "" || !youtubeValue.includes("youtube.com")) {
-        youtubeInput.style.border = "solid 1px #ff4e4e";
+    if(opsnsValue.trim() === "") {
+        opsnsInput.style.border = "solid 1px #ff4e4e";
     } else {
-        youtubeInput.style.border = "solid 1px #4e4e4e";
+        opsnsInput.style.border = "solid 1px #4e4e4e";
     }
 });
 
@@ -315,7 +314,7 @@ return emailRegex.test(email);
 }
 
 // Close Alert
-const alertClose = document.querySelectorAll('.alert-close-content');
+const alertClose = document.querySelectorAll('.alert-close');
 
 alertClose.forEach(function(element) {
     element.addEventListener("click", function (event) {
@@ -340,13 +339,13 @@ function formSubmit(event) {
     const gender = getValue('gender-result');
     const discord = getValue('discord');
     const email = getValue('email');
-    const youtube = getValue('youtube');
+    const opsns = getValue('opsns');
     const platform = getValue('platform');
     const introduce = getValue('introduce');
     const privacy = getValue('checkbox-result');
     const timestamp = new Date().toString();
 
-    sendData(name, birthday, gender, discord, email, youtube, platform, introduce, privacy, timestamp);
+    sendData(name, birthday, gender, discord, email, opsns, platform, introduce, privacy, timestamp);
 
     correctAlert.style.visibility = "visible";
     correctAlert.style.opacity = "1";
@@ -361,7 +360,7 @@ function formSubmit(event) {
 }
 
 // Send Data
-const sendData = (name, birthday, gender, discord, email, youtube, platform, introduce, privacy, timestamp) => {
+const sendData = (name, birthday, gender, discord, email, opsns, platform, introduce, privacy, timestamp) => {
     var newForm = applyFormDatabase.push();
 
     newForm.set({
@@ -370,8 +369,8 @@ const sendData = (name, birthday, gender, discord, email, youtube, platform, int
     "2) 성별": gender,
     "3) Discord": discord,
     "4) E-Mail": email,
-    "5) YouTube URL": youtube,
-    "6) SNS (YouTube 제외) URL": platform,
+    "5) 운영 중인 SNS": opsns,
+    "6) 추가 운영 중인 SNS": platform,
     "7) 자기소개": introduce,
     "8) 개인정보 처리방침 동의": privacy,
     "9) 제출 시간": timestamp,
