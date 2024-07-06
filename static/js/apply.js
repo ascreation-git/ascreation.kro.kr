@@ -148,7 +148,7 @@ form.addEventListener("submit", function (event) {
         errorAlert.style.visibility = "hidden"
     }
     
-    // Incorrect Input Error
+    // Insuccess Input Error
     function focusAndSetStyle(element) {
         const commonBorderStyle = "solid 1px #ff4e4e";
         element.focus()
@@ -333,7 +333,7 @@ alertClose.forEach(function(element) {
 function formSubmit(event) {
     event.preventDefault();
 
-    const correctAlert = document.querySelector('.alert.correct');
+    const successAlert = document.querySelector('.alert.success');
     const name = getValue('name');
     const birthday = getValue('birthday');
     const gender = getValue('gender-result');
@@ -347,12 +347,12 @@ function formSubmit(event) {
 
     sendData(name, birthday, gender, discord, email, opsns, platform, introduce, privacy, timestamp);
 
-    correctAlert.style.visibility = "visible";
-    correctAlert.style.opacity = "1";
+    successAlert.style.visibility = "visible";
+    successAlert.style.opacity = "1";
 
     setTimeout(() => {
-    correctAlert.style.opacity = "0";
-    correctAlert.style.visibility = "hidden";
+    successAlert.style.opacity = "0";
+    successAlert.style.visibility = "hidden";
     }, 5000);
 
     document.getElementById("applyform").reset();
