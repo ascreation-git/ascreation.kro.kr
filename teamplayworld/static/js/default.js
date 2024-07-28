@@ -18,7 +18,7 @@ navLinks.forEach(link => {
 });
 
 // 이용자가 메인 페이지를 위와 다른 방법으로 접속한 경우
-if (currentPath === '/index.html' || currentPath === '/index') {
+if (currentPath === '/index.html' || currentPath === '/index' || currentPath === '/teamplayworld/') {
     navHomeLinks.forEach(homeLink => {
         homeLink.classList.add('nav-active');
         homeLink.removeAttribute('href');
