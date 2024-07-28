@@ -9,7 +9,7 @@
 .section-intro {
     width: 100%;
     height: 100vh;
-    background: url(/static/images/svg/helix.svg) center no-repeat fixed;
+    background: url(/teamplayworld/static/images/svg/helix.svg) center no-repeat fixed;
     background-size: 105%;
 }
 
