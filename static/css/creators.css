@@ -165,6 +165,12 @@
     justify-content: space-around;
 }
 
+.no-data {
+    margin: 10% auto;
+    font-size: 3rem;
+    color: #fff;
+}
+
 .profile-grid.nopage {
     display: none;
     visibility: hidden;

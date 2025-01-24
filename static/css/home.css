@@ -373,6 +373,10 @@
     box-shadow: 1px -2px 30px -2px #4263f7;
 }
 
+.video-contents.none {
+    display: none;
+}
+
 .video-wrap {
     width: 0;
     height: 0;
